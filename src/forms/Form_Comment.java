@@ -19,7 +19,6 @@ public class Form_Comment extends HttpServlet {
    
     public Form_Comment() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 
