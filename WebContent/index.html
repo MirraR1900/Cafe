@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery_style.css">
+	<script src="js/init.js" type="text/javascript"></script>
+    <title>Dolce vita</title>
+</head>
+
+<body>
+
+    <!-- header-->
+    <div class="flex-container column">
+        <div class="flex-item header">
+            <div class="header-front">
+                <div class="flex-item name">Dolce vita</div>
+                <div class="flex-item navigation">
+                    <ul class="nav">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#main">О нас</a></li>
+                        <li><a href="#column_menu">Меню</a></li>
+                        <li><a href="#banquet">Банкеты</a></li>
+                        <li><a href="#comment-box">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <p id="adress">ул. Ленина, 40</p>
+                <p id="phone">+7(8459)78-78-60</p>
+                <p id="time">Мы работаем для Вас с 10 до 23 часов</p>
+            </div>
+
+
+        </div>
+        <div id="main" class="flex-item main">
+            <p id="paragraph_1">Кафе "Dolce vita" место где всегда рады гостям.</p>
+            <p id="paragraph_2">Кафе "Dolce vita" - это уютная атмосфера и блюда приготовленные с душой.
+                Для наших гостей два просторных этажа с баром, открытой кухней, живой музыкой, собственной закрытой
+                парковкой и прекрасным панорамным видом на город.
+            </p>
+        </div>
+        <!-- Menu-->
+        <div id="column_menu" class="flex-container_menu column_menu">
+            <div class="flex-item name_menu">
+                <p id="name_menu">Меню</p>
+            </div>
+            <div class="flex-item menu">
+                <ul class="nav_menu">
+                    <li><a href="bisness_lunch.html"><span class="desrc">Бизнес ланч</span><img src="images/bisness_lunch.jpg"></a></li>
+                    <li><a href="soup.html"><span class="desrc">Супы</span><img src="images/soup.jpg"></a></li>
+                    <li><a href="salad.html"><span class="desrc">Салаты / Закуски</span><img src="images/salad.jpg"></a></li>
+            <!--         <li><a href="meat.html"><span class="desrc">Мясо</span><img src="images/meat.jpg"></a></li>  -->
+                    <li><a href="seafood.html"><span class="desrc">Рыба / Морепродукты</span><img src="images/seafood.jpg"></a></li>
+                    <li><a href="side_dish.html"><span class="desrc">Гарниры</span><img src="images/french-fries.jpg"></a></li>
+                    <li><a href="pasta.html"><span class="desrc">Паста</span><img src="images/pasta.jpg"></a></li>
+                    <li><a href="pizza.html"><span class="desrc">Пицца</span><img src="images/pizza.jpg"></a></li>
+                    <li><a href="drink.html"><span class="desrc">Напитки</span><img src="images/drink.jpg"></a></li>
+         <!--            <li><a href="cocktails.html"><span class="desrc">Коктели</span><img src="images/cocktails.jpg"></a></li>  -->
+                    <li><a href="cake.html"><span class="desrc">Десерты</span><img src="images/cake.jpg"></a></li>
+        <!--             <li><a href="bread.html"><span class="desrc">Хлеб</span><img src="images/bread.jpg"></a></li> -->
+                </ul>
+            </div>
+        </div>
+        <!-- Banquet-->
+        <div class="banquet" id="banquet">
+            <h3 id="banquet_name">Банкеты и свадьбы</h3>
+            <div class="flex-container_banquet text_banquet">
+                <div class="flex-item banquet_text">
+                    <ul id="banquet_list">
+                        <li>Два зала вместимостью от 30 человек</li>
+                        <li>Просторный балкон для фотосессии</li>
+                        <li>Современное световое и звуковое сопровождение</li>
+                        <li>Разработка индивидуального меню</li>
+                        <li>Дизайнерское оформление банкетного зала</li>
+                        <li>Разработка индивидуального меню</li>
+                        <li>Проведение вечера тамадой в подарок</li>
+                    </ul>
+
+                    <button id="order_button">Заказать банкет</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Wedding-->
+        <div class="container">
+            <div id="content-slider">
+               <div id="slider">  
+                  <div id="mask">  
+         
+                  <ul>
+                  <li class="wedding_1">  
+                  <a href="#"> <img src="images/wedding_1.jpg" /> </a>
+                  </li>
+         
+                  <li  class="wedding_2">
+                  <a href="#"> <img src="images/wedding_2.jpg" /> </a>
+                  </li>
+         
+                  <li  class="wedding_3">
+                  <a href="#"> <img src="images/wedding_3.jpg "/> </a>
+                  </li>
+         
+                  <li  class="wedding_4">
+                  <a href="#"> <img src="images/wedding_4.jpg "/> </a>
+                  </li>
+         
+                  <li  class="wedding_5">
+                  <a href="#"> <img src="images/wedding_5.jpg" /> </a>
+                  </li>
+                  </ul>
+         
+                  </div>  
+                  <div class="progress-bar"></div>  
+               </div>  
+            </div>
+         </div>
+         
+         
+
+<!--Comment-->
+        <div id="comment-box" class="flex-item comment-box">
+            <h1 id="comParagraph">Оставьте свой комментарий о нашем кафе</h1>
+            <div>
+                <form id="comment" action="Form_Comment" method="POST" name="comment ">
+                    <input name="name" id="firstName" maxlength="30" placeholder="Введите ваше имя" required />
+                    <input name="name" id="lastName" maxlength="50" placeholder="Введите вашу фамилию" required />
+                    <input name="email" type="email" id="email" maxlength="20" placeholder="Введите ваш E-mail" required />
+                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
+                    <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div id="footer" class="flex-item footer">
+            <p>Получить информацию по интересующим вопросам: </p>
+        </div>
+    </div>
+</body>
+</html>
