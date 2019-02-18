@@ -16,13 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Form_Comment extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-   
-    public Form_Comment() {
-        super();
-    }
 
-
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html; charset=utf-8"); 

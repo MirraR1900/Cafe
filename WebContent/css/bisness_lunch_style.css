@@ -58,10 +58,28 @@ ul.nav a:hover{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    
 }
+
 
 .offer{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+}
+.special_offer{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+font-style: italic;
+list-style: none;
+line-height: 40px;
+}
+
+.special_price{
+color: rgb(111, 55, 0);
+font-weight: bold;
 }
 
