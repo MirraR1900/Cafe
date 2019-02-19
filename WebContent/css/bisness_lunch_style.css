@@ -1,27 +1,30 @@
 body {
 	background: rgba(255, 228, 196, 0.7);
+	margin: 0; 
+	padding: 0;
 }
 /*Header*/
 .header {
-	width: 1270px;
+width: 100%;
 	height: 100px;
-	margin: 0 auto;
-	z-index: 0;
+	/* z-index: 0; */
+	background-color: rgba(0, 0, 0, 0.4);
+    height: 100px;
 }
 
 .header_content {
-	width: 1270px;
+	width: 100%;
 	height: 100px;
 	background-image: url(../images/header_menu.png);
 	position: fixed;
 	z-index: 9999;
+	overflow: hidden;
 }
 
 .name {
 	height: 2px;
 	color: white;
-	font-family: "Times New Roman", 'Franklin Gothic Medium', 'Arial Narrow',
-		Arial, sans-serif;
+	font-family: "Times New Roman", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 60px;
 	font-style: italic;
 	padding-top: 10px;
