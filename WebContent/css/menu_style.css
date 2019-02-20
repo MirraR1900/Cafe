@@ -87,8 +87,47 @@ ul.nav a:hover {
   /*  padding: 20px; */
   /*  font-size: 20px;
 	text-align: center; */
+	position: relative;
+	overflow: hidden;
 }
 
+.specification{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgb(255, 255, 255);
+	padding-top: 25px;
+	text-align: center;
+	opacity: 0;
+	top: 100%;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.grid-item:hover .specification{
+opacity: 1;
+top: 0;
+}
+
+.name_dish{
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+font-weight: bold;
+}
+
+.composition{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+}
+
+.price_dish{
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+font-weight: bold;
+}
 
 img{
     margin: 0;
@@ -100,5 +139,7 @@ img{
     width: auto;
     height: 100px;
 }
+
+
 
 
