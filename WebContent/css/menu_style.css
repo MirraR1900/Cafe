@@ -86,8 +86,9 @@ ul.nav a:hover {
     border: 3px solid rgba(255, 255, 255, 0.8);
   /*  padding: 20px; */
   /*  font-size: 20px;
-    text-align: center; */
+	text-align: center; */
 }
+
 
 img{
     margin: 0;
@@ -99,3 +100,5 @@ img{
     width: auto;
     height: 100px;
 }
+
+
