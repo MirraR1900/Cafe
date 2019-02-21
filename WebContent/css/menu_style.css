@@ -1,8 +1,9 @@
 @charset "UTF-8";
-body{
-    margin: 0;
-    padding: 0;
-    background: rgba(255, 228, 196, 0.7);
+
+body {
+	margin: 0;
+	padding: 0;
+	background: rgba(255, 228, 196, 0.7);
 }
 
 /*Header*/
@@ -64,34 +65,37 @@ ul.nav a:hover {
 	color: white;
 }
 
-.main{
-    text-align: center;
+/*Menu*/
+.main {
+	text-align: center;
 	font-size: 30px;
 	font-family: 'Times New Roman', Times, serif;
 	font-style: italic;
 }
 
-.grid-container{
-    display: grid;
-    grid-gap: 30px;  /*gap - растоянием между div*/
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    background-color:rgba(255, 228, 196, 0.2);
-  /*  padding: 10px; */
-  margin-left: 5px;
-  margin-right: 5px;
+.grid-container {
+	display: grid;
+	grid-gap: 30px; /*gap - растоянием между div*/
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	background-color: rgba(255, 228, 196, 0.2);
+	/*  padding: 10px; */
+	margin-left: 5px;
+	margin-right: 5px;
 }
-.grid-item{
-   /* background-color: rgba(255, 255, 255, 0.8); */
-    border: 3px solid rgba(255, 255, 255, 0.8);
-  /*  padding: 20px; */
-  /*  font-size: 20px;
+
+.grid-item {
+	/* background-color: rgba(255, 255, 255, 0.8); */
+	border: 3px solid rgba(255, 255, 255, 0.8);
+	/*  padding: 20px; */
+	/*  font-size: 20px;
 	text-align: center; */
 	position: relative;
 	overflow: hidden;
 }
 
-.specification{
+/*Specification dishes*/
+.specification {
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -107,39 +111,37 @@ ul.nav a:hover {
 	transition: all .5s;
 }
 
-.grid-item:hover .specification{
-opacity: 1;
-top: 0;
+
+/*Menu animation*/
+.grid-item:hover .specification {
+	opacity: 1;
+	top: 0;
 }
 
-.name_dish{
-font-family: 'Times New Roman', Times, serif;
-font-size: 25px;
-font-weight: bold;
+.name_dish {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 25px;
+	font-weight: bold;
 }
 
-.composition{
-font-family: 'Times New Roman', Times, serif;
-font-size: 20px;
+.composition {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
 }
 
-.price_dish{
-font-family: 'Times New Roman', Times, serif;
-font-size: 25px;
-font-weight: bold;
+.price_dish {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 25px;
+	font-weight: bold;
 }
 
-img{
-    margin: 0;
-    width: 100%;
-    height: 100%;
+img {
+	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
-.full{
-    width: auto;
-    height: 100px;
+.full {
+	width: auto;
+	height: 100px;
 }
-
-
-
-
