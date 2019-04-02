@@ -86,6 +86,28 @@ ul.nav a:hover{
     color: rgb(255, 255, 255);
 }
 
+.orderTable{
+    height: 150px;
+}
+
+.orderButton{
+    margin-top: 50px;
+    width: 300px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid  rgb(105, 105, 105);
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 25px;
+    
+}
+.orderTable button:hover{
+    background-color:rgba(169, 169, 169, 0.4);
+    color: white;
+}
 /* About cafe */
 .main{
     padding-top: 50px;
@@ -252,7 +274,7 @@ ul.nav_menu a{
     top: 48px; 
 }  
 
-#order_button{
+.orderButtonBanquet{
     background: rgb(139, 69, 19);
     border-radius: 20px;
     width: 200px;
