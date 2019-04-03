@@ -2,9 +2,33 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Заказ столика</title>
+        <link rel="stylesheet" href="css/order_table.css">
+        <title>Забронировать столик</title>
     </head>
     <body>
-        <h1>Заказ столика</h1>
+        <p class="main">Забронировать столик</p>
+        <p class="textInformation">Забронируйте столик, указав необходимую информацию. </p>
+
+        <div class="formOrderTable">
+                <form id="orderTable" action="Form_Order" method="POST" name="orderTable">
+                    <input name="name" id="firstName" maxlength="30" placeholder="Имя" required/> 
+                    <input name="email" id="email" maxlength="50" placeholder="E-mail" required />
+                    <input name="phone" id="phone" placeholder="Телефон" required />
+                    <input type="text" id="calender" name="date" placeholder="Дата" required/>
+                    <input type="text" id="time" name="time" placeholder="Время"/ required>
+                    <input type="text" id="guests" name=" guests" placeholder="Выберите количество гостей" list="numberGuests" required/>
+                    <textarea id="textOrder" placeholder="Текст сообщения"></textarea>
+                    <button class="ButtonOrder" type="submit" form="orderTable">Отправить сообщение</button>
+                    </form>
+
+                    <datalist id="numberGuests">
+                        <option value="Столик на 2 персоны" />
+                        <option value="Столик на 3 персоны" />
+                        <option value="Столик на 4 персоны"" />
+                        <option value="Столик на 5 персоны"" />
+                        <option value="Столик на 6 персоны"" />
+                    </datalist>
+        </div>
+        
     </body>
 </html>

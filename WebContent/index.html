@@ -32,7 +32,7 @@
                 <p id="time">Мы работаем для Вас с 10 до 23 часов</p>
 
                 <div class="orderTable">                     
-                     <a href="orderTable.html"><button class="orderButton">Заказать столик</button></a>
+                     <a href="orderTable.html"><button class="orderButton">Забронировать столик</button></a>
                         
                 </div>
             </div>
@@ -134,10 +134,10 @@
             <div>
                 <form id="comment" action="Form_Comment" method="POST" name="comment ">
                     <input name="name" id="firstName" maxlength="30" placeholder="Введите ваше имя" required />
-                    <input name="name" id="lastName" maxlength="50" placeholder="Введите вашу фамилию" required />
+                    <input name="lastName" id="lastName" maxlength="50" placeholder="Введите вашу фамилию" />
                     <input name="email" type="email" id="email" maxlength="20" placeholder="Введите ваш E-mail"
-                        required />
-                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
+                        required />   
+                    <textarea id="textComment"  name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
                     <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
                 </form>
             </div>
