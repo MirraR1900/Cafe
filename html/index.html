@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="../js/formComment.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gallery_style.css">
-    <script src="js/init.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gallery_style.css">
     <title>Dolce vita</title>
 </head>
 
 <body>
-
     <!-- header-->
     <div class="flex-container column">
         <div class="flex-item header">
@@ -31,9 +31,9 @@
                 <p id="phone">+7(8459)78-78-60</p>
                 <p id="time">Мы работаем для Вас с 10 до 23 часов</p>
 
-                <div class="orderTable">                     
-                     <a href="orderTable.html"><button class="orderButton">Забронировать столик</button></a>
-                        
+                <div class="orderTable">
+                    <a href="orderTable.html"><button class="orderButton">Забронировать столик</button></a>
+
                 </div>
             </div>
 
@@ -53,16 +53,18 @@
             <div class="flex-item menu">
                 <ul class="nav_menu">
                     <li><a href="bisness_lunch.html"><span class="desrc">Бизнес ланч</span><img
-                                src="images/bisness_lunch.jpg"></a></li>
-                    <li><a href="soups.html"><span class="desrc">Супы</span><img src="images/soups/soup.jpg"></a></li>
+                                src="../images/bisness_lunch.jpg"></a></li>
+                    <li><a href="soups.html"><span class="desrc">Супы</span><img src="../images/soups/soup.jpg"></a>
+                    </li>
                     <li><a href="salads.html"><span class="desrc">Салаты / Закуски</span><img
-                                src="images/salads/salad-dolce-vita.jpg"></a></li>
+                                src="../images/salads/salad-dolce-vita.jpg"></a></li>
                     <!--         <li><a href="meat.html"><span class="desrc">Мясо</span><img src="images/meat.jpg"></a></li>  -->
                     <li><a href="seafood.html"><span class="desrc">Рыба / Морепродукты</span><img
-                                src="images/seafood/fried-fish.jpg"></a></li>
+                                src="../images/seafood/fried-fish.jpg"></a></li>
                     <li><a href="side_dish.html"><span class="desrc">Гарниры</span><img
-                                src="images/side_dish/boiled-potatoes.jpg"></a></li>
-                    <li><a href="pasta.html"><span class="desrc">Паста</span><img src="images/pasta/pasta.jpg"></a></li>
+                                src="../images/side_dish/boiled-potatoes.jpg"></a></li>
+                    <li><a href="pasta.html"><span class="desrc">Паста</span><img src="../images/pasta/pasta.jpg"></a>
+                    </li>
                     <!--<li><a href="pizza.html"><span class="desrc">Пицца</span><img src="images/pizza.jpg"></a></li>-->
                     <!--<li><a href="drink.html"><span class="desrc">Напитки</span><img src="images/drink.jpg"></a></li>-->
                     <!--            <li><a href="cocktails.html"><span class="desrc">Коктели</span><img src="images/cocktails.jpg"></a></li>  -->
@@ -91,7 +93,6 @@
             </div>
         </div>
 
-
         <!--Wedding-->
         <div class="container">
             <div id="content-slider">
@@ -100,23 +101,23 @@
 
                         <ul>
                             <li class="wedding_1">
-                                <a href="#"> <img src="images/wedding/wedding_1.jpg" /> </a>
+                                <a href="#"> <img src="../images/wedding/wedding_1.jpg" /> </a>
                             </li>
 
                             <li class="wedding_2">
-                                <a href="#"> <img src="images/wedding/wedding_2.jpg" /> </a>
+                                <a href="#"> <img src="../images/wedding/wedding_2.jpg" /> </a>
                             </li>
 
                             <li class="wedding_3">
-                                <a href="#"> <img src="images/wedding/wedding_3.jpg " /> </a>
+                                <a href="#"> <img src="../images/wedding/wedding_3.jpg " /> </a>
                             </li>
 
                             <li class="wedding_4">
-                                <a href="#"> <img src="images/wedding/wedding_4.jpg " /> </a>
+                                <a href="#"> <img src="../images/wedding/wedding_4.jpg " /> </a>
                             </li>
 
                             <li class="wedding_5">
-                                <a href="#"> <img src="images/wedding/wedding_5.jpg" /> </a>
+                                <a href="#"> <img src="../images/wedding/wedding_5.jpg" /> </a>
                             </li>
                         </ul>
 
@@ -126,8 +127,6 @@
             </div>
         </div>
 
-
-
         <!--Comment-->
         <div id="comment-box" class="flex-item comment-box">
             <h1 id="comParagraph">Оставьте свой отзыв о нашем кафе</h1>
@@ -136,11 +135,12 @@
                     <input name="name" id="firstName" maxlength="30" placeholder="Введите ваше имя" required />
                     <input name="lastName" id="lastName" maxlength="50" placeholder="Введите вашу фамилию" />
                     <input name="email" type="email" id="email" maxlength="20" placeholder="Введите ваш E-mail"
-                        required />   
-                    <textarea id="textComment"  name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
+                        required />
+                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
                     <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
                 </form>
             </div>
+
         </div>
 
         <!--Footer-->
