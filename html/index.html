@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/gallery_style.css">
+    <link rel="stylesheet" href="../css/order_table.css">
     <title>Dolce vita</title>
 </head>
 
@@ -32,7 +33,62 @@
                 <p id="time">Мы работаем для Вас с 10 до 23 часов</p>
 
                 <div class="orderTable">
-                    <a href="orderTable.html"><button class="orderButton">Забронировать столик</button></a>
+                    <a href="#orderTableForm"><button class="orderButton">Забронировать столик</button></a>
+                </div>
+                <div id="orderTableForm" class="modal-window">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title">Бронирование столика</p>
+                                <a href="#close" title="Close" class="close">X</a>
+                            </div>
+                            <div class="modal-body">
+                                <form class="orderTableForm" action="Form_Order" method="POST" name="orderTable">
+                                    <fieldset>
+                                        <p>
+                                            <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя">
+                                        </p>
+                                        <p>
+                                                <input name=" phone" id="phoneOrder" placeholder="Телефон">
+                                        </p>
+                                        <fieldset>
+                                            <input type="date" name="calender" id="calender" placeholder="Дата">
+                                                  
+                                            <input name="time" id="timeOrder" placeholder="Время">
+                                            <select name="guests" id="guests" size="1">
+                                                    <option value="data" selected>Количество гостей</option>
+                                                    <option value="2">2 гостя</option>
+                                                    <option value="3">3 гостя</option>
+                                                    <option value="4">4 гостя</option>
+                                                    <option value="5">5 гостей</option>
+                                                    <option value="6">6 гостей</option>
+                                                    <option value="7">7 гостей</option>
+                                                    <option value="8">8 гостей</option>
+                                                    <option value="9">9 гостей</option>
+                                                    <option value="10">10 гостей</option>
+                                                </select>
+                                        </fieldset>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <p>
+                                            <textarea name="" id="textOrder" cols="30" rows="10"></textarea>
+                                        </p>
+                                    </fieldset>
+
+                                    <p id="check">
+                                        <input type="checkbox">
+                                        <label for="check1">Я согласен с условиями обработки персональных данных</label>
+                                    </p>
+
+                                    <p class="sibmit">
+                                        <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
+                                            сообщение</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
