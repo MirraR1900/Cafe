@@ -3,7 +3,6 @@ body{
     padding: 0;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -127,7 +126,7 @@ body{
     margin: .5em 0;
 }
 
-#firstNameOrder, #phoneOrder, #textOrder {
+#firstNameOrder, #phoneOrder {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     width: 300px;
@@ -138,6 +137,18 @@ body{
     margin-top: 10px;
     font-size: 20px;
 
+}
+
+#textOrder {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    resize: none;
+    background: none;
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #calender,#timeOrder {
@@ -152,6 +163,15 @@ body{
     margin-top: 10px;
     font-size: 20px;
 }
+
+#calender::-webkit-inner-spin-button,
+#calender::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+
+
+
 .orderTableForm select {
     -webkit-appearance: none;
     -moz-appearance: none;

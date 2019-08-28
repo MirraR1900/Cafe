@@ -1,22 +1,14 @@
+var firstNameOrder = document.getElementById('firstNameOrder');
+var phonNumberOrder = document.getElementById('phoneOrder');
 var inputDate = document.getElementById('calender');
 var inputTime = document.getElementById('timeOrder');
+var numberGuests = document.getElementById('guests');
+var messageOrder = document.getElementById('textOrder');
+var checkOrder = document.getElementById('check');
+var buttomOrder = document.getElementsByClassName('ButtonOrder');
 
-inputDate.addEventListener('blur', function() {
-    this.type='text';
-});
 
-inputDate.addEventListener('focus', function() {
-    this.type='date';
-});
 
-inputDate.addEventListener('blur', function() {
-    this.type='text';
-});
-inputTime.addEventListener('focus', function() {
-    this.type='time';
-});
-
-var phonNumberOrder = document.getElementById('phoneOrder');
 
 window.addEventListener('DOMContentLoaded', function() {
 function setCursorPosition(pos, elem) {
@@ -51,4 +43,22 @@ phonNumberOrder.addEventListener('focus', mask, false);
 phonNumberOrder.addEventListener('blur', mask, false);
 
 });
+
+inputDate.addEventListener('blur', function() {
+    this.type='text';
+});
+
+inputDate.addEventListener('focus', function() {
+    this.type='date';
+});
+
+inputTime.addEventListener('blur', function() {
+    this.type='text';
+});
+
+inputTime.addEventListener('focus', function() {
+    this.type='time';
+});
+
+
 
