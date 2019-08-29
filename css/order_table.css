@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    color: white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     line-height: 1.5;
@@ -62,7 +61,7 @@ body{
      -ms-flex-pack: justify;
      justify-content: space-between;
      padding: 16px;
-     border-bottom: 1 solid #eceeef;
+     border-bottom: 1px solid black;
  }
 
  .modal-title {
@@ -170,8 +169,6 @@ body{
     margin: 0; 
   }
 
-
-
 .orderTableForm select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -228,7 +225,7 @@ body{
     height: 50px;
     margin-top: 20px;
     line-height: 40px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid white;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.7);
     color:  #000000;
@@ -247,5 +244,4 @@ body{
 label{
     color: rgb(255, 255, 255);
     font-size: 18px;
-    /* margin-right: 10px; */
 }
