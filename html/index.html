@@ -5,75 +5,77 @@
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
     <link rel="stylesheet" href="../css/gallery_style.css">
     <link rel="stylesheet" href="../css/order_table.css">
     <title>Dolce vita</title>
 </head>
 
 <body>
+    <div id="orderTableForm" class="modal-window">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title">Бронирование столика</p>
+                    <a href="#close" title="Close" class="close">X</a>
+                </div>
+                <div class="modal-body">
+                    <form class="orderTableForm" action="Form_Order" method="POST" name="orderTable">
+                        <fieldset>
+                            <p>
+                                <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя">
+                            </p>
+                            <p>
+                                <input name="phone" id="phoneOrder" value="" placeholder="Телефон">
+                            </p>
+                            <fieldset>
+                                <input type="text" name="calender" id="calender" placeholder="Дата"
+                                    title="Кликните мышкой чтобы выбрать дату">
+                                <input type="text" name="time" id="timeOrder" placeholder="Время">
+                                <select name="guests" id="guests" size="1">
+                                    <option value="data" selected>Количество гостей</option>
+                                    <option value="2">2 гостя</option>
+                                    <option value="3">3 гостя</option>
+                                    <option value="4">4 гостя</option>
+                                    <option value="5">5 гостей</option>
+                                    <option value="6">6 гостей</option>
+                                    <option value="7">7 гостей</option>
+                                    <option value="8">8 гостей</option>
+                                    <option value="9">9 гостей</option>
+                                    <option value="10">10 гостей</option>
+                                </select>
+                            </fieldset>
+                        </fieldset>
 
-        <div id="orderTableForm" class="modal-window">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <p class="modal-title">Бронирование столика</p>
-                            <a href="#close" title="Close" class="close">X</a>
-                        </div>
-                        <div class="modal-body">
-                                <form class="orderTableForm" action="Form_Order" method="POST" name="orderTable">
-                                        <fieldset>
-                                            <p>
-                                                <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя">
-                                            </p>
-                                            <p>
-                                                    <input name="phone" id="phoneOrder" value="" placeholder="Телефон">
-                                            </p>
-                                            <fieldset>
-                                                <input type="text" name="calender" id="calender" placeholder="Дата" title="Кликните мышкой чтобы выбрать дату">
-                                                <input type="text" name="time" id="timeOrder" placeholder="Время" >
-                                                <select name="guests" id="guests" size="1">
-                                                        <option value="data" selected>Количество гостей</option>
-                                                        <option value="2">2 гостя</option>
-                                                        <option value="3">3 гостя</option>
-                                                        <option value="4">4 гостя</option>
-                                                        <option value="5">5 гостей</option>
-                                                        <option value="6">6 гостей</option>
-                                                        <option value="7">7 гостей</option>
-                                                        <option value="8">8 гостей</option>
-                                                        <option value="9">9 гостей</option>
-                                                        <option value="10">10 гостей</option>
-                                                    </select>
-                                            </fieldset>
-                                        </fieldset>
-    
-                                        <fieldset> 
-                                                <textarea id="textOrder"  style="width: 450px; height: 200px;" placeholder="Текст сообщения"></textarea>
-                                        </fieldset>
-    
-                                        <p id="check">
-                                            <input type="checkbox">
-                                            <label for="check1">Я согласен с условиями обработки персональных данных</label>
-                                        </p>
-    
-                                        <p class="sibmit">
-                                            <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
-                                                сообщение</button>
-                                        </p>
-                                    </form>
-                        </div>
-                    </div>
+                        <fieldset>
+                            <textarea id="textOrder" style="width: 450px; height: 200px;"
+                                placeholder="Текст сообщения"></textarea>
+                        </fieldset>
+
+                        <p id="check">
+                            <input type="checkbox">
+                            <label for="check1">Я согласен с условиями обработки персональных данных</label>
+                        </p>
+
+                        <p class="sibmit">
+                            <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
+                                сообщение</button>
+                        </p>
+                    </form>
                 </div>
             </div>
+        </div>
+    </div>
 
-
-    <!-- header-->
-    <div class="flex-container column">
-        <div class="flex-item header">
+    <div class="main-container">
+        <!--Header-->
+        <header>
             <div class="header-front">
-                <div class="flex-item name">Dolce vita</div>
-                <div class="flex-item navigation">
-                    <ul class="nav">
+                <div class="name-cafe">
+                    Dolce vita
+                </div>
+                <div class="navigation">
+                    <ul class="navigation-site">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#main">О нас</a></li>
                         <li><a href="#column_menu">Меню</a></li>
@@ -82,126 +84,133 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
-                <p id="adress">ул. Ленина, 40</p>
-                <p id="phone">+7(8459)78-78-60</p>
-                <p id="time">Мы работаем для Вас с 10 до 23 часов</p>
-
+                <div class="info">
+                    <p">ул. Ленина, 40</p>
+                        <p>+7(8459)78-78-60</p>
+                        <p>Мы работаем для Вас с 10 до 23 часов</p>
+                </div>
                 <div class="orderTable">
                     <a href="#orderTableForm"><button class="orderButton">Забронировать столик</button></a>
                 </div>
-                
             </div>
-
-        </div>
-        <div id="main" class="flex-item main">
-            <p id="paragraph_1">Кафе "Dolce vita" место где всегда рады гостям.</p>
-            <p id="paragraph_2">Кафе "Dolce vita" - это уютная атмосфера и блюда приготовленные с душой.
-                Для наших гостей два просторных этажа с баром, открытой кухней, живой музыкой, собственной закрытой
-                парковкой и прекрасным панорамным видом на город.
-            </p>
-        </div>
-        <!-- Menu-->
-        <div id="column_menu" class="flex-container_menu column_menu">
-            <div class="flex-item name_menu">
-                <p id="name_menu">Меню</p>
+        </header>
+        <!--Main-->
+        <main>
+            <div class="story">
+                <p><strong>Кафе "Dolce vita" место где всегда рады гостям.</strong></p>
+                <p>Кафе "Dolce vita" - это уютная атмосфера и блюда приготовленные с душой.
+                    Для наших гостей два просторных этажа с баром, открытой кухней, живой музыкой, собственной закрытой
+                    парковкой и прекрасным панорамным видом на город.
+                </p>
             </div>
-            <div class="flex-item menu">
-                <ul class="nav_menu">
-                    <li><a href="bisness_lunch.html"><span class="desrc">Бизнес ланч</span><img
-                                src="../images/bisness_lunch.jpg"></a></li>
-                    <li><a href="soups.html"><span class="desrc">Супы</span><img src="../images/soups/soup.jpg"></a>
-                    </li>
-                    <li><a href="salads.html"><span class="desrc">Салаты / Закуски</span><img
-                                src="../images/salads/salad-dolce-vita.jpg"></a></li>
-                    <!--         <li><a href="meat.html"><span class="desrc">Мясо</span><img src="images/meat.jpg"></a></li>  -->
-                    <li><a href="seafood.html"><span class="desrc">Рыба / Морепродукты</span><img
-                                src="../images/seafood/fried-fish.jpg"></a></li>
-                    <li><a href="side_dish.html"><span class="desrc">Гарниры</span><img
-                                src="../images/side_dish/boiled-potatoes.jpg"></a></li>
-                    <li><a href="pasta.html"><span class="desrc">Паста</span><img src="../images/pasta/pasta.jpg"></a>
-                    </li>
-                    <!--<li><a href="pizza.html"><span class="desrc">Пицца</span><img src="images/pizza.jpg"></a></li>-->
-                    <!--<li><a href="drink.html"><span class="desrc">Напитки</span><img src="images/drink.jpg"></a></li>-->
-                    <!--            <li><a href="cocktails.html"><span class="desrc">Коктели</span><img src="images/cocktails.jpg"></a></li>  -->
-                    <!-- <li><a href="cake.html"><span class="desrc">Десерты</span><img src="images/cake.jpg"></a></li>-->
-                    <!--             <li><a href="bread.html"><span class="desrc">Хлеб</span><img src="images/bread.jpg"></a></li> -->
-                </ul>
-            </div>
-        </div>
-        <!-- Banquet-->
-        <div class="banquet" id="banquet">
-            <h3 id="banquet_name">Банкеты и свадьбы</h3>
-            <div class="flex-container_banquet text_banquet">
-                <div class="flex-item banquet_text">
-                    <ul id="banquet_list">
-                        <li>Два зала вместимостью от 30 человек</li>
-                        <li>Просторный балкон для фотосессии</li>
-                        <li>Современное световое и звуковое сопровождение</li>
-                        <li>Разработка индивидуального меню</li>
-                        <li>Дизайнерское оформление банкетного зала</li>
-                        <li>Разработка индивидуального меню</li>
-                        <li>Проведение вечера тамадой в подарок</li>
-                    </ul>
-
-                    <a href="banquet.html"><button class="orderButtonBanquet">Заказать банкет</button></a>
-                </div>
-            </div>
-        </div>
-
-        <!--Wedding-->
-        <div class="container">
-            <div id="content-slider">
-                <div id="slider">
-                    <div id="mask">
-
-                        <ul>
-                            <li class="wedding_1">
-                                <a href="#"> <img src="../images/wedding/wedding_1.jpg" /> </a>
-                            </li>
-
-                            <li class="wedding_2">
-                                <a href="#"> <img src="../images/wedding/wedding_2.jpg" /> </a>
-                            </li>
-
-                            <li class="wedding_3">
-                                <a href="#"> <img src="../images/wedding/wedding_3.jpg " /> </a>
-                            </li>
-
-                            <li class="wedding_4">
-                                <a href="#"> <img src="../images/wedding/wedding_4.jpg " /> </a>
-                            </li>
-
-                            <li class="wedding_5">
-                                <a href="#"> <img src="../images/wedding/wedding_5.jpg" /> </a>
-                            </li>
-                        </ul>
-
+            <div class="menu-dishes">
+                <p>Меню</p>
+                <div class="list-dishes">
+                    <div class="dish">
+                        <a href="bisness_lunch.html"><span class="specification">Бизнес ланч</span></a>
+                        <img src="../images/bisness_lunch.jpg">
                     </div>
-                    <div class="progress-bar"></div>
+                    <div class="dish">
+                        <a href="soups.html"><span class="specification">Супы</span></a>
+                        <img src="../images/soups/soup.jpg">
+                    </div>
+                    <div class="dish">
+                        <a href="salads.html"><span class="specification">Салаты / Закуски</span></a>
+                        <img src="../images/salads/salad-dolce-vita.jpg">
+                    </div>
+                    <div class="dish">
+                        <a href="meat.html"><span class="specification">Мясо</span></a>
+                        <img src="../images/meat/meats.jpg">
+                    </div>
+                    <div class="dish">
+                        <a href="seafood.html"><span class="specification">Рыба / Морепродукты</span></a>
+                        <img src="../images/seafood/fried-fish.jpg">
+                    </div>
+                    <div class="dish">
+                        <a href="side_dish.html"><span class="specification">Гарниры</span></a>
+                        <img src="../images/side_dish/boiled-potatoes.jpg">
+                    </div>
+                    <div class="dish">
+                        <a href="pasta.html"><span class="specification">Паста</span></a>
+                        <img src="../images/pasta/pasta.jpg">
+                    </div>
+                    <div class="dish">
+                         <a href="drink.html"><span class="specification">Напитки</span></a>
+                        <img src="../images/drink/drink.jpg">
+                    </div>
+                    <div class="dish">
+                        <a href="cake.html"><span class="specification">Десерты</span></a>
+                        <img src="../images/dessert/cake.jpg">
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!--Comment-->
-        <div id="comment-box" class="flex-item comment-box">
-            <h1 id="comParagraph">Оставьте свой отзыв о нашем кафе</h1>
-            <div>
-                <form id="comment" action="Form_Comment" method="POST" name="comment ">
-                    <input name="name" id="firstName" maxlength="30" placeholder="Введите ваше имя" required />
-                    <input name="lastName" id="lastName" maxlength="50" placeholder="Введите вашу фамилию" />
-                    <input name="email" type="email" id="email" maxlength="20" placeholder="Введите ваш E-mail"
-                        required />
-                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
-                    <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
-                </form>
+            <div class="banquets">
+                <p>Банкеты и свадьбы</p>
+                <div class="flex-container_banquet text_banquet">
+                    <div class="flex-item banquet_text">
+                        <ul id="banquet_list">
+                            <li>Два зала вместимостью от 30 человек</li>
+                            <li>Просторный балкон для фотосессии</li>
+                            <li>Современное световое и звуковое сопровождение</li>
+                            <li>Разработка индивидуального меню</li>
+                            <li>Дизайнерское оформление банкетного зала</li>
+                            <li>Разработка индивидуального меню</li>
+                            <li>Проведение вечера тамадой в подарок</li>
+                        </ul>
+                        <a href="banquet.html"><button class="orderButtonBanquet">Заказать банкет</button></a>
+                    </div>
+                </div>
             </div>
+            <div class="photo-gallery">
+                <div id="content-slider">
+                    <div id="slider">
+                        <div id="mask">
+                            <ul>
+                                <li class="wedding_1">
+                                    <a href="#"> <img src="../images/wedding/wedding_1.jpg" /> </a>
+                                </li>
 
-        </div>
+                                <li class="wedding_2">
+                                    <a href="#"> <img src="../images/wedding/wedding_2.jpg" /> </a>
+                                </li>
 
+                                <li class="wedding_3">
+                                    <a href="#"> <img src="../images/wedding/wedding_3.jpg " /> </a>
+                                </li>
+
+                                <li class="wedding_4">
+                                    <a href="#"> <img src="../images/wedding/wedding_4.jpg " /> </a>
+                                </li>
+
+                                <li class="wedding_5">
+                                    <a href="#"> <img src="../images/wedding/wedding_5.jpg" /> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <p id="comParagraph">Оставьте свой отзыв о нашем кафе</p>
+                <div>
+                    <form id="comment" action="Form_Comment" method="POST" name="comment ">
+                        <input name="name" id="firstName" maxlength="30" placeholder="Введите ваше имя" required />
+                        <input name="lastName" id="lastName" maxlength="50" placeholder="Введите вашу фамилию" />
+                        <input name="email" type="email" id="email" maxlength="20" placeholder="Введите ваш E-mail"
+                            required />
+                        <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв"
+                            required></textarea>
+                        <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
+                    </form>
+                </div>
+
+            </div>
+        </main>
         <!--Footer-->
-        <div id="footer" class="flex-item footer">
-            <p>Получить информацию по интересующим вопросам: </p>
-        </div>
+        <footer>
+            <div class="footer"></div>
+        </footer>
     </div>
     <script src="../js/formsIndex.js"></script>
 </body>

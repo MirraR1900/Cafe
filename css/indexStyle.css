@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto auto auto;
+}
+
+/* .main-container div {
+    width: auto;
+} */
+header {
+    background: url(../images/header.png) no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    height: auto;
+}
+.header-front{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.name-cafe  {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+.navigation {
+    list-style: none;
+    text-align: center;
+}
+.navigation-site li{
+    display: inline;
+}
+ul.navigation-site a {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    opacity: 0,1;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-style: italic;   
+}
+
+ul.navigation-site a:hover {
+    background-color: rgba(169, 169, 169, 0.4);
+    color: rgb(255, 255, 255);
+}
+.info {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.orderTable {
+    text-align: center;
+}
+
+.orderButton {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.orderTable button:hover {
+    background-color: rgba(169, 169, 169, 0.4);
+    color:  rgb(255, 255, 255);
+}
+
+.story {
+    padding: 50px 50px 100px 50px;
+    background-color: rgb(255, 228, 196);
+    background-image: linear-gradient(top left, rgb(255, 255, 255), rgb(210, 180, 140));
+    background-image: -o-linear-gradient(top left, rgb(255, 255, 255), rgb(210, 180, 140));
+    background-image: -moz-linear-gradient(top left, rgb(255, 255, 255), rgb(210, 180, 140));
+    background-image: -webkit-linear-gradient(top left, rgb(255, 255, 255), rgb(210, 180, 140));
+}
+
+.story p {
+    font-size: 30px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: rgb(0, 0,0);
+
+}
+
+.menu-dishes {
+margin: 0 auto;
+}
+
+.menu-dishes p{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.list-dishes {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dish {
+    border: 1 px solid rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+}
+
+.specification {
+    font-size: 30px;
+    font-family: "Times New Roman", Arial, sans-serif;;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    text-align: center;
+    opacity: 0;
+    top: 100%;
+    -webkit-transition: all .5s;
+    -o-transition:  all .5s;
+    transition:  all .5s;
+}
+
+.dish:hover .specification {
+    opacity: 1;
+    top: 0;
+}
+
+.dish img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.banquets {
+    border: 2px solid firebrick;
+}
+
+.photo-gallery {
+
+}
+
+.comments {
+    border: 2px solid hotpink;
+}
+
+.footer {
+    border: 2px solid gray;
+    height: 150px;
+}
+
+
+
+

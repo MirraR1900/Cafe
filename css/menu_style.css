@@ -93,6 +93,9 @@ ul.nav a:hover {
 	position: relative;
 	overflow: hidden;
 }
+/* .nav_menu {
+	overflow: hidden;
+} */
 
 /*Specification dishes*/
 .specification {
