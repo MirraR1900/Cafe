@@ -172,7 +172,6 @@ ul.navigation-site a:hover {
     background-image: -moz-linear-gradient(top left, rgb(255, 255, 255), rgb(210, 180, 140));
     background-image: -webkit-linear-gradient(top left, rgb(255, 255, 255), rgb(210, 180, 140));
     overflow: hidden; 
-    border: 2px solid firebrick;
 }
 
 .banquets  p {
@@ -261,6 +260,10 @@ ul.navigation-site a:hover {
     position: relative;
     overflow: hidden;
 }
+.coverHide img {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
 
 .hideClick {
     font-size: 30px;
@@ -268,11 +271,11 @@ ul.navigation-site a:hover {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 80%;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgb(255, 255, 255);
+    height: 60%;
+    background-color: rgba(211, 211, 211, 0.1);
     padding-top: 25px;
     text-align: center;
+    margin-top: 10px;
     opacity: 1;
     top: 0;
     -webkit-transition: all .5s;
@@ -293,11 +296,11 @@ ul.navigation-site a:hover {
 
 
 .comments {
-    border: 4px solid green;
+    /* border: 4px solid green; */
 }
 
 .footer {
-    border: 4px solid greenyellow;
+    /* border: 4px solid greenyellow; */
     height: 150px;
 }
 

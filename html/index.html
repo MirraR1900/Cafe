@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/indexStyle.css">
     <!-- <link rel="stylesheet" href="../css/gallery_style.css"> -->
     <link rel="stylesheet" href="../css/order_table.css">
+    <link rel="stylesheet" href="../css/modalWindowBanquet.css">
     <title>Dolce vita</title>
 </head>
 
@@ -46,17 +47,14 @@
                                 </select>
                             </fieldset>
                         </fieldset>
-
                         <fieldset>
                             <textarea id="textOrder" style="width: 450px; height: 200px;"
                                 placeholder="Текст сообщения"></textarea>
                         </fieldset>
-
                         <p id="check">
                             <input type="checkbox">
                             <label for="check1">Я согласен с условиями обработки персональных данных</label>
                         </p>
-
                         <p class="sibmit">
                             <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
                                 сообщение</button>
@@ -159,9 +157,8 @@
                         <li>Проведение вечера тамадой в подарок</li>
                     </ul>
                     <div class="buttonOrder">
-                        <a href="banquet.html"><button class="orderButtonBanquet">Заказать банкет</button></a>
+                        <a href="#orderBanquet"><button class="orderButtonBanquet">Заказать банкет</button></a>
                     </div>
-
                 </div>
                 <div class="photo-gallery">
                     <div><img src="../images/wedding/banquet_4.jpg" alt=""></div>
@@ -173,22 +170,52 @@
                     <div><img src="../images/wedding/banquet_10.jpg" alt=""></div>
                     <div><img src="../images/wedding/banquet_2.jpg" alt=""></div>
                     <div class="coverHide">
-                        <a href="">
+                        <img src="../images/wedding/banquet_15.jpg" alt="">
+                        <a href="#modalWindowPhotoGallery">
                             <span class="hideClick">
                                 <label for="hideCheckbox"><strong>+</strong> Посмотреть фото</label>
                             </span></a>
-                        <img src="../images/wedding/banquet_5.jpg" alt=""">
-                    </div>     
+                    </div>
                     <!-- <div class=" hide"><img src="../images/wedding/banquet_12.jpg" alt=""></div>
                     <div class="hide"><img src="../images/wedding/banquet_13.jpg" alt=""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_8.jpg" alt=""></div>
+                    <div class="hide"><img src="../images/wedding/banquet_5.jpg" alt="""></div>
                     <div class="hide"><img src="../images/wedding/banquet_1.jpg" alt=""></div>
                     <div class="hide"><img src="../images/wedding/banquet_14.jpg" alt=""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_15.jpg" alt=""></div>
+                    <div class="hide"><img src="../images/wedding/banquet_8.jpg" alt=""></div>
                     <div class="hide"><img src="../images/wedding/banquet_16.jpg" alt=""></div> -->
 
                 </div>
             </div>
+            <div class="modal-windowBanquet" id="orderBanquet">
+                <div class="modal-dialogBanquet">
+                    <div class="modal-contentBanquet">
+                        <div class="modal-headerBanquet">
+                            <p class="title-modalBanquet">Заказать банкет</p>
+                            <a href="#close" title="Close" class="close">X</a>
+                        </div>
+                        <div class="modal-bodyBanquet">
+                            <form class="orderBanquetForm" action="form_order" method="POST">
+                                <fieldset>
+                                    <p>
+                                        <input type="text" id="firstName" name="name" placeholder="Имя">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="phone" id="phoneClient" placeholder="Телефон">
+                                    </p>
+                                </fieldset>
+                                <p id="checkboxBanquet">
+                                        <input type="checkbox">
+                                        <label for="checkboxBanquet">Я согласен с условиями обработки персональных данных</label>
+                                </p>
+                                <p>
+                                    <button class="buttonOrderBanquet" type="submit" form="orderBanquet">Заказать банкет</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modalWindowPhotoGallery"></div>
         </div>
         <div class="comments" id="comments">
             <p id="comParagraph">Оставьте свой отзыв о нашем кафе</p>

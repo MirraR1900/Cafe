@@ -1,0 +1,129 @@
+body {
+
+}
+
+.modal-windowBanquet {
+    position: fixed;
+    top: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1060;
+    opacity: 0;
+    /* -moz-transition: opacity 400ms ease-in; */
+    transition: opacity 40ms ease-in;
+    pointer-events: none;
+}
+
+.modal-windowBanquet:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modal-dialogBanquet {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+}
+
+.modal-contentBanquet {
+    position: relative;
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     background-color: rgba(0, 0, 0, 0.9);
+     background-clip: padding-box;
+     outline: 0;
+    }
+
+.modal-headerBanquet {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.title-modalBanquet {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.close:focus, .close:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+.modal-bodyBanquet {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+.orderBanquetForm {
+    margin: 0;
+    padding: 0;
+}
+
+.orderBanquetForm fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    float: left;
+    width: 500px;
+    margin-left:  25px;
+}
+
+.orderBanquetForm p {
+    margin: .5em 0;
+}
+
+.orderBanquetForm input {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: 300px;
+    height: 50px;
+    background: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+#checkboxBanquet {}
+
+.buttonOrderBanquet {}
