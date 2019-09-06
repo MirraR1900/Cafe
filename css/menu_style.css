@@ -20,7 +20,7 @@ body {
 	height: 100px;
 	background-image: url(../images/header_menu.png);
 	position: fixed;
-	z-index: 9999;
+	z-index: 999;
 	overflow: hidden;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .nav {
 	margin: 20px;
-	margin-left: 355px;
+	margin-left: 300px;
 	list-style: none;
 }
 

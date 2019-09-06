@@ -20,11 +20,12 @@
                         <div class="flex-item navigation">
                             <ul class="nav">
                                 <li><a href="index.html">Главная</a></li>
-                                <li><a href="#main">О нас</a></li>
-                                <li><a href="#column_menu">Меню</a></li>
-                                <li><a href="#banquet">Банкеты</a></li>
-                                <li><a href="#comment-box">Отзывы</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="index.html#main">О нас</a></li>
+                                <li><a href="index.html#story">О нас</a></li>
+                                <li><a href="index.html#menu-dishes">Меню</a></li>
+                                <li><a href="index.html#banquets">Банкеты</a></li>
+                                <li><a href="index.html#comments">Отзывы</a></li>
+                                <li><a href="index.html#footer">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -59,63 +60,59 @@
             </p>
             <!-- <button type="submit" class="reservation_button" form="">Забронировать столик</button> -->
             <div class="orderTable">
-                    <a href="#orderTableForm"><button class="orderButton reservation_button">Забронировать столик</button></a>
-                </div>
+                <a href="#orderTableForm"><button class="orderButton reservation_button">Забронировать
+                        столик</button></a>
+            </div>
         </div>
         <div id="orderTableForm" class="modal-window">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <p class="modal-title">Бизнес-ланч бронирование столика</p>
-                            <a href="#close" title="Close" class="close">X</a>
-                        </div>
-                        <div class="modal-body">
-                                <form class="orderTableForm" action="Form_Order" method="POST" name="orderTable">
-                                        <fieldset>
-                                            <p>
-                                                <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя">
-                                            </p>
-                                            <p>
-                                                    <input name="phone" id="phoneOrder" value="" placeholder="Телефон">
-                                            </p>
-                                            <p>
-                                                <input type="email" id="email" placeholder="E-mail">
-                                            </p>
-                                            <fieldset>
-                                                <input type="text" name="calender" id="calender" placeholder="Дата" title="Кликните мышкой чтобы выбрать дату">
-                                                <input type="text" name="time" id="timeOrder" placeholder="Время" >
-                                                <select name="guests" id="guests" size="1">
-                                                        <option value="data" selected>Количество гостей</option>
-                                                        <option value="2">2 гостя</option>
-                                                        <option value="3">3 гостя</option>
-                                                        <option value="4">4 гостя</option>
-                                                        <option value="5">5 гостей</option>
-                                                        <option value="6">6 гостей</option>
-                                                        <option value="7">7 гостей</option>
-                                                        <option value="8">8 гостей</option>
-                                                        <option value="9">9 гостей</option>
-                                                        <option value="10">10 гостей</option>
-                                                    </select>
-                                            </fieldset>
-                                        </fieldset>
-    
-                                        <p id="check">
-                                            <input type="checkbox">
-                                            <label for="check1">Я согласен с условиями обработки персональных данных</label>
-                                        </p>
-    
-                                        <p class="sibmit">
-                                            <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
-                                                сообщение</button>
-                                        </p>
-                                    </form>
-                        </div>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Бизнес-ланч бронирование столика</p>
+                        <a href="#close" title="Close" class="close">X</a>
+                    </div>
+                    <div class="modal-body">
+                        <form class="orderTableForm" action="Form_Order" method="POST" name="orderTable">
+                            <fieldset>
+                                <p>
+                                    <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя">
+                                </p>
+                                <p>
+                                    <input name="phone" id="phoneOrder" value="" placeholder="Телефон">
+                                </p>
+                                <p>
+                                    <input type="email" id="email" placeholder="E-mail">
+                                </p>
+                                <fieldset>
+                                    <input type="text" name="calender" id="calender" placeholder="Дата"
+                                        title="Кликните мышкой чтобы выбрать дату">
+                                    <input type="text" name="time" id="timeOrder" placeholder="Время">
+                                    <select name="guests" id="guests" size="1">
+                                        <option value="data" selected>Количество гостей</option>
+                                        <option value="2">2 гостя</option>
+                                        <option value="3">3 гостя</option>
+                                        <option value="4">4 гостя</option>
+                                        <option value="5">5 гостей</option>
+                                        <option value="6">6 гостей</option>
+                                        <option value="7">7 гостей</option>
+                                        <option value="8">8 гостей</option>
+                                        <option value="9">9 гостей</option>
+                                        <option value="10">10 гостей</option>
+                                    </select>
+                                </fieldset>
+                            </fieldset>
+                            <p id="check">
+                                <input type="checkbox">
+                                <label for="check1">Я согласен с условиями обработки персональных данных</label>
+                            </p>
+                            <p class="sibmit">
+                                <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
+                                    сообщение</button>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
-
-        <div>
-            <p>Информация</p>
         </div>
     </div>
     <script src="../js/formsIndex.js"></script>
