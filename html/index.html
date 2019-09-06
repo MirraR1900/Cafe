@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="../css/gallery_style.css"> -->
     <link rel="stylesheet" href="../css/order_table.css">
     <link rel="stylesheet" href="../css/modalWindowBanquet.css">
+    <link rel="stylesheet" href="../css/modalWindowPhotoGallery.css">
     <title>Dolce vita</title>
 </head>
 
@@ -173,8 +174,8 @@
                         <img src="../images/wedding/banquet_15.jpg" alt="">
                         <a href="#modalWindowPhotoGallery">
                             <span class="hideClick">
-                                <label for="hideCheckbox"><strong>+</strong> Посмотреть фото</label>
-                            </span></a>
+                                <label for="hideCheckbox"><strong>+</strong> Посмотреть фото</label></span>
+                        </a>
                     </div>
                     <!-- <div class=" hide"><img src="../images/wedding/banquet_12.jpg" alt=""></div>
                     <div class="hide"><img src="../images/wedding/banquet_13.jpg" alt=""></div>
@@ -190,7 +191,7 @@
                 <div class="modal-dialogBanquet">
                     <div class="modal-contentBanquet">
                         <div class="modal-headerBanquet">
-                            <p class="title-modalBanquet">Заказать банкет</p>
+                            <p>Заказать банкет</p>
                             <a href="#close" title="Close" class="close">X</a>
                         </div>
                         <div class="modal-bodyBanquet">
@@ -204,32 +205,58 @@
                                     </p>
                                 </fieldset>
                                 <p id="checkboxBanquet">
-                                        <input type="checkbox">
-                                        <label for="checkboxBanquet">Я согласен с условиями обработки персональных данных</label>
+                                    <input type="checkbox">
+                                    <label for="checkboxBanquet"> Я согласен с условиями обработки персональных
+                                        данных</label>
                                 </p>
-                                <p>
-                                    <button class="buttonOrderBanquet" type="submit" form="orderBanquet">Заказать банкет</button>
+
+                                <p class="buttonBanquet">
+                                    <button class="buttonOrderBanquet" type="submit" form="orderBanquet">Заказать
+                                        банкет</button>
                                 </p>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="modalWindowPhotoGallery"></div>
+        </div>
+        <div class="modal-windowGallery" id="modalWindowPhotoGallery">
+            <div class="modalGallery">
+                <div class="modal-contentGallery">
+                    <div class="galleryHeader">
+                        <p></p>
+                        <a href="#close" title="Close" class="close">X</a>
+                    </div>
+                    <div class="modal-bodyGallery">
+                        <div class="previousPhoto">
+                            <button class="previousButton">
+                                < </button> </div> <div class="showPhoto">
+                        </div>
+                        <div class="nextPhoto">
+                            <button class="nextButton"> > </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="comments" id="comments">
-            <p id="comParagraph">Оставьте свой отзыв о нашем кафе</p>
-            <div>
+            <div class="comment-header">
+                <p>Оставьте свои отзовы и предложения</p>
+            </div>
+            <div class="commentForm">
                 <form id="comment" action="Form_Comment" method="POST" name="comment ">
-                    <input name="name" id="firstName" maxlength="30" placeholder="Введите ваше имя" required />
-                    <input name="lastName" id="lastName" maxlength="50" placeholder="Введите вашу фамилию" />
-                    <input name="email" type="email" id="email" maxlength="20" placeholder="Введите ваш E-mail"
-                        required />
+                    <p>
+                        <input type="text" id="name" name="name" placeholder="Имя" required>
+                    </p>
+                    <p>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </p>
                     <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
-                    <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
+                    <p>
+                        <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
+                    </p>
                 </form>
             </div>
-
         </div>
         <!--Footer-->
         <div class="footer" id="footer">

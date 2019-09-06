@@ -219,7 +219,7 @@ ul.navigation-site a:hover {
 .orderButtonBanquet {
     width: 250px;
     height: 50px;
-    background:rgb(210, 180, 140);
+    background:rgba(210, 180, 140, 0.4);
     border: 2px solid rgb(188, 143, 143);
     border-radius: 30px;
     font-family: "Times New Roman", Arial, sans-serif;
@@ -266,22 +266,22 @@ ul.navigation-site a:hover {
 }
 
 .hideClick {
-    font-size: 30px;
+    font-size: 18px;
     font-family: "Times New Roman", Arial, sans-serif;
     position: absolute;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 50%;
     background-color: rgba(211, 211, 211, 0.1);
     padding-top: 25px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     opacity: 1;
     top: 0;
     -webkit-transition: all .5s;
     -o-transition:  all .5s;
     transition:  all .5s;
-    border-radius: 30%;
+    border-radius: 70%;
 }
 
 .coverHide:hover .hideClick {
@@ -294,12 +294,76 @@ ul.navigation-site a:hover {
     color: rgba(0, 0, 0, 0.8);
 }
 
-
 .comments {
+    text-align: center;
+    background: rgb(210, 180, 140);
     /* border: 4px solid green; */
+}
+.comment-header p{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-style: italic;
+}
+.commentForm p {
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.commentForm input{
+    margin-top: 10px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    background: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.commentForm textarea {
+    width: 450px;
+    height: auto;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Times New Roman", Arial, sans-serif;
+}
+.commentForm button{
+    
+}
+
+.commentButton {
+    width: 250px;
+    height: 50px;
+    background:rgba(222, 184, 135, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.commentButton:hover {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: none;
 }
 
 .footer {
+    background: rgba(0, 0, 0, 0.8);
     /* border: 4px solid greenyellow; */
     height: 150px;
 }

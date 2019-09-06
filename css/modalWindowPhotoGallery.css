@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.modal-windowGallery{ 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1080;
+    opacity: 0;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 40ms ease-in;
+    pointer-events: none;
+}
+
+.modal-windowGallery:target { 
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modalGallery {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    /* border: 2px solid magenta; */
+}
+
+.modal-contentGallery {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     background-color: rgba(0, 0, 0, 0.2); 
+     /* background-clip: padding-box; */
+     outline: 0;
+     /* border: 4px solid rgb(255, 255, 0); */
+     width: auto;
+     margin: 0 auto;
+}
+
+.galleryHeader {
+    display: -ms-flexbox;
+     display: flex;
+     -ms-flex-align: center; 
+     align-items: center; 
+      -ms-flex-pack: justify; 
+      justify-content: space-between; 
+      padding: 16px;
+}
+
+.galleryHeader p{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 35px;
+    text-align: center;   
+}
+
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(255, 255, 255); 
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.close:focus, .close:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+.modal-bodyGallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid greenyellow; */
+}
+
+.previousPhoto, .nextPhoto {
+    flex: 1;
+    text-align: center;
+    /* border: 2px solid orange; */
+}
+
+.previousButton, .nextButton {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+}
+
+.previousButton:hover, .nextButton:hover {
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 50%;
+    background: rgb(105, 105, 105);
+}
+.showPhoto {
+    flex: 8;
+    height: 600px;
+    margin: 30px 0 30px 0;
+    border: 2px solid white;
+}
