@@ -6,7 +6,6 @@
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="stylesheet" href="../css/indexStyle.css">
-    <!-- <link rel="stylesheet" href="../css/gallery_style.css"> -->
     <link rel="stylesheet" href="../css/order_table.css">
     <link rel="stylesheet" href="../css/modalWindowBanquet.css">
     <link rel="stylesheet" href="../css/modalWindowPhotoGallery.css">
@@ -65,7 +64,6 @@
             </div>
         </div>
     </div>
-
     <div class="main-container">
         <!--Header-->
         <div class="header">
@@ -170,21 +168,9 @@
                     <div><img src="../images/wedding/banquet_3.jpg" alt=""></div>
                     <div><img src="../images/wedding/banquet_10.jpg" alt=""></div>
                     <div><img src="../images/wedding/banquet_2.jpg" alt=""></div>
-                    <div class="coverHide">
-                        <img src="../images/wedding/banquet_15.jpg" alt="">
-                        <a href="#modalWindowPhotoGallery">
-                            <span class="hideClick">
-                                <label for="hideCheckbox"><strong>+</strong> Посмотреть фото</label></span>
-                        </a>
-                    </div>
-                    <!-- <div class=" hide"><img src="../images/wedding/banquet_12.jpg" alt=""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_13.jpg" alt=""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_5.jpg" alt="""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_1.jpg" alt=""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_14.jpg" alt=""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_8.jpg" alt=""></div>
-                    <div class="hide"><img src="../images/wedding/banquet_16.jpg" alt=""></div> -->
-
+                    <div class="coverHide"><img src="../images/wedding/banquet_15.jpg" alt=""><a
+                            href="#modalWindowPhotoGallery"><span class="hideClick showClick"><label
+                                    for="hideCheckbox"><strong>+</strong> Посмотреть фото</label></span></a></div>
                 </div>
             </div>
             <div class="modal-windowBanquet" id="orderBanquet">
@@ -209,7 +195,6 @@
                                     <label for="checkboxBanquet"> Я согласен с условиями обработки персональных
                                         данных</label>
                                 </p>
-
                                 <p class="buttonBanquet">
                                     <button class="buttonOrderBanquet" type="submit" form="orderBanquet">Заказать
                                         банкет</button>
@@ -224,49 +209,54 @@
             <div class="modalGallery">
                 <div class="modal-contentGallery">
                     <div class="galleryHeader">
-                        <p></p>
+                        <div class="counter"></div>
                         <a href="#close" title="Close" class="close">X</a>
                     </div>
                     <div class="modal-bodyGallery">
                         <div class="previousPhoto">
                             <button class="previousButton">
                                 < </button> </div> <div class="showPhoto">
+                                    <div id="show-gallery"><img src="" alt=""></div>
                         </div>
                         <div class="nextPhoto">
                             <button class="nextButton"> > </button>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="comments" id="comments">
-            <div class="comment-header">
-                <p>Оставьте свои отзовы и предложения</p>
-            </div>
-            <div class="commentForm">
-                <form id="comment" action="Form_Comment" method="POST" name="comment ">
-                    <p>
-                        <input type="text" id="name" name="name" placeholder="Имя" required>
-                    </p>
-                    <p>
-                        <input type="email" id="email" name="email" placeholder="E-mail" required>
-                    </p>
-                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
-                    <p>
-                        <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
-                    </p>
-                </form>
-            </div>
+    </div>
+    </div>
+    <div class="comments" id="comments">
+        <div class="comment-header">
+            <p>Оставьте свои отзовы и предложения</p>
         </div>
-        <!--Footer-->
-        <div class="footer" id="footer">
-            <p">ул. Ленина, 40</p>
+        <div class="commentForm">
+            <form id="comment" action="Form_Comment" method="POST" name="comment ">
+                <p>
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                </p>
+                <p>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                </p>
+                <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
+                <p>
+                    <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer" id="footer">
+        <p">ул. Ленина, 40</p>
             <p>+7(8459)78-78-60</p>
             <p>dolcevita@enjoy.ru</p>
             <p>&copy;2019</p>
-        </div>
+    </div>
     </div>
     <script src="../js/formsIndex.js"></script>
+    <script src="../js/photoGallery.js"></script>
 </body>
 
 </html>

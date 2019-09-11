@@ -50,6 +50,8 @@ body{
      /* border: 1px solid rgba(255, 255, 255, 0.9); */
      /* border-radius: .3rem; */
      outline: 0;
+     border: 8px solid rgba(255, 255, 255, 0.9);
+     border-radius: 35px;
  }
 
  /*св-во для заголовка*/
@@ -123,6 +125,7 @@ body{
 
 .orderTableForm p {
     margin: .5em 0;
+    text-align: center;
 }
 
 #firstNameOrder, #phoneOrder {
