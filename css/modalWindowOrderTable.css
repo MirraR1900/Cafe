@@ -15,7 +15,7 @@ body{
     background: rgba(0, 0, 0, 0.9); /* цвет фона */
     z-index: 1050;
     opacity: 0;  /*по умолчанию модальное окно прозрачно*/
-    /* -moz-transition: opacity 400ms ease-in; */
+    -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in; /*анимация перехода*/
     pointer-events: none;  /*элемент невидим для событий мыши*/
 }
@@ -32,12 +32,13 @@ body{
      position: relative;
      width: auto;
      height: auto;
-     /* margin: 10px; */
-     margin-top: 100px;
- }
+     margin-top: 10%;
+}
 
  /*свойство для блока, содержащего контент модального окна*/
  .modal-content {
+     width: 60%;
+     margin: 0 auto;
      position: relative;
      display: -ms-flexbox;
      display: flex;
@@ -47,8 +48,6 @@ body{
      -ms-flex-direction: column;
      background-color: rgba(192, 192, 192 0.8);
      background-clip: padding-box;
-     /* border: 1px solid rgba(255, 255, 255, 0.9); */
-     /* border-radius: .3rem; */
      outline: 0;
      border: 8px solid rgba(255, 255, 255, 0.9);
      border-radius: 35px;
@@ -62,7 +61,7 @@ body{
      align-items: center;
      -ms-flex-pack: justify;
      justify-content: space-between;
-     padding: 16px;
+     padding: 1em;
      border-bottom: 1px solid rgb(0, 0, 0);
  }
 
@@ -102,25 +101,23 @@ body{
  /*св-во для блока, содержащего основное содержимое окна*/
  .modal-body {
      position: relative;
-     -ms-flex: 1 1 auto;
-     flex: 1 1 auto;
-     padding: 15px;
+     -ms-flex: 1;
+     flex: 1;
+     padding: 1em;
      overflow: auto;
  }
 
 .orderTableForm {
     margin: 0;
     padding: 0;
-    /* border: 1px solid pink; */
 }
 
 .orderTableForm fieldset {
     margin: 0;
     padding: 0;
+    text-align: center;
+    width: 100%;
     border: none;
-    float: left;
-    width: 500px;
-    margin-left: 25px;
 }
 
 .orderTableForm p {
@@ -141,26 +138,14 @@ body{
 
 }
 
-#textOrder {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-    resize: none;
-    background: none;
-    color: white;
-    text-align: left;
-    margin-top: 10px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#calender,#timeOrder {
+#calender,#timeOrder,  #guests {
     display: inline-block;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     width: 150px;
     height: 50px;
     background: none;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 10px;
     font-size: 20px;
@@ -184,35 +169,12 @@ body{
     text-align-last: center;
 }
 
- #guests {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-    width: 150px;
-    height: 50px;
-    background: none;
-    color: rgb(169, 169, 169);
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 16px;
-    display: block;
-    float: left;
-}
-
-#textOrder {
-    width: 300px;
-    height: 200px;
-    overflow: auto;
-}
-
 #check {
     clear: both;
-    margin: 0;
-    margin-top: 30px;
-    margin-left: 25px;
+    /* margin: 0; */
     color: rgba(255, 255, 255, 0.4);
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     
 }
 .orderTableForm p.sibmit {

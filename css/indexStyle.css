@@ -29,14 +29,14 @@
     font-weight: 400;
     text-align: center;
 }
-.navigation {
+.navigation { /*div*/
     list-style: none;
     text-align: center;
 }
-.navigation-site li{
+.navigation-site li{ /*ul*/
     display: inline;
 }
-ul.navigation-site a {
+ul.navigation-site a { /*ul*/
     display: inline-block;
     width: 100px;
     padding: 10px;
@@ -88,6 +88,14 @@ ul.navigation-site a:hover {
     color:  rgb(255, 255, 255);
 }
 
+/* .info-mobile {
+    display: none;
+}
+
+.mobile-navigation {
+    display: none;
+} */
+
 .story {
     padding: 50px 50px 100px 50px;
     background-color: rgb(255, 228, 196);
@@ -102,10 +110,13 @@ ul.navigation-site a:hover {
     font-family: "Times New Roman", Arial, sans-serif;
     font-style: italic;
     text-align: center;
-    color: rgb(0, 0,0);
+    color: rgb(0, 0, 0);
 
 }
 
+/* .menuDishesMobile {
+    display: none;
+} */
 .menu-dishes {
 /* margin: 0 auto; */
 }

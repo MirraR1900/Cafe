@@ -54,6 +54,7 @@ previousButton.onclick = function () {
   score--;
   showPhoto.innerHTML = "";
   hidePreviousButton();
+  nextButtonBack();
   switchPhoto();
 };
 
@@ -92,9 +93,18 @@ function repeatShow() {
 };
 
 function nextButtonBack() {
-  if (score === 1) {
+  if (score === 1 || arrayPhoto.length > score) {
     nextButton.innerHTML = "";
     nextButton.innerHTML = ">";
   }
-}
+};
+
+//https://itchief.ru/lessons/javascript/javascript-sessionstorage-and-localstorage
+// https://learn.javascript.ru/localstorage
+//https://learn.javascript.ru/onload-ondomcontentloaded
+//https://developer.mozilla.org/ru/docs/Web/API/Window/sessionStorage
+// https://basicweb.ru/javascript/js_window_sessionstorage.php
+// https://tproger.ru/articles/localstorage/
+//http://shpargalkablog.ru/2013/06/localStorage.html
+// https://metanit.com/web/javascript/12.2.php
 

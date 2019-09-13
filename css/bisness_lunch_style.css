@@ -74,7 +74,7 @@ ul.nav a:hover {
 	font-size: 30px;
 	font-family: 'Times New Roman', Times, serif;
 	font-style: italic;
-	border: 8px solid rgb(222, 184, 135);
+	/* border: 8px solid rgb(222, 184, 135); */
 	border-top-left-radius: 100% 30px;
 	border-bottom-right-radius: 100% 30px;
 }
