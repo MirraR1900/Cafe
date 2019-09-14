@@ -99,12 +99,3 @@ function nextButtonBack() {
   }
 };
 
-//https://itchief.ru/lessons/javascript/javascript-sessionstorage-and-localstorage
-// https://learn.javascript.ru/localstorage
-//https://learn.javascript.ru/onload-ondomcontentloaded
-//https://developer.mozilla.org/ru/docs/Web/API/Window/sessionStorage
-// https://basicweb.ru/javascript/js_window_sessionstorage.php
-// https://tproger.ru/articles/localstorage/
-//http://shpargalkablog.ru/2013/06/localStorage.html
-// https://metanit.com/web/javascript/12.2.php
-

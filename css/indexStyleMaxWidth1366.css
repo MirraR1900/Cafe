@@ -1,0 +1,22 @@
+@media (max-width: 1366px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .info-mobile {
+        display: none;
+    }
+    
+    .mobile-navigation {
+        display: none;
+    } 
+        
+    .menuDishesMobile {
+        display: none;
+    }
+        
+    .ordeBanquetMobile {
+        display: none;
+    }
+}
