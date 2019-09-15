@@ -31,8 +31,6 @@ body {
     margin: 0 auto;
     width: 70%;
     height: 70%;
-    /* margin: 10px; */
-    margin-top: 100px;
 }
 
 .modal-content {
@@ -48,6 +46,7 @@ body {
     outline: 0;
     border: 8px solid rgba(255, 255, 255, 0.9);
     border-radius: 35px;
+    margin-top: 5%;
 }
 
 .modal-header {

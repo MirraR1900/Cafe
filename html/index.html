@@ -8,7 +8,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="../css/indexStyle.css">
-    <link rel="stylesheet" media="(max-width: 480px)"  href="../css/indexStyleMaxWidth480.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="../css/indexStyleMaxWidth480.css">
     <link rel="stylesheet" media="(max-width:768px)" href="../css/indexStyleMaxWidth768.css">
     <link rel="stylesheet" media="(max-width: 1024px)" href="../css/indexStyleMaxWidth1024.css">
     <link rel="stylesheet" media="(max-width: 1280px)" href="../css/indexStyleMaxWidth1280.css">
@@ -232,8 +232,8 @@
                         <li>Проведение вечера тамадой в подарок</li>
                     </ul>
                     <div class="ordeBanquetMobile">
-                    <p>Заказать банкет вы можете по телефону:</p>
-                    <p>+7(8459)78-78-60</p>
+                        <p>Заказать банкет вы можете по телефону:</p>
+                        <p>+7(8459)78-78-60</p>
                     </div>
                     <div class="buttonOrder">
                         <a href="#orderBanquet"><button class="orderButtonBanquet">Заказать банкет</button></a>
@@ -250,7 +250,13 @@
                     <div><img src="../images/wedding/banquet_2.jpg" alt=""></div>
                     <div class="coverHide"><img src="../images/wedding/banquet_15.jpg" alt=""><a
                             href="#modalWindowPhotoGallery"><span class="hideClick showClick"><label
+                                    for="hideCheckbox"><strong>+</strong> Посмотреть фото</label></span>
+                        </a></div>
+                    <div class="coverHideDisplay1366"><img src="../images/wedding/banquet_15.jpg" alt=""><a
+                            href="#modalWindowPhotoGalleryDisplay1366"><span class="hideClickDisplay1366 showClickDisplay1366"><label
                                     for="hideCheckbox"><strong>+</strong> Посмотреть фото</label></span></a></div>
+
+
                 </div>
             </div>
             <div class="modal-windowBanquet" id="orderBanquet">
@@ -264,7 +270,8 @@
                             <form class="orderBanquetForm" action="form_order" method="POST">
                                 <fieldset>
                                     <p>
-                                        <input type="text" id="firstName" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}">
+                                        <input type="text" id="firstName" name="name" placeholder="Имя"
+                                            pattern="[А-Яа-яЁё]{1,15}">
                                     </p>
                                     <p>
                                         <input type="text" name="phone" id="phoneClient" placeholder="Телефон">
@@ -295,8 +302,7 @@
                     <div class="modal-bodyGallery">
                         <div class="previousPhoto">
                             <button class="previousButton">
-                                < </button></div>
-                                <div class="showPhoto">
+                                < </button> </div> <div class="showPhoto">
                                     <div id="show-gallery"><img src="" alt=""></div>
                         </div>
                         <div class="nextPhoto">
@@ -305,12 +311,12 @@
                     </div>
                 </div>
 
-            </div> 
+            </div>
         </div>
         <!--
             экран 1366px
         -->
-        <div class="modal-windowGalleryDisplay1366" id="modalWindowPhotoGallery">
+        <div class="modal-windowGalleryDisplay1366" id="modalWindowPhotoGalleryDisplay1366">
             <div class="modalGallerDisplay1366">
                 <div class="modal-contentGalleryDisplay1366">
                     <div class="galleryHeaderDisplay1366">
@@ -320,12 +326,11 @@
                     <div class="modal-bodyGalleryDisplay1366">
                         <div class="previousPhotoDisplay1366">
                             <button class="previousButtonDisplay1366">
-                                < </button></div>
-                                <div class="showPhotoDisplay1366">
+                                < </button> </div> <div class="showPhotoDisplay1366">
                                     <div id="show-galleryDisplay1366"><img src="" alt=""></div>
                         </div>
-                        <div class="nextPhotoDisplay-1366px">
-                            <button class="nextButtonDisplay-1366px"> > </button>
+                        <div class="nextPhotoDisplay1366">
+                            <button class="nextButtonDisplay1366"> > </button>
                         </div>
 
                     </div>
@@ -339,7 +344,7 @@
             <div class="commentForm">
                 <form id="comment" action="Form_Comment" method="POST" name="comment ">
                     <p>
-                        <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required >
+                        <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required>
                     </p>
                     <p>
                         <input type="email" id="email" name="email" placeholder="E-mail" required>
@@ -350,17 +355,18 @@
                     </p>
                 </form>
             </div>
-        </div> 
+        </div>
         <!--Footer-->
         <div class="footer" id="footer">
-        <p">ул. Ленина, 40</p>
-        <p>+7(8459)78-78-60</p>
-        <p>dolcevita@enjoy.ru</p>
-        <p>&copy;2019</p>
-    </div>
+            <p">ул. Ленина, 40</p>
+                <p>+7(8459)78-78-60</p>
+                <p>dolcevita@enjoy.ru</p>
+                <p>&copy;2019</p>
+        </div>
     </div>
     <script src="../js/formsIndex.js"></script>
     <script src="../js/photoGallery.js"></script>
+    <script src="../js/PhotoGallery1366.js"></script>
     <script src="../js/buttonMobileMenu.js"></script>
 </body>
 

@@ -271,7 +271,18 @@ ul.navigation-site a:hover {
     position: relative;
     overflow: hidden;
 }
+
 .coverHide img {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.coverHideDisplay1366 {
+    position: relative;
+    overflow: hidden;
+}
+
+.coverHideDisplay1366 img {
     -webkit-filter: blur(3px);
     filter: blur(3px);
 }
@@ -299,12 +310,40 @@ ul.navigation-site a:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.hideClickDisplay1366 {
+    font-size: 18px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(211, 211, 211, 0.1);
+    padding-top: 25px;
+    text-align: center;
+    margin-top: 15px;
+    opacity: 1;
+    top: 0;
+    -webkit-transition: all .5s;
+    -o-transition:  all .5s;
+    transition:  all .5s;
+    border-radius: 70%;
+}
+
+.coverHideDisplay1366:hover .hideClickDisplay1366 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .hideClick label {
     font-size: 20px;
     font-family: "Times New Roman", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.8);
 }
 
+.hideClickDisplay1366 label {
+    font-size: 20px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
 .comments {
     text-align: center;
     background: rgb(210, 180, 140);
