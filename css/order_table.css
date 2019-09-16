@@ -32,14 +32,9 @@ body{
      position: relative;
      width: auto;
      height: auto;
-<<<<<<< HEAD:css/order_table.css
      /* margin: 10px; */
      margin-top: 100px;
  }
-=======
-     /* margin-top: 10%; */
-}
->>>>>>> 187c0c311fa54ad4f40b3f98d7a73417ede181a2:css/modalWindowOrderTable.css
 
  /*свойство для блока, содержащего контент модального окна*/
  .modal-content {
