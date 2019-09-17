@@ -154,7 +154,6 @@ ul.navigation-site a:hover {
 .specification {
     font-size: 30px;
     font-family: "Times New Roman", Arial, sans-serif;
-    ;
     position: absolute;
     /* left: 0; */
     width: 100%;
@@ -396,6 +395,10 @@ ul.navigation-site a:hover {
 }
 
 @media only screen and (min-width: 710px) and (max-width: 800px) {
+    .header {
+        background: url(../images/header-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
     .navigation {
         display: none;
     }
@@ -412,7 +415,10 @@ ul.navigation-site a:hover {
     .buttonMobileNavigation {
         width: 80px;
         height: 70px;
-        font-size: 20px;
+        margin-top: 1.2em;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10%;
+        font-size: 25px;
         font-family: "Times new Roman", Arial, sans-serif;
     }
     .mobile-navigation {
@@ -420,7 +426,9 @@ ul.navigation-site a:hover {
         text-align: center;
     }
     .mobileNavigationSite {
-        background: rgb(0, 0, 0);
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1em 0 1em 0;
     }
     .navigationSiteList li {
         list-style: none;
@@ -434,6 +442,9 @@ ul.navigation-site a:hover {
         font-size: 23px;
         margin-top: 10px;
     }
+    .orderTable {
+        margin-top: 1.2em;
+    }
     .specification {
         font-size: 25px;
     }
@@ -443,6 +454,10 @@ ul.navigation-site a:hover {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 709px) {
+    .header {
+        background: url(../images/header-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
     .navigation {
         display: none;
     }
@@ -459,7 +474,9 @@ ul.navigation-site a:hover {
     .buttonMobileNavigation {
         width: 80px;
         height: 70px;
-        font-size: 20px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10%;
+        font-size: 25px;
         font-family: "Times new Roman", Arial, sans-serif;
     }
     .mobile-navigation {
@@ -494,6 +511,10 @@ ul.navigation-site a:hover {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .header {
+        background: url(../images/header-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
     .navigation {
         display: none;
     }
@@ -510,6 +531,8 @@ ul.navigation-site a:hover {
     .buttonMobileNavigation {
         width: 80px;
         height: 70px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10%;
         font-size: 20px;
         font-family: "Times new Roman", Arial, sans-serif;
     }

@@ -9,7 +9,7 @@
         background: url(../images/header-mobile.jpg) no-repeat;
     }
     .name-cafe {
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 100;
     }
     .navigation {
@@ -21,14 +21,16 @@
     .info-mobile {
         display: block;
         color: rgb(255, 255, 255);
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-family: "Times new Roman", Arial, sans-serif;
         text-align: center;
     }
     .buttonMobileNavigation {
-        width: 80px;
-        height: 70px;
-        font-size: 20px;
+        width: 70px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10%;
+        font-size: 18px;
         font-family: "Times new Roman", Arial, sans-serif;
     }
     .mobile-navigation {
@@ -47,18 +49,17 @@
         color: rgb(255, 255, 255);
         text-align: center;
         font-family: "Times new Roman", Arial, sans-serif;
-        font-size: 23px;
+        font-size: 20px;
         margin-top: 10px;
     }
     .orderButton {
-        width: 200px;
-        font-size: 1.3em;
+        display: none;
     }
     .story {
-        padding: 20px;
+        padding: 10px;
     }
     .story p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .menu-dishes p {
         font-size: 2em;
@@ -68,7 +69,7 @@
         grid-template-columns: 80%;
     }
     .specification {
-        font-size: 2em;
+        font-size: 1.5em;
         padding-top: 20%;
     }
     .banquets p {
@@ -78,19 +79,25 @@
         grid-template-columns: 1fr;
     }
     .banquet-list li {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    .banquet-list li:before {
+        display: none;
+    }
+    .orderButtonBanquet {
+        display: none;
     }
     .photo-gallery {
         display: none;
     }
-    .comment-header p {
-        font-size: 2em;
+    .comments {
+        display: none;
     }
-    .commentForm input {
-        width: 280px;
-        font-size: 20px;
+    .comments-hide {
+        display: none;
     }
-    .commentForm textarea {
-        width: 280px;
+    .footer p {
+        font-size: 1.2em;
     }
 }
