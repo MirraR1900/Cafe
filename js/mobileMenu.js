@@ -1,9 +1,9 @@
 var buttonMobileNavigation = document.querySelector('.buttonMobileNavigation');
 var mobileNavigationSite = document.querySelector('.mobileNavigationSite');
-var flag = false;
+var flagСondition = false;
 
 function pressButton() {
-    if (flag === false) {
+    if (flagСondition === false) {
         buttonMobileNavigation.style.color = '';
         buttonMobileNavigation.style.color = '#0000FF';
         openMenu();
@@ -16,12 +16,12 @@ function pressButton() {
 
 function openMenu() {
     mobileNavigationSite.style.display = 'block';
-    flag = true;
+    flagСondition = true;
 };
 
 function closeMenu() {
     mobileNavigationSite.style.display = 'none';
-    flag = false;
+    flagСondition = false;
 };
 
 buttonMobileNavigation.addEventListener("click", pressButton);

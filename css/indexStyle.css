@@ -388,7 +388,7 @@ ul.navigation-site a:hover {
     margin: 5px;
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .specification {
         font-size: 25px;
     }

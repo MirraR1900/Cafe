@@ -1,150 +1,165 @@
-@charset "UTF-8";
-
 body {
-	margin: 0;
-	padding: 0;
-	background: rgba(255, 228, 196, 0.7);
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 228, 196, 0.7);
 }
 
+
 /*Header*/
+
 .header {
-	width: 100%;
-	height: 100px;
-	/* z-index: 0; */
-	background-color: rgba(0, 0, 0, 0.4);
-	height: 100px;
+    width: 100%;
+    height: 100px;
+    /* z-index: 0; */
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100px;
 }
 
 .header_content {
-	width: 100%;
-	height: 100px;
-	background-image: url(../images/header_menu.png);
-	position: fixed;
-	z-index: 999;
-	overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background-image: url(../images/header_menu.png);
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
 }
 
 .name {
-	height: 2px;
-	color: white;
-	font-family: "Times New Roman", 'Franklin Gothic Medium', 'Arial Narrow',
-		Arial, sans-serif;
-	font-size: 60px;
-	font-style: italic;
-	padding-top: 10px;
-	padding-left: 30px;
+    height: 2px;
+    color: white;
+    font-family: "Times New Roman", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    padding-top: 10px;
+    padding-left: 30px;
 }
 
 .nav {
-	margin: 20px;
-	margin-left: 300px;
-	list-style: none;
+    margin: 20px;
+    margin-left: 300px;
+    list-style: none;
 }
 
 .nav li {
-	display: inline;
+    display: inline;
 }
 
 ul.nav a {
-	display: inline-block;
-	width: 100px;
-	padding: 10px;
-	opacity: 0, 1;
-	background: rgba(255, 255, 255, 0.8);
-	border: 2px solid rgb(105, 105, 105);
-	text-decoration: none;
-	color: black;
-	text-align: center;
-	border-radius: 30px;
-	font-family: 'Times New Roman', Times, serif;
-	font-style: italic;
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    opacity: 0, 1;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgb(105, 105, 105);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 ul.nav a:hover {
-	background-color: rgba(169, 169, 169, 0.4);
-	color: white;
+    background-color: rgba(169, 169, 169, 0.4);
+    color: white;
 }
 
+
 /*Menu*/
+
 .main {
-	text-align: center;
-	font-size: 30px;
-	font-family: 'Times New Roman', Times, serif;
-	font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 .grid-container {
-	display: grid;
-	grid-gap: 30px; /*gap - растоянием между div*/
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
-	background-color: rgba(255, 228, 196, 0.2);
-	/*  padding: 10px; */
-	margin-left: 5px;
-	margin-right: 5px;
+    display: grid;
+    grid-gap: 30px;
+    /*gap - растоянием между div*/
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgba(255, 228, 196, 0.2);
+    /*  padding: 10px; */
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .grid-item {
-	/* background-color: rgba(255, 255, 255, 0.8); */
-	border: 3px solid rgba(255, 255, 255, 0.8);
-	/*  padding: 20px; */
-	/*  font-size: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    /*  padding: 20px; */
+    /*  font-size: 20px;
 	text-align: center; */
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
+
+
 /* .nav_menu {
 	overflow: hidden;
 } */
 
+
 /*Specification dishes*/
+
 .specification {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
-	color: rgb(255, 255, 255);
-	padding-top: 25px;
-	text-align: center;
-	opacity: 0;
-	top: 100%;
-	-webkit-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    text-align: center;
+    opacity: 0;
+    top: 100%;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 
 /*Menu animation*/
+
 .grid-item:hover .specification {
-	opacity: 1;
-	top: 0;
+    opacity: 1;
+    top: 0;
 }
 
 .name_dish {
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 25px;
-	font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .composition {
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 .price_dish {
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 25px;
-	font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 img {
-	margin: 0;
-	width: 100%;
-	height: 100%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .full {
-	width: auto;
-	height: 100px;
+    width: auto;
+    height: 100px;
 }
+
+@media screen and (max-width: 900px) {}
+
+@media only screen and (min-width: 710px) and (max-width: 800px) {}
+
+@media only screen and (min-width: 600px) and (max-width: 709px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {}

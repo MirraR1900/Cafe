@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-.modal-windowGallery{ 
+.modal-windowGallery {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -17,7 +17,7 @@ body {
     pointer-events: none;
 }
 
-.modal-windowGallery:target { 
+.modal-windowGallery:target {
     opacity: 1;
     pointer-events: auto;
     overflow-y: auto;
@@ -38,7 +38,7 @@ body {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.2);
     outline: 0;
     width: auto;
     margin: 0 auto;
@@ -47,12 +47,12 @@ body {
 
 .galleryHeader {
     display: -ms-flexbox;
-     display: flex;
-     -ms-flex-align: center; 
-     align-items: center; 
-     -ms-flex-pack: justify; 
-     justify-content: space-between; 
-     padding: 16px;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
 }
 
 .counter {
@@ -63,7 +63,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
-} 
+}
 
 .close {
     float: right;
@@ -71,13 +71,14 @@ body {
     font-size: 30px;
     font-weight: 700;
     line-height: 1;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
     text-decoration: none;
 }
 
-.close:focus, .close:hover {
+.close:focus,
+.close:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
@@ -90,12 +91,14 @@ body {
     justify-content: center;
 }
 
-.previousPhoto, .nextPhoto {
+.previousPhoto,
+.nextPhoto {
     flex: 1;
     text-align: center;
 }
 
-.previousButton, .nextButton {
+.previousButton,
+.nextButton {
     width: 70px;
     height: 70px;
     font-size: 50px;
@@ -105,20 +108,22 @@ body {
     border: none;
 }
 
-.previousButton:hover, .nextButton:hover {
+.previousButton:hover,
+.nextButton:hover {
     border: 2px solid rgb(105, 105, 105);
     border-radius: 50%;
     background: rgb(105, 105, 105);
 }
+
 .showPhoto {
     flex: 8;
     height: 600px;
     margin: 30px 0 30px 0;
     text-align: center;
+    border: 2px solid white;
 }
 
-.showPhoto img{
+.showPhoto img {
     max-width: 100%;
     max-height: 100%;
 }
-
