@@ -75,10 +75,49 @@ ul.navigation-site a:hover {
 
 .info-mobile {
     display: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-family: "Times new Roman", Arial, sans-serif;
+    text-align: center;
 }
 
 .mobile-navigation {
     display: none;
+}
+
+.buttonMobileNavigation {
+    width: 80px;
+    height: 70px;
+    margin-top: 1.2em;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10%;
+    font-size: 25px;
+    font-family: "Times new Roman", Arial, sans-serif;
+}
+
+.mobile-navigation {
+    display: none;
+    text-align: center;
+}
+
+.mobileNavigationSite {
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1em 0 1em 0;
+}
+
+.navigationSiteList li {
+    list-style: none;
+}
+
+ul.navigationSiteList a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-size: 23px;
+    margin-top: 10px;
 }
 
 .orderTable {
@@ -407,40 +446,9 @@ ul.navigation-site a:hover {
     }
     .info-mobile {
         display: block;
-        color: rgb(255, 255, 255);
-        font-size: 1.5em;
-        font-family: "Times new Roman", Arial, sans-serif;
-        text-align: center;
-    }
-    .buttonMobileNavigation {
-        width: 80px;
-        height: 70px;
-        margin-top: 1.2em;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 10%;
-        font-size: 25px;
-        font-family: "Times new Roman", Arial, sans-serif;
     }
     .mobile-navigation {
         display: block;
-        text-align: center;
-    }
-    .mobileNavigationSite {
-        display: none;
-        background: rgba(0, 0, 0, 0.6);
-        padding: 1em 0 1em 0;
-    }
-    .navigationSiteList li {
-        list-style: none;
-    }
-    ul.navigationSiteList a {
-        display: block;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: "Times new Roman", Arial, sans-serif;
-        font-size: 23px;
-        margin-top: 10px;
     }
     .orderTable {
         margin-top: 1.2em;
@@ -466,37 +474,16 @@ ul.navigation-site a:hover {
     }
     .info-mobile {
         display: block;
-        color: rgb(255, 255, 255);
         font-size: 1.5em;
-        font-family: "Times new Roman", Arial, sans-serif;
-        text-align: center;
     }
     .buttonMobileNavigation {
-        width: 80px;
-        height: 70px;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 10%;
         font-size: 25px;
-        font-family: "Times new Roman", Arial, sans-serif;
     }
     .mobile-navigation {
         display: block;
-        text-align: center;
-    }
-    .mobileNavigationSite {
-        background: rgb(0, 0, 0);
-    }
-    .navigationSiteList li {
-        list-style: none;
     }
     ul.navigationSiteList a {
-        display: block;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: "Times new Roman", Arial, sans-serif;
         font-size: 23px;
-        margin-top: 10px;
     }
     .specification {
         font-size: 25px;
@@ -523,35 +510,16 @@ ul.navigation-site a:hover {
     }
     .info-mobile {
         display: block;
-        color: rgb(255, 255, 255);
         font-size: 1.5em;
-        font-family: "Times new Roman", Arial, sans-serif;
-        text-align: center;
     }
     .buttonMobileNavigation {
-        width: 80px;
-        height: 70px;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 10%;
         font-size: 20px;
-        font-family: "Times new Roman", Arial, sans-serif;
     }
     .mobile-navigation {
         display: block;
-        text-align: center;
-    }
-    .mobileNavigationSite {
-        background: rgb(0, 0, 0);
-    }
-    .navigationSiteList li {
-        list-style: none;
     }
     ul.navigationSiteList a {
         display: block;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: "Times new Roman", Arial, sans-serif;
         font-size: 23px;
         margin-top: 10px;
     }
