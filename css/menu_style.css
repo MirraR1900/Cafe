@@ -98,40 +98,47 @@ ul.navigation-site a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     color: rgb(255, 255, 255);
-    /* padding-top: 10px; */
+    padding-top: 10px;
     text-align: center;
-    opacity: 1;
-    top: 65%;
+    opacity: 0;
+    top: 100%;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
 }
 
-.specification p {
+.grid-item:hover .specification {
+    opacity: 1;
+    top: 0;
+}
+
+.specification-mobile {
     display: none;
 }
 
-
-/* .grid-item:hover .specification {
-    opacity: 0;
-    top: 100;
-} */
-
 .name_dish {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .composition {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .price_dish {
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: bold;
+}
+
+.up {
+    display: none;
+}
+
+.down {
+    display: none;
 }
 
 img {
@@ -152,7 +159,53 @@ img {
     margin: 5px;
 }
 
-@media screen and (max-width: 900px) {}
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+    .specification {
+        display: none;
+    }
+    .specification-mobile {
+        display: grid;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        opacity: 1;
+        top: 65%;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+    .name_dishMobile {
+        font-size: 25px;
+        text-align: center;
+    }
+    .compositionMobile {
+        font-size: 25px;
+    }
+    .up {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .down {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
 
 @media only screen and (min-width: 710px) and (max-width: 800px) {}
 

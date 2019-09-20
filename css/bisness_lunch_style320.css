@@ -4,6 +4,9 @@
         grid-template-columns: 100%;
         overflow-x: hidden;
     }
+    .header {
+        background: url(../images/header-mobile.jpg) no-repeat;
+    }
     .navigation {
         display: none;
     }
