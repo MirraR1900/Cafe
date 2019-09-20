@@ -53,16 +53,15 @@
         margin-top: 10px;
     }
     .bissnesMenu p {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .orderTable {
+        display: none;
     }
     .reservation {
         font-size: 20px;
     }
     .res_paragraph {
-        font-size: 20px;
-    }
-    .reservation_button {
-        width: 200px;
         font-size: 20px;
     }
 }

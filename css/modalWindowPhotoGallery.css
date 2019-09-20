@@ -4,6 +4,9 @@ body {
 }
 
 .modal-windowGallery {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -20,7 +23,8 @@ body {
 .modal-windowGallery:target {
     opacity: 1;
     pointer-events: auto;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    overflow-y: hidden;
 }
 
 .modalGallery {
@@ -31,28 +35,23 @@ body {
 }
 
 .modal-contentGallery {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
+    display: grid;
     background-color: rgba(0, 0, 0, 0.2);
     outline: 0;
     width: auto;
     margin: 0 auto;
-    /* border: 2px solid red; */
 }
 
 .galleryHeader {
-    display: -ms-flexbox;
-    display: flex;
+    /* display: -ms-flexbox; */
+    display: grid;
+    grid-template-columns: 9fr 1fr;
     -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     padding: 16px;
+}
+
+.block-counter {
+    text-align: center;
 }
 
 .counter {
@@ -86,14 +85,14 @@ body {
 }
 
 .modal-bodyGallery {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     justify-content: center;
+    align-items: center;
 }
 
 .previousPhoto,
 .nextPhoto {
-    flex: 1;
     text-align: center;
 }
 
@@ -116,11 +115,8 @@ body {
 }
 
 .showPhoto {
-    flex: 8;
-    height: 600px;
     margin: 30px 0 30px 0;
     text-align: center;
-    border: 2px solid white;
 }
 
 .showPhoto img {
