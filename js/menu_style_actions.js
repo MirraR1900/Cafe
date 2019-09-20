@@ -18,6 +18,8 @@ function openDescription() {
     let target = event.target;
     let name_dishMobile = target.parentNode;
     let specificationMobile = name_dishMobile.parentNode;
+    let textShow = specificationMobile.childNodes[3];
+    textShow.style.display = 'block';
     specificationMobile.style.top = 0;
     target.style.color = 'rgba(255, 255, 255, 0.1';
 
@@ -30,4 +32,6 @@ function closeDescription() {
     specificationMobile.style.top = '65%';
     let upB = specificationMobile.childNodes[1].childNodes[0];
     upB.style.color = 'rgb(255, 255, 255';
+    let textHide = specificationMobile.childNodes[3];
+    textHide.style.display = 'none';
 };
