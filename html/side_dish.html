@@ -8,14 +8,28 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <div class="header">
-            <header>
-                <div class="header_content">
-                    <div class="flex-item header">
-                        <div class="flex-item name">Dolce vita</div>
-                        <div class="flex-item navigation">
-                            <ul class="nav">
+            <div class="header-front">
+                <div class="name-cafe">
+                    Dolce vita
+                </div>
+                <div class="navigation">
+                    <ul class="navigation-site">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#main">О нас</a></li>
+                        <li><a href="index.html#story">О нас</a></li>
+                        <li><a href="index.html#menu-dishes">Меню</a></li>
+                        <li><a href="index.html#banquets">Банкеты</a></li>
+                        <li><a href="index.html#comments">Отзывы</a></li>
+                        <li><a href="index.html#footer">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-navigation">
+                    <div class="content-navigation">
+                        <p><button class="buttonMobileNavigation"> &#9776; Меню</button></p>
+                        <div class="mobileNavigationSite">
+                            <ul class="navigationSiteList">
                                 <li><a href="index.html">Главная</a></li>
                                 <li><a href="index.html#main">О нас</a></li>
                                 <li><a href="index.html#story">О нас</a></li>
@@ -27,16 +41,20 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
         </div>
-
-        <h1 class="main">Гарниры</h1>
+        <div class="main">Гарниры</div>
         <div class="grid-container">
             <div class="grid-item">
                 <span class="specification">
                     <p class="name_dish">Картофель молодой с зеленью</p>
                     <p class="price_dish">Цена: 50 руб</p>
                     <p>Цена указана за 100 гр</p>
+                </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Картофель молодой с зеленью</div>
+                        <div class="compositionMobile"><br><strong>Цена: 50 руб за 100 гр</strong><br><button
+                                class="down">&#9660;</button></div>
                 </span>
                 <img src="../images/side_dish/boiled-potatoes.jpg">
             </div>
@@ -46,6 +64,11 @@
                     <p class="price_dish">Цена: 80 руб</p>
                     <p>Цена указана за 100 гр</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Картофель из печи</div>
+                        <div class="compositionMobile"><br><strong>Цена: 80 руб за 100 гр</strong><br><button
+                                class="down">&#9660;</button></div>
+                </span>
                 <img src="../images/side_dish/baked-potatoes.jpg">
             </div>
             <div class="grid-item">
@@ -53,6 +76,11 @@
                     <p class="name_dish">Рис отварной</p>
                     <p class="price_dish">Цена: 30 руб</p>
                     <p>Цена указана за 100 гр</p>
+                </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Рис отварной</div>
+                        <div class="compositionMobile"><br><strong>Цена: 30 руб за 100 гр</strong><br><button
+                                class="down">&#9660;</button></div>
                 </span>
                 <img src="../images/side_dish/boiled-rice.jpg">
             </div>
@@ -62,6 +90,11 @@
                     <p class="price_dish">Цена: 60 руб</p>
                     <p>Цена указана за 100 гр</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Рис обжаренный с восточными специями</div>
+                        <div class="compositionMobile"><br><strong>Цена: 60 руб за 100 гр</strong><br><button
+                                class="down">&#9660;</button></div>
+                </span>
                 <img src="../images/side_dish/fried-rice.jpg">
             </div>
             <div class="grid-item">
@@ -69,6 +102,11 @@
                     <p class="name_dish">Греча</p>
                     <p class="price_dish">Цена: 50 руб</p>
                     <p>Цена указана за 100 гр</p>
+                </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Греча</div>
+                        <div class="compositionMobile"><br><strong>Цена: 50 руб за 100 гр</strong><br><button
+                                class="down">&#9660;</button></div>
                 </span>
                 <img src="../images/side_dish/buckwheat.jpg">
             </div>
@@ -78,11 +116,24 @@
                     <p class="price_dish">Цена: 50 руб</p>
                     <p>Цена указана за 100 гр</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Картофель пюре</div>
+                        <div class="compositionMobile"><br><strong>Цена: 50 руб за 100 гр</strong><br><button
+                                class="down">&#9660;</button></div>
+                </span>
                 <img src="../images/side_dish/mashed-potatoes.jpg">
             </div>
         </div>
-        <div class="full"></div>
+        <div class="footer" id="footer">
+            <p>ул. Ленина, 40</p>
+            <p>+7(8459)78-78-60</p>
+            <p>dolcevita@enjoy.ru</p>
+            <p>&copy;2019</p>
+        </div>
     </div>
+    <script src=" ../js/mobileMenu.js "></script>
+    <script src=" ../js/menu_style_actions.js "></script>
+    <script src=" ../js/windowWidth.js "></script>
 </body>
 
 </html>

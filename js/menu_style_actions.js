@@ -1,15 +1,13 @@
 var buttonUp = document.querySelectorAll('.up');
 var buttonDown = document.querySelectorAll('.down');
 
-
-
+// button up
 for (let i = 0; i < buttonUp.length; i++) {
     buttonUp[i].onclick = function() {
         openDescription();
     };
 }
-
-
+// button down
 for (let i = 0; i < buttonDown.length; i++) {
     buttonDown[i].onclick = function() {
         closeDescription();

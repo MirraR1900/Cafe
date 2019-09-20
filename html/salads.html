@@ -8,14 +8,28 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <div class="header">
-            <header>
-                <div class="header_content">
-                    <div class="flex-item header">
-                        <div class="flex-item name">Dolce vita</div>
-                        <div class="flex-item navigation">
-                            <ul class="nav">
+            <div class="header-front">
+                <div class="name-cafe">
+                    Dolce vita
+                </div>
+                <div class="navigation">
+                    <ul class="navigation-site">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#main">О нас</a></li>
+                        <li><a href="index.html#story">О нас</a></li>
+                        <li><a href="index.html#menu-dishes">Меню</a></li>
+                        <li><a href="index.html#banquets">Банкеты</a></li>
+                        <li><a href="index.html#comments">Отзывы</a></li>
+                        <li><a href="index.html#footer">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-navigation">
+                    <div class="content-navigation">
+                        <p><button class="buttonMobileNavigation"> &#9776; Меню</button></p>
+                        <div class="mobileNavigationSite">
+                            <ul class="navigationSiteList">
                                 <li><a href="index.html">Главная</a></li>
                                 <li><a href="index.html#main">О нас</a></li>
                                 <li><a href="index.html#story">О нас</a></li>
@@ -27,10 +41,9 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
         </div>
-
-        <h1 class="main">Салаты и Закуски</h1>
+        <div class="main">Салаты и Закуски</div>
         <div class="grid-container">
             <div class="grid-item">
                 <span class="specification">
@@ -38,6 +51,10 @@
                     <p class="composition">Курица, сухарики, помидоры, яйца, сыр пармезан, соус, зелень</p>
                     <p class="price_dish">Цена: 250 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Цезарь"</div>
+                        <div class="compositionMobile">Курица, сухарики, помидоры, яйца, сыр пармезан, соус, зелень<br><strong>Цена: 250 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/caesar-salad.jpg">
             </div>
             <div class="grid-item">
@@ -46,6 +63,10 @@
                     <p class="composition">Свекла, яблоко, орехи</p>
                     <p class="price_dish">Цена: 80 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат из свеклы</div>
+                        <div class="compositionMobile">Свекла, яблоко, орехи<br><strong>Цена: 80 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/Beet-salad.jpg">
             </div>
             <div class="grid-item">
@@ -54,6 +75,10 @@
                     <p class="composition">Клубника, киви, манго, сливочное мороженое</p>
                     <p class="price_dish">Цена: 180 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат фруктовый</div>
+                        <div class="compositionMobile">Клубника, киви, манго, сливочное мороженое<br><strong>Цена: 180 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/fruit-salad.jpg">
             </div>
             <div class="grid-item">
@@ -62,6 +87,10 @@
                     <p class="composition">Томат, огурец, маслины, сыр фета, богагский перец, лук, оливковое масло</p>
                     <p class="price_dish">Цена: 200 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Греческий салат</div>
+                        <div class="compositionMobile">Томат, огурец, маслины, сыр фета, богагский перец, лук, оливковое масло<br><strong>Цена: 200 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/greek-salad.jpg">
             </div>
             <div class="grid-item">
@@ -71,6 +100,10 @@
                     </p>
                     <p class="price_dish">Цена: 280 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Счастье"</div>
+                        <div class="compositionMobile">Капуста, креветки, морковь, лук, базилик, бразильский орех, оливковое масло<br><strong>Цена: 280 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/happiness-salad.jpg">
             </div>
             <div class="grid-item">
@@ -79,6 +112,10 @@
                     <p class="composition">Томат, капуста, стручковая фасоль, морковь, лук, оливковое масло</p>
                     <p class="price_dish">Цена: 170 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Вегетарианский"</div>
+                        <div class="compositionMobile">Томат, капуста, стручковая фасоль, морковь, лук, оливковое масло<br><strong>Цена: 170 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/papaya-salad.jpg">
             </div>
             <div class="grid-item">
@@ -87,7 +124,10 @@
                     <p class="composition">Томат, огурец, сыр моцарелла, салат листовой, морковь, инжир</p>
                     <p class="price_dish">Цена: 290 руб</p>
                 </span>
-
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Dolce vita"</div>
+                        <div class="compositionMobile">Томат, огурец, сыр моцарелла, салат листовой, морковь, инжир<br><strong>Цена: 290 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/salad-dolce-vita.jpg">
             </div>
             <div class="grid-item">
@@ -97,6 +137,11 @@
                         масло</p>
                     <p class="price_dish">Цена: 150 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Великолепный"</div>
+                        <div class="compositionMobile">Помидор черри, пекинская капуста, болгарский перец, лук, базилик, оливковое
+                                масло<br><strong>Цена: 150 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/salad-great.jpg">
             </div>
             <div class="grid-item">
@@ -105,14 +150,22 @@
                     <p class="composition">Копченая курица, салат листовой, яйца, сухарики, сливочный соус </p>
                     <p class="price_dish">Цена: 140 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Итальянская история"</div>
+                        <div class="compositionMobile">Копченая курица, салат листовой, яйца, сухарики, сливочный соус<br><strong>Цена: 140 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/salad-italian-history.jpg">
             </div>
             <div class="grid-item">
                 <span class="specification">
                     <p class="name_dish">Салат "Весна"</p>
-                    <p class="composition">Томат, болгарский пеерц, зелень, морковь, оливковое масло</p>
+                    <p class="composition">Томат, болгарский перец, зелень, морковь, оливковое масло</p>
                     <p class="price_dish">Цена: 120 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Весна"</div>
+                        <div class="compositionMobile">Томат, болгарский перец, зелень, морковь, оливковое масло<br><strong>Цена: 120 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/salad-spring.jpg">
             </div>
             <div class="grid-item">
@@ -121,6 +174,10 @@
                     <p class="composition">Баклажаны, лосось, томат, салат листовой, оливки, сливочный соус</p>
                     <p class="price_dish">Цена: 290 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат с лососем</div>
+                        <div class="compositionMobile">Баклажаны, лосось, томат, салат листовой, оливки, сливочный соус<br><strong>Цена: 290 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/salad-with-salmon.jpg">
             </div>
             <div class="grid-item">
@@ -129,6 +186,10 @@
                     <p class="composition">Помидоры черри, щавель, лимон, оливковое масло</p>
                     <p class="price_dish">Цена: 140руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Витаминный салат</div>
+                        <div class="compositionMobile">Помидоры черри, щавель, лимон, оливковое масло<br><strong>Цена: 140руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/vitamin-salad.jpg">
             </div>
             <div class="grid-item">
@@ -137,12 +198,24 @@
                     <p class="composition">Папая, цуккини, грецкий орех, гранат, сладкий соус</p>
                     <p class="price_dish">Цена: 300 руб</p>
                 </span>
+                <span class="specification-mobile" id="specification-mobile">
+                        <div class="name_dishMobile"><button class="up">&#9650;</button><br>Салат "Дамский"</div>
+                        <div class="compositionMobile">Папая, цуккини, грецкий орех, гранат, сладкий соус<br><strong>Цена: 300 руб</strong><br><button class="down">&#9660;</button></div>
+                    </span>
                 <img src="../images/salads/zucchini-salad.jpg">
             </div>
         </div>
-        <div class="full"></div>
-    </div>
+        <div class="footer" id="footer">
+            <p>ул. Ленина, 40</p>
+            <p>+7(8459)78-78-60</p>
+            <p>dolcevita@enjoy.ru</p>
+            <p>&copy;2019</p>
+        </div>
 
+    </div>
+    <script src=" ../js/mobileMenu.js "></script>
+    <script src=" ../js/menu_style_actions.js "></script>
+    <script src=" ../js/windowWidth.js "></script>
 </body>
 
 </html>

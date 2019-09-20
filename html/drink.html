@@ -8,91 +8,145 @@
 </head>
 
 <body>
-    <div>
-        <div>
-            <div class="header">
-                <header>
-                    <div class="header_content">
-                        <div class="flex-item header">
-                            <div class="flex-item name">Dolce vita</div>
-                            <div class="flex-item navigation">
-                                <ul class="nav">
-                                    <li><a href="index.html">Главная</a></li>
-                                    <li><a href="index.html#main">О нас</a></li>
-                                    <li><a href="index.html#story">О нас</a></li>
-                                    <li><a href="index.html#menu-dishes">Меню</a></li>
-                                    <li><a href="index.html#banquets">Банкеты</a></li>
-                                    <li><a href="index.html#comments">Отзывы</a></li>
-                                    <li><a href="index.html#footer">Контакты</a></li>
-                                </ul>
-                            </div>
+    <div class="container">
+        <div class="header">
+            <div class="header-front">
+                <div class="name-cafe">
+                    Dolce vita
+                </div>
+                <div class="navigation">
+                    <ul class="navigation-site">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#main">О нас</a></li>
+                        <li><a href="index.html#story">О нас</a></li>
+                        <li><a href="index.html#menu-dishes">Меню</a></li>
+                        <li><a href="index.html#banquets">Банкеты</a></li>
+                        <li><a href="index.html#comments">Отзывы</a></li>
+                        <li><a href="index.html#footer">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-navigation">
+                    <div class="content-navigation">
+                        <p><button class="buttonMobileNavigation"> &#9776; Меню</button></p>
+                        <div class="mobileNavigationSite">
+                            <ul class="navigationSiteList">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="index.html#main">О нас</a></li>
+                                <li><a href="index.html#story">О нас</a></li>
+                                <li><a href="index.html#menu-dishes">Меню</a></li>
+                                <li><a href="index.html#banquets">Банкеты</a></li>
+                                <li><a href="index.html#comments">Отзывы</a></li>
+                                <li><a href="index.html#footer">Контакты</a></li>
+                            </ul>
                         </div>
                     </div>
-                </header>
-            </div>
-
-            <h1 class="main">Напитки</h1>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <span class="specification">
-                        <p class="name_dish">Латте</p>
-                        <p class="composition">300 мл</p>
-                        <p class="price_dish">Цена: 100 руб</p>
-                    </span>
-                    <img src="../images/drink/coffee-latte.jpg">
-                </div>
-                <div class="grid-item">
-                    <span class="specification">
-                        <p class="name_dish">Капучино</p>
-                        <p class="composition">220 мл</p>
-                        <p class="price_dish">Цена: 130 руб</p>
-                    </span>
-                    <img src="../images/drink/cappuccino.jpg">
-                </div>
-                <div class="grid-item">
-                    <span class="specification">
-                        <p class="name_dish">Эспрессо</p>
-                        <p class="composition">45 мл</p>
-                        <p class="price_dish">Цена: 90 руб</p>
-                    </span>
-                    <img src="../images/drink/espresso.jpg">
-                </div>
-                <div class="grid-item">
-                    <span class="specification">
-                        <p class="name_dish">Черный чай</p>
-                        <p class="composition">Добавки: мята, чабрец, лимон</p>
-                        <p class="price_dish">Цена: 40 руб</p>
-                    </span>
-                    <img src="../images/drink/black-tea.jpg">
-                </div>
-                <div class="grid-item">
-                    <span class="specification">
-                        <p class="name_dish">Зеленый чай</p>
-                        <p class="composition">Добавки: жасмин</p>
-                        <p class="price_dish">Цена: 40 руб</p>
-                    </span>
-                    <img src="../images/drink/green-tea.jpg">
-                </div>
-                <div class="grid-item">
-                    <span class="specification">
-                        <p class="name_dish">Вино в ассортименте</p>
-                        <p class="composition">Красное и белое, наличиечие уточняйте</p>
-                        <p class="price_dish">Цена: от 150 руб за бокал</p>
-                    </span>
-                    <img src="../images/drink/wine.jpg">
-                </div>
-                <div class="grid-item">
-                    <span class="specification">
-                        <p class="name_dish">Коньяк в ассортименте</p>
-                        <p class="composition">Армянский, французский</p>
-                        <p class="price_dish">Цена: от 200 руб за бокал</p>
-                    </span>
-                    <img src="../images/drink/cognac.jpg">
                 </div>
             </div>
-            <div class="full"></div>
+        </div>
+        <div class="main">Напитки</div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <span class="specification">
+                            <p class="name_dish">Латте</p>
+                            <p class="composition">300 мл</p>
+                            <p class="price_dish">Цена: 100 руб</p>
+                        </span>
+                <span class="specification-mobile" id="specification-mobile">
+                                <div class="name_dishMobile"><button class="up">&#9650;</button><br>Латте</div>
+                                <div class="compositionMobile">300 мл<br><strong>Цена: 100 руб</strong><br><button
+                                        class="down">&#9660;</button></div>
+                        </span>
+                <img src="../images/drink/coffee-latte.jpg">
+            </div>
+            <div class="grid-item">
+                <span class="specification">
+                            <p class="name_dish">Капучино</p>
+                            <p class="composition">220 мл</p>
+                            <p class="price_dish">Цена: 130 руб</p>
+                        </span>
+                <span class="specification-mobile" id="specification-mobile">
+                                <div class="name_dishMobile"><button class="up">&#9650;</button><br>Капучино</div>
+                                <div class="compositionMobile">220 мл<br><strong>Цена: 130 руб</strong><br><button
+                                        class="down">&#9660;</button></div>
+                        </span>
+                <img src="../images/drink/cappuccino.jpg">
+            </div>
+            <div class="grid-item">
+                <span class="specification">
+                            <p class="name_dish">Эспрессо</p>
+                            <p class="composition">45 мл</p>
+                            <p class="price_dish">Цена: 90 руб</p>
+                        </span>
+                <span class="specification-mobile" id="specification-mobile">
+                                <div class="name_dishMobile"><button class="up">&#9650;</button><br>Эспрессо</div>
+                                <div class="compositionMobile">45 мл<br><strong>Цена: 90 руб</strong><br><button
+                                        class="down">&#9660;</button></div>
+                        </span>
+                <img src="../images/drink/espresso.jpg">
+            </div>
+            <div class="grid-item">
+                <span class="specification">
+                            <p class="name_dish">Черный чай</p>
+                            <p class="composition">Добавки: мята, чабрец, лимон</p>
+                            <p class="price_dish">Цена: 40 руб</p>
+                        </span>
+                <span class="specification-mobile" id="specification-mobile">
+                                <div class="name_dishMobile"><button class="up">&#9650;</button><br>Черный чай</div>
+                                <div class="compositionMobile">Добавки: мята, чабрец, лимон<br><strong>Цена: 40 руб</strong><br><button
+                                        class="down">&#9660;</button></div>
+                        </span>
+                <img src="../images/drink/black-tea.jpg">
+            </div>
+            <div class="grid-item">
+                <span class="specification">
+                            <p class="name_dish">Зеленый чай</p>
+                            <p class="composition">Добавки: жасмин</p>
+                            <p class="price_dish">Цена: 40 руб</p>
+                        </span>
+                <span class="specification-mobile" id="specification-mobile">
+                                <div class="name_dishMobile"><button class="up">&#9650;</button><br>Зеленый чай</div>
+                                <div class="compositionMobile">Добавки: жасмин<br><strong>Цена: 40 руб</strong><br><button
+                                        class="down">&#9660;</button></div>
+                        </span>
+                <img src="../images/drink/green-tea.jpg">
+            </div>
+            <div class="grid-item">
+                <span class="specification">
+                            <p class="name_dish">Вино в ассортименте</p>
+                            <p class="composition">Красное и белое, наличиечие уточняйте</p>
+                            <p class="price_dish">Цена: от 150 руб за бокал</p>
+                        </span>
+                <span class="specification-mobile" id="specification-mobile">
+                                <div class="name_dishMobile"><button class="up">&#9650;</button><br>Вино в ассортименте</div>
+                                <div class="compositionMobile">Красное и белое, наличиечие уточняйте<br><strong>Цена: от 150 руб за бокал</strong><br><button
+                                        class="down">&#9660;</button></div>
+                        </span>
+                <img src="../images/drink/wine.jpg">
+            </div>
+            <div class="grid-item">
+                <span class="specification">
+                            <p class="name_dish">Коньяк в ассортименте</p>
+                            <p class="composition">Армянский, французский</p>
+                            <p class="price_dish">Цена: от 200 руб за бокал</p>
+                        </span>
+                <span class="specification-mobile" id="specification-mobile">
+                                <div class="name_dishMobile"><button class="up">&#9650;</button><br>Коньяк в ассортименте</div>
+                                <div class="compositionMobile">Армянский, французский<br><strong>Цена: от 200 руб за бокал</strong><br><button
+                                        class="down">&#9660;</button></div>
+                        </span>
+                <img src="../images/drink/cognac.jpg">
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <p>ул. Ленина, 40</p>
+            <p>+7(8459)78-78-60</p>
+            <p>dolcevita@enjoy.ru</p>
+            <p>&copy;2019</p>
         </div>
     </div>
+    <script src=" ../js/mobileMenu.js "></script>
+    <script src=" ../js/menu_style_actions.js "></script>
+    <script src=" ../js/windowWidth.js "></script>
 </body>
 
 </html>

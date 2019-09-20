@@ -183,6 +183,7 @@ img {
         text-align: center;
     }
     .compositionMobile {
+        /* display: none; */
         font-size: 25px;
     }
     .up {
