@@ -24,8 +24,7 @@ var arrayPhoto = [
     '../images/wedding/banquet_5.jpg',
     '../images/wedding/banquet_1.jpg',
     '../images/wedding/banquet_14.jpg',
-    '../images/wedding/banquet_8.jpg',
-    '../images/wedding/banquet_16.jpg'
+    '../images/wedding/banquet_8.jpg'
 ];
 
 showPhoto.innerHTML = "<img src='../images/wedding/banquet_4.jpg' alt=''/>";
