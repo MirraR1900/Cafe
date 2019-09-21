@@ -26,12 +26,18 @@
         display: block;
         top: 65%;
     }
-    .name_dishMobile {
+    .up {
         font-size: 20px;
+    }
+    .name_dishMobile {
+        font-size: 16px;
         text-align: center;
     }
     .compositionMobile {
         display: none;
+        font-size: 20px;
+    }
+    .down {
         font-size: 20px;
     }
 }
