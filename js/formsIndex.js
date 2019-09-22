@@ -1,18 +1,18 @@
-var firstNameOrder = document.getElementById('firstNameOrder');
-var phonNumberOrder = document.getElementById('phoneOrder');
-var inputDate = document.getElementById('calender');
-var inputTime = document.getElementById('timeOrder');
-var numberGuests = document.getElementById('guests');
-var messageOrder = document.getElementById('textOrder');
-var checkOrder = document.getElementById('check');
-var buttomOrder = document.getElementsByClassName('ButtonOrder');
+let firstNameOrder = document.getElementById('firstNameOrder');
+let phonNumberOrder = document.getElementById('phoneOrder');
+let inputDate = document.getElementById('calender');
+let inputTime = document.getElementById('timeOrder');
+let numberGuests = document.getElementById('guests');
+let messageOrder = document.getElementById('textOrder');
+let checkOrder = document.getElementById('check');
+let buttomOrder = document.getElementsByClassName('ButtonOrder');
 
 window.addEventListener('DOMContentLoaded', function() {
     function setCursorPosition(pos, elem) {
         elem.focus();
         if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
         else if (elem.createTextRange) {
-            var range = elem.createTextRange();
+            let range = elem.createTextRange();
             range.collapse(true);
             range.moveEnd("character", pos);
             range.moveStart("character", pos);
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     function mask(event) {
-        var phone = "+7(___) ___ ____",
+        let phone = "+7(___) ___ ____",
             i = 0,
             def = phone.replace(/\D/g, ""),
             val = this.value.replace(/\D/g, "");

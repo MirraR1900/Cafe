@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="../css/indexStyle.css">
-    <link rel="stylesheet" href="../css/order_table.css">
+    <link rel="stylesheet" href="../css/orderTable.css">
     <link rel="stylesheet" media="screen and (max-width: 320px)" href="../css/indexStyleMobile320px.css">
     <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 480px)" href="../css/indexStyleMobile320_480px.css">
     <link rel="stylesheet" href="../css/modalWindowBanquet.css">
@@ -15,15 +15,15 @@
 </head>
 
 <body>
-    <div id="orderTableForm" class="modal-window">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title">Бронирование столика</p>
+    <div id="orderTableForm" class="modalWindow">
+        <div class="modalDialog">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <p class="modalTitle">Бронирование столика</p>
                     <a href="#close" title="Close" class="close">X</a>
                 </div>
-                <div class="modal-body">
-                    <form class="orderTableForm" action="Form_Order" method="POST" name="orderTable">
+                <div class="modalBody">
+                    <form class="orderTableForm" action="FormOrder" method="POST" name="orderTable">
                         <fieldset>
                             <p>
                                 <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required>
@@ -61,18 +61,18 @@
             </div>
         </div>
     </div>
-    <div class="main-container">
+    <div class="mainContainer">
         <!--Header-->
         <div class="header">
-            <div class="header-front">
-                <div class="name-cafe">
+            <div class="headerFront">
+                <div class="nameCafe">
                     Dolce vita
                 </div>
                 <div class="navigation">
-                    <ul class="navigation-site">
+                    <ul class="navigationSite">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#story">О нас</a></li>
-                        <li><a href="#menu-dishes">Меню</a></li>
+                        <li><a href="#menuDishes">Меню</a></li>
                         <li><a href="#banquets">Банкеты</a></li>
                         <li><a href="#comments">Отзовы</a></li>
                         <li><a href="#footer">Контакты</a></li>
@@ -83,22 +83,22 @@
                         <p>+7(8459)78-78-60</p>
                         <p>Мы работаем для Вас с 10 до 23 часов</p>
                 </div>
-                <div class=" info-mobile ">
+                <div class=" infoMobile ">
                     <p">ул. Ленина, 40</p>
                     <p>Заказать столик по тел:</p>
                     <p>+7(8459)78-78-60</p>
                     <p>Мы работаем для Вас <br>с 10 до 23 часов</p>
                 </div>
-                <div class="mobile-navigation">
-                    <div class="content-navigation">
+                <div class="mobileNavigation">
+                    <div class="contentNavigation">
                         <p><button class="buttonMobileNavigation"> &#9776; Меню</button></p>
                         <div class="mobileNavigationSite">
                             <ul class="navigationSiteList">
                                 <li><a href="#">Главная</a></li>
                                 <li><a href="#story">О нас</a></li>
-                                <li><a href="#menu-dishes">Меню</a></li>
+                                <li><a href="#menuDishes">Меню</a></li>
                                 <li><a href="#banquets">Банкеты</a></li>
-                                <li class="comments-hide"><a href="#comments">Отзывы</a></li>
+                                <li class="commentsHide"><a href="#comments">Отзывы</a></li>
                                 <li><a href="#footer">Контакты</a></li>
                             </ul>
                         </div>
@@ -115,43 +115,43 @@
             <p>Кафе "Dolce vita" - это уютная атмосфера и блюда приготовленные с душой. Для наших гостей два просторных этажа с баром, открытой кухней, живой музыкой, собственной закрытой парковкой и прекрасным панорамным видом на город.
             </p>
         </div>
-        <div class="menu-dishes" id="menu-dishes">
+        <div class="menuDishes" id="menuDishes">
             <p>Меню</p>
-            <div class="list-dishes">
+            <div class="listDishes">
                 <div class="dish">
-                    <a href="bisness_lunch.html"><span class="specification">Бизнес ланч</span></a>
-                    <img src="../images/bisness_lunch.jpg">
+                    <a href="bisnessLunchStyle.html"><span class="description">Бизнес ланч</span></a>
+                    <img src="../images/bisness-lunch.jpg">
                 </div>
                 <div class="dish">
-                    <a href="soups.html"><span class="specification">Супы</span></a>
+                    <a href="soups.html"><span class="description">Супы</span></a>
                     <img src="../images/soups/soup.jpg">
                 </div>
                 <div class="dish">
-                    <a href="salads.html"><span class="specification">Салаты / Закуски</span></a>
+                    <a href="salads.html"><span class="description">Салаты / Закуски</span></a>
                     <img src="../images/salads/salad-dolce-vita.jpg">
                 </div>
                 <div class="dish">
-                    <a href="meat.html"><span class="specification">Мясо</span></a>
+                    <a href="meat.html"><span class="description">Мясо</span></a>
                     <img src="../images/meat/meats.jpg">
                 </div>
                 <div class="dish">
-                    <a href="seafood.html"><span class="specification">Рыба / Морепродукты</span></a>
+                    <a href="seafood.html"><span class="description">Рыба / Морепродукты</span></a>
                     <img src="../images/seafood/fried-fish.jpg">
                 </div>
                 <div class="dish">
-                    <a href="side_dish.html"><span class="specification">Гарниры</span></a>
+                    <a href="sideDish.html"><span class="description">Гарниры</span></a>
                     <img src="../images/side_dish/boiled-potatoes.jpg">
                 </div>
                 <div class="dish">
-                    <a href="pasta.html"><span class="specification">Паста</span></a>
+                    <a href="pasta.html"><span class="description">Паста</span></a>
                     <img src="../images/pasta/pasta.jpg">
                 </div>
                 <div class="dish">
-                    <a href="drink.html"><span class="specification">Напитки</span></a>
+                    <a href="drink.html"><span class="description">Напитки</span></a>
                     <img src="../images/drink/cappuccino.jpg">
                 </div>
                 <div class="dish">
-                    <a href="cake.html"><span class="specification">Десерты</span></a>
+                    <a href="dessert.html"><span class="description">Десерты</span></a>
                     <img src="../images/dessert/cake.jpg">
                 </div>
             </div>
@@ -160,8 +160,8 @@
             <div>
                 <p>Банкеты и свадьбы</p>
             </div>
-            <div class="banquet-container">
-                <div class="banquet-list">
+            <div class="banquetContainer">
+                <div class="banquetList">
                     <ul>
                         <li>Два зала вместимостью от 30 человек</li>
                         <li>Просторный балкон для фотосессии</li>
@@ -175,7 +175,7 @@
                         <a href="#orderBanquet"><button class="orderButtonBanquet">Заказать банкет</button></a>
                     </div>
                 </div>
-                <div class="photo-gallery">
+                <div class="photoGallery">
                     <div><img src="../images/wedding/banquet_4.jpg" alt=""></div>
                     <div><img src="../images/wedding/banquet_11.jpg" alt=""></div>
                     <div><img src="../images/wedding/banquet_7.jpg" alt=""></div>
@@ -189,15 +189,15 @@
                         </a></div>
                 </div>
             </div>
-            <div class="modal-windowBanquet" id="orderBanquet">
-                <div class="modal-dialogBanquet">
-                    <div class="modal-contentBanquet">
-                        <div class="modal-headerBanquet">
+            <div class="modalWindowBanquet" id="orderBanquet">
+                <div class="modalDialogBanquet">
+                    <div class="modalContentBanquet">
+                        <div class="modalHeaderBanquet">
                             <p>Заказать банкет</p>
                             <a href="#close" title="Close" class="close">X</a>
                         </div>
-                        <div class="modal-bodyBanquet">
-                            <form class="orderBanquetForm" action="form_order" method="POST">
+                        <div class="modalBodyBanquet">
+                            <form class="orderBanquetForm" action="formOrder" method="POST">
                                 <fieldset>
                                     <p>
                                         <input type="text" id="firstName" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}">
@@ -221,16 +221,16 @@
                 </div>
             </div>
         </div>
-        <div class="modal-windowGallery" id="modalWindowPhotoGallery">
+        <div class="modalWindowGallery" id="modalWindowPhotoGallery">
             <div class="modalGallery">
-                <div class="modal-contentGallery">
+                <div class="modalContentGallery">
                     <div class="galleryHeader">
                         <div class="counter"></div>
                         <div class="buttonClose">
                             <a href="#close" title="Close" class="close">X</a>
                         </div>
                     </div>
-                    <div class="modal-bodyGallery">
+                    <div class="modalBodyGallery">
                         <div class="previousPhoto">
                             <button class="previousButton">
                                 < </button> </div>
@@ -244,11 +244,11 @@
             </div>
         </div>
         <div class="comments" id="comments">
-            <div class="comment-header">
+            <div class="commentHeader">
                 <p>Оставьте свои отзовы и предложения</p>
             </div>
             <div class="commentForm">
-                <form id="comment" action="Form_Comment" method="POST" name="comment ">
+                <form id="comment" action="FormComment" method="POST" name="comment ">
                     <p>
                         <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required>
                     </p>

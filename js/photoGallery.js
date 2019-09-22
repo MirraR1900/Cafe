@@ -1,15 +1,15 @@
-var createArrayPhoto = document.querySelector('.showClick');
-var counter = document.querySelector(".counter");
-var counterNumber;
-var showPhoto = document.querySelector('.showPhoto');
-var previousButton = document.querySelector('.previousButton');
-var nextButton = document.querySelector('.nextButton');
-var repeat = document.querySelector('.repeat');
-var galleryHeader = document.querySelector('.galleryHeader');
+let createArrayPhoto = document.querySelector('.showClick');
+let counter = document.querySelector(".counter");
+let counterNumber;
+let showPhoto = document.querySelector('.showPhoto');
+let previousButton = document.querySelector('.previousButton');
+let nextButton = document.querySelector('.nextButton');
+let repeat = document.querySelector('.repeat');
+let galleryHeader = document.querySelector('.galleryHeader');
 let flag = 0;
 let score = 1;
 
-var arrayPhoto = [
+let arrayPhoto = [
     '../images/wedding/banquet_4.jpg',
     '../images/wedding/banquet_11.jpg',
     '../images/wedding/banquet_7.jpg',

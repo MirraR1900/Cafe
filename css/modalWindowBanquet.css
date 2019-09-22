@@ -4,7 +4,7 @@ body {
     line-height: 1.5;
 }
 
-.modal-windowBanquet {
+.modalWindowBanquet {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -18,13 +18,13 @@ body {
     pointer-events: none;
 }
 
-.modal-windowBanquet:target {
+.modalWindowBanquet:target {
     opacity: 1;
     pointer-events: auto;
     overflow-y: auto;
 }
 
-.modal-dialogBanquet {
+.modalDialogBanquet {
     position: relative;
     width: auto;
     height: auto;
@@ -33,35 +33,35 @@ body {
     margin-bottom: 10%;
 }
 
-.modal-contentBanquet {
+.modalContentBanquet {
     position: relative;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-     -webkit-flex-direction: column;
-     -ms-flex-direction: column;
-     background-color: rgba(0, 0, 0, 0.8); 
-     background-clip: padding-box;
-     outline: 0;
-     border: 6px solid rgba(255, 255, 255, 0.6);
-     border-radius: 15px;
-     width: 600px;
-      margin: 0 auto;
-    }
-
-.modal-headerBanquet {
-    display: -ms-flexbox;
-     display: flex;
-     -ms-flex-align: center; 
-     align-items: center;
-     -ms-flex-pack: justify;
-     justify-content: space-between;
-     padding: 16px;
-     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-clip: padding-box;
+    outline: 0;
+    border: 6px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    width: 600px;
+    margin: 0 auto;
 }
 
-.modal-headerBanquet p {
+.modalHeaderBanquet {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.modalHeaderBanquet p {
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -70,7 +70,7 @@ body {
     line-height: 1.5;
     font-size: 35px;
     font-style: italic;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 .close {
@@ -79,20 +79,21 @@ body {
     font-size: 30px;
     font-weight: 700;
     line-height: 1;
-     color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
     text-decoration: none;
 }
 
-.close:focus, .close:hover {
+.close:focus,
+.close:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
     opacity: .75;
 }
 
-.modal-bodyBanquet {
+.modalBodyBanquet {
     position: relative;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -111,14 +112,15 @@ body {
     border: none;
     /* float: left; */
     width: 500px;
-    margin-left:  25px;
+    margin-left: 25px;
 }
 
 .orderBanquetForm p {
     margin: .5em 0;
 }
 
-#firstName, #phoneClient {
+#firstName,
+#phoneClient {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     width: 400px;
@@ -134,7 +136,7 @@ body {
     clear: both;
     margin: 0;
     margin-top: 30px;
-     margin-left: 25px; 
+    margin-left: 25px;
     color: rgba(255, 255, 255, 0.4);
     font-size: 18px;
     text-align: left;
@@ -159,11 +161,9 @@ body {
     font-family: "Times New Roman", Arial, sans-serif;
     font-size: 25px;
     font-style: italic;
-} 
+}
 
 .buttonBanquet button:hover {
     background-color: rgba(169, 169, 169, 0.4);
-    color:  rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
-
-

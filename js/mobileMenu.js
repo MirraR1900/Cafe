@@ -1,6 +1,6 @@
-var buttonMobileNavigation = document.querySelector('.buttonMobileNavigation');
-var mobileNavigationSite = document.querySelector('.mobileNavigationSite');
-var flagСondition = false;
+let buttonMobileNavigation = document.querySelector('.buttonMobileNavigation');
+let mobileNavigationSite = document.querySelector('.mobileNavigationSite');
+let flagСondition = false;
 
 function pressButton() {
     if (flagСondition === false) {

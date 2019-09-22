@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: rgba(255, 228, 196, 0.7);
+}
+
+.header {
+    background: url(../images/header.png) no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+}
+
+.headerFront {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.nameCafe {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.navigationSite li {
+    display: inline;
+}
+
+ul.navigationSite a {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    opacity: 0, 1;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+ul.navigationSite a:hover {
+    background-color: rgba(169, 169, 169, 0.4);
+    color: rgb(255, 255, 255);
+}
+
+.mobileNavigation {
+    display: none;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 8px solid rgb(222, 184, 135);
+    border-top-left-radius: 100% 30px;
+    border-bottom-right-radius: 100% 30px;
+}
+
+.headline {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bissnesMenu p {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.bissnesMenuInfo {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(188, 143, 143);
+}
+
+.reservation {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.resParagraph {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.info {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(188, 143, 143);
+}
+
+.reservationButton {
+    background: rgba(222, 184, 135, 0.5);
+    border: 3px solid rgb(222, 184, 135);
+    border-radius: 40px;
+    width: 300px;
+    height: 50px;
+    margin: 20px 20px 20px 20px;
+    font-family: "Times New Roman", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.reservationButton:hover {
+    background: rgb(210, 180, 140);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.navigationSite a {
+        width: 80px;
+        font-size: 18px;
+    }
+    .footer {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 850px) {
+    .navigation {
+        display: none;
+    }
+    .buttonMobileNavigation {
+        width: 80px;
+        height: 70px;
+        margin-top: 1.2em;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10%;
+        font-size: 25px;
+        font-family: "Times new Roman", Arial, sans-serif;
+    }
+    .mobileNavigation {
+        display: block;
+        text-align: center;
+    }
+    .mobileNavigationSite {
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1em 0 1em 0;
+    }
+    .navigationSiteList li {
+        list-style: none;
+    }
+    ul.navigationSiteList a {
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: "Times new Roman", Arial, sans-serif;
+        font-size: 23px;
+        margin-top: 10px;
+    }
+}

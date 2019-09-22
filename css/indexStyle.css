@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.main-container {
+.mainContainer {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -18,13 +18,13 @@
     height: auto;
 }
 
-.header-front {
+.headerFront {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
 }
 
-.name-cafe {
+.nameCafe {
     color: rgb(255, 255, 255);
     font-size: 70px;
     font-family: "Times new Roman", Arial, sans-serif;
@@ -38,11 +38,11 @@
     text-align: center;
 }
 
-.navigation-site li {
+.navigationSite li {
     display: inline;
 }
 
-ul.navigation-site a {
+ul.navigationSite a {
     display: inline-block;
     width: 100px;
     padding: 10px;
@@ -58,7 +58,7 @@ ul.navigation-site a {
     font-style: italic;
 }
 
-ul.navigation-site a:hover {
+ul.navigationSite a:hover {
     background-color: rgba(169, 169, 169, 0.4);
     color: rgb(255, 255, 255);
 }
@@ -72,7 +72,7 @@ ul.navigation-site a:hover {
     padding-top: 50px;
 }
 
-.info-mobile {
+.infoMobile {
     display: none;
     color: rgb(255, 255, 255);
     font-size: 1.5em;
@@ -80,7 +80,7 @@ ul.navigation-site a:hover {
     text-align: center;
 }
 
-.mobile-navigation {
+.mobileNavigation {
     display: none;
 }
 
@@ -94,7 +94,7 @@ ul.navigation-site a:hover {
     font-family: "Times new Roman", Arial, sans-serif;
 }
 
-.mobile-navigation {
+.mobileNavigation {
     display: none;
     text-align: center;
 }
@@ -160,11 +160,11 @@ ul.navigationSiteList a {
     color: rgb(0, 0, 0);
 }
 
-.menu-dishes {
+.menuDishes {
     /* margin: 0 auto; */
 }
 
-.menu-dishes p {
+.menuDishes p {
     color: rgb(0, 0, 0);
     font-size: 50px;
     font-family: "Times new Roman", Arial, sans-serif;
@@ -172,7 +172,7 @@ ul.navigationSiteList a {
     text-align: center;
 }
 
-.list-dishes {
+.listDishes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5em;
@@ -189,7 +189,7 @@ ul.navigationSiteList a {
     grid-template-columns: minmax(150px, 1fr);
 }
 
-.specification {
+.description {
     font-size: 30px;
     font-family: "Times New Roman", Arial, sans-serif;
     position: absolute;
@@ -233,23 +233,23 @@ ul.navigationSiteList a {
     text-align: center;
 }
 
-.banquet-container {
+.banquetContainer {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.banquet-list ul {
+.banquetList ul {
     list-style-type: none;
 }
 
-.banquet-list li {
+.banquetList li {
     position: relative;
     padding: 10px 0 10px 50px;
     font-size: 25px;
     font-style: italic;
 }
 
-.banquet-list li:before {
+.banquetList li:before {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -286,20 +286,20 @@ ul.navigationSiteList a {
     color: rgb(255, 255, 255);
 }
 
-.photo-gallery {
+.photoGallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-gap: 1.5em;
     padding: 10px;
 }
 
-.photo-gallery div {
+.photoGallery div {
     justify-self: center;
     align-self: center;
     overflow: hidden;
 }
 
-.photo-gallery img {
+.photoGallery img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -352,7 +352,7 @@ ul.navigationSiteList a {
     background: rgb(210, 180, 140);
 }
 
-.comment-header p {
+.commentHeader p {
     color: rgb(0, 0, 0);
     font-size: 50px;
     font-family: "Times new Roman", Arial, sans-serif;
@@ -426,7 +426,7 @@ ul.navigationSiteList a {
 }
 
 @media only screen and (max-width: 900px) {
-    .specification {
+    .description {
         font-size: 25px;
     }
 }
@@ -442,19 +442,19 @@ ul.navigationSiteList a {
     .info {
         display: none;
     }
-    .info-mobile {
+    .infoMobile {
         display: block;
     }
-    .mobile-navigation {
+    .mobileNavigation {
         display: block;
     }
     .orderTable {
         margin-top: 1.2em;
     }
-    .specification {
+    .description {
         font-size: 25px;
     }
-    .comment-header p {
+    .commentHeader p {
         font-size: 2.5em;
     }
 }
@@ -470,27 +470,27 @@ ul.navigationSiteList a {
     .info {
         display: none;
     }
-    .info-mobile {
+    .infoMobile {
         display: block;
         font-size: 1.5em;
     }
     .buttonMobileNavigation {
         font-size: 25px;
     }
-    .mobile-navigation {
+    .mobileNavigation {
         display: block;
     }
     ul.navigationSiteList a {
         font-size: 23px;
     }
-    .specification {
+    .description {
         font-size: 25px;
     }
-    .banquet-container {
+    .banquetContainer {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .comment-header p {
+    .commentHeader p {
         font-size: 2.5em;
     }
 }
@@ -506,14 +506,14 @@ ul.navigationSiteList a {
     .info {
         display: none;
     }
-    .info-mobile {
+    .infoMobile {
         display: block;
         font-size: 1.5em;
     }
     .buttonMobileNavigation {
         font-size: 20px;
     }
-    .mobile-navigation {
+    .mobileNavigation {
         display: block;
     }
     ul.navigationSiteList a {
@@ -521,24 +521,24 @@ ul.navigationSiteList a {
         font-size: 23px;
         margin-top: 10px;
     }
-    .menu-dishes p {
+    .menuDishes p {
         font-size: 2.5em;
     }
-    .specification {
+    .description {
         font-size: 20px;
         padding-top: 10%;
     }
     .banquets p {
         font-size: 2.5em;
     }
-    .banquet-container {
+    .banquetContainer {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .photo-gallery {
+    .photoGallery {
         display: none;
     }
-    .comment-header p {
+    .commentHeader p {
         font-size: 2.5em;
     }
 }

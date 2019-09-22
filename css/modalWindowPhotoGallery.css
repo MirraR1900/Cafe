@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-.modal-windowGallery {
+.modalWindowGallery {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -17,7 +17,7 @@ body {
     pointer-events: none;
 }
 
-.modal-windowGallery:target {
+.modalWindowGallery:target {
     opacity: 1;
     pointer-events: auto;
     overflow-y: auto;
@@ -30,7 +30,7 @@ body {
     margin-top: 20px;
 }
 
-.modal-contentGallery {
+.modalContentGallery {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -85,7 +85,7 @@ body {
     opacity: .75;
 }
 
-.modal-bodyGallery {
+.modalBodyGallery {
     display: flex;
     align-items: center;
     justify-content: center;
