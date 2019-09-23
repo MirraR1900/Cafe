@@ -30,8 +30,12 @@ function closeDescription() {
     let compositionMobile = target.parentNode;
     let specificationMobile = compositionMobile.parentNode;
     specificationMobile.style.top = '65%';
-    let upB = specificationMobile.childNodes[1].childNodes[0];
-    upB.style.color = 'rgb(255, 255, 255';
+    // let upB = specificationMobile.childNodes[1].childNodes[0];
+    let upB = specificationMobile.childNodes[1];
+    if (upB != undefined) {
+        let upBShow = upB.childNodes[0];
+        upBShow.style.color = 'rgb(255, 255, 255)';
+    }
     let textHide = specificationMobile.childNodes[3];
     textHide.style.display = 'none';
 };
