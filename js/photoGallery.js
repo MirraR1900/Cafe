@@ -10,24 +10,24 @@ let flag = 0;
 let score = 1;
 
 let arrayPhoto = [
-    '../images/wedding/banquet_4.jpg',
-    '../images/wedding/banquet_11.jpg',
-    '../images/wedding/banquet_7.jpg',
-    '../images/wedding/banquet_6.jpg',
-    '../images/wedding/banquet_9.jpg',
-    '../images/wedding/banquet_3.jpg',
-    '../images/wedding/banquet_10.jpg',
-    '../images/wedding/banquet_2.jpg',
-    '../images/wedding/banquet_15.jpg',
-    '../images/wedding/banquet_12.jpg',
-    '../images/wedding/banquet_13.jpg',
-    '../images/wedding/banquet_5.jpg',
-    '../images/wedding/banquet_1.jpg',
-    '../images/wedding/banquet_14.jpg',
-    '../images/wedding/banquet_8.jpg'
+    '../images/wedding/banquet4.jpg',
+    '../images/wedding/banquet11.jpg',
+    '../images/wedding/banquet7.jpg',
+    '../images/wedding/banquet6.jpg',
+    '../images/wedding/banquet9.jpg',
+    '../images/wedding/banquet3.jpg',
+    '../images/wedding/banquet10.jpg',
+    '../images/wedding/banquet2.jpg',
+    '../images/wedding/banquet15.jpg',
+    '../images/wedding/banquet12.jpg',
+    '../images/wedding/banquet13.jpg',
+    '../images/wedding/banquet5.jpg',
+    '../images/wedding/banquet1.jpg',
+    '../images/wedding/banquet14.jpg',
+    '../images/wedding/banquet8.jpg'
 ];
 
-showPhoto.innerHTML = "<img src='../images/wedding/banquet_4.jpg' alt=''/>";
+showPhoto.innerHTML = "<img src='../images/wedding/banquet4.jpg' alt=''/>";
 
 createArrayPhoto.onclick = function() {
     hidePreviousButton();

@@ -3,7 +3,6 @@
         display: grid;
         grid-template-columns: 100%;
         overflow-x: hidden;
-        /*уберает пустое пространство справо*/
     }
     .header {
         background: url(../images/header-mobile.jpg) no-repeat;
