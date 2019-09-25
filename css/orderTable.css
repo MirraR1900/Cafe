@@ -116,6 +116,7 @@ body {
     text-align: center;
     width: 100%;
     border: none;
+    /* border: 2px solid red; */
 }
 
 .orderTableForm p {
@@ -136,10 +137,11 @@ body {
     font-size: 20px;
 }
 
-#calender,
+#datepicker,
 #timeOrder,
 #guests {
-    display: inline-block;
+    /* display: inline-block; */
+    display: inline;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     width: 150px;
@@ -150,6 +152,66 @@ body {
     margin-top: 10px;
     font-size: 20px;
 }
+
+.ui-datepicker {
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    width: 300px;
+}
+
+.ui-datepicker table {
+    width:278px;
+    border: 1px solid black;
+    color: white;
+    }
+     
+    .ui-datepicker table td {
+    text-align:center;
+    }
+     
+    .ui-datepicker a {
+    cursor:pointer;
+    text-decoration:none;
+    color: white;
+    }
+     
+
+    .ui-datepicker-header {
+        /* background: ; */
+        color: #ffffff;
+        font-family:'Times New Roman';
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        border-color: #111;
+    }
+    
+    .ui-datepicker-title {
+        text-align: center;
+        font-size: 15px;
+    
+    }
+    
+    .ui-datepicker-prev {
+        float: left;
+        margin-left: 10px;
+        cursor: pointer;
+        background-position: center -30px;
+    }
+    
+    .ui-datepicker-next {
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
+        background-position: center 0px;
+    }
+        
+    .ui-datepicker-title {
+    text-align: center;
+    font-weight:bold;
+    }
+
+    
 
 #calender::-webkit-inner-spin-button,
 #calender::-webkit-outer-spin-button {

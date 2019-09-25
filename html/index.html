@@ -5,12 +5,19 @@
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/modalWindowBanquet.css">
+    <link rel="stylesheet" href="../css/modalWindowPhotoGallery.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/datepicker-ru.js"></script>
     <link rel="stylesheet" href="../css/indexStyle.css">
     <link rel="stylesheet" href="../css/orderTable.css">
     <link rel="stylesheet" media="screen and (max-width: 320px)" href="../css/indexStyleMobile320px.css">
-    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 480px)" href="../css/indexStyleMobile320_480px.css">
-    <link rel="stylesheet" href="../css/modalWindowBanquet.css">
-    <link rel="stylesheet" href="../css/modalWindowPhotoGallery.css">
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 480px)"
+        href="../css/indexStyleMobile320_480px.css">
     <title>Dolce vita</title>
 </head>
 
@@ -26,13 +33,16 @@
                     <form class="orderTableForm" action="FormOrder" method="POST" name="orderTable">
                         <fieldset>
                             <p>
-                                <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required>
+                                <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя"
+                                    pattern="[А-Яа-яЁё]{1,15}" required>
                             </p>
                             <p>
                                 <input name="phone" id="phoneOrder" value="" placeholder="Телефон" required>
                             </p>
                             <fieldset>
-                                <input type="text" name="calender" id="calender" placeholder="Дата" title="Кликните мышкой чтобы выбрать дату">
+                                <input type="text" id="datepicker" class="calender" placeholder="Дата"
+                                    title="Кликните мышкой чтобы выбрать дату">
+                                    <!-- <input type="text" id="datepicker"> -->
                                 <input type="text" name="time" id="timeOrder" placeholder="Время">
                                 <select name="guests" id="guests" size="1">
                                     <option>Гости</option>
@@ -70,7 +80,7 @@
                 </div>
                 <div class="navigation">
                     <ul class="navigationSite">
-                        <li><a href="#">Главная</a></li>
+                        <li><a href="# ">Главная</a></li>
                         <li><a href="#story">О нас</a></li>
                         <li><a href="#menuDishes">Меню</a></li>
                         <li><a href="#banquets">Банкеты</a></li>
@@ -89,79 +99,81 @@
                     <p>+7(8459)78-78-60</p>
                     <p>Мы работаем для Вас <br>с 10 до 23 часов</p>
                 </div>
-                <div class="mobileNavigation ">
-                    <div class="contentNavigation ">
-                        <p><button class="buttonMobileNavigation "> &#9776; Меню</button></p>
-                        <div class="mobileNavigationSite ">
-                            <ul class="navigationSiteList ">
-                                <li><a href="# ">Главная</a></li>
-                                <li><a href="#story ">О нас</a></li>
-                                <li><a href="#menuDishes ">Меню</a></li>
-                                <li><a href="#banquets ">Банкеты</a></li>
-                                <li class="commentsHide "><a href="#comments ">Отзывы</a></li>
-                                <li><a href="#footer ">Контакты</a></li>
-                            </ul>
+                <div class=" mobileNavigation">
+                        <div class="contentNavigation">
+                            <p><button class="buttonMobileNavigation"> &#9776; Меню</button></p>
+                            <div class="mobileNavigationSite">
+                                <ul class="navigationSiteList">
+                                    <li><a href="#">Главная</a></li>
+                                    <li><a href="#story">О нас</a></li>
+                                    <li><a href="#menuDishes">Меню</a></li>
+                                    <li><a href="#banquets">Банкеты</a></li>
+                                    <li class="commentsHide"><a href="#comments">Отзывы</a></li>
+                                    <li><a href="#footer">Контакты</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
                 </div>
-                <div class="orderTable ">
-                    <a href="#orderTableForm "><button class="orderButton ">Забронировать столик</button></a>
+                <div class="orderTable">
+                    <a href="#orderTableForm"><button class="orderButton">Забронировать столик</button></a>
                 </div>
             </div>
         </div>
         <!--Main-->
-        <div class="story " id="story ">
+        <div class="story" id="story">
             <p><strong>Кафе "Dolce vita " место где всегда рады гостям.</strong></p>
-            <p>Кафе "Dolce vita " - это уютная атмосфера и блюда приготовленные с душой. Для наших гостей два просторных этажа с баром, открытой кухней, живой музыкой, собственной закрытой парковкой и прекрасным панорамным видом на город.
+            <p>Кафе "Dolce vita " - это уютная атмосфера и блюда приготовленные с душой. Для наших гостей два просторных
+                этажа с баром, открытой кухней, живой музыкой, собственной закрытой парковкой и прекрасным панорамным
+                видом на город.
             </p>
         </div>
-        <div class="menuDishes " id="menuDishes ">
+        <div class="menuDishes" id="menuDishes">
             <p>Меню</p>
-            <div class="listDishes ">
-                <div class="dish ">
-                    <a href="bisnessLunchStyle.html "><span class="description ">Бизнес ланч</span></a>
+            <div class="listDishes">
+                <div class="dish">
+                    <a href="bisnessLunchStyle.html"><span class="description">Бизнес ланч</span></a>
                     <img src="../images/bisnessLunch.jpg ">
                 </div>
-                <div class="dish ">
-                    <a href="soups.html "><span class="description ">Супы</span></a>
-                    <img src="../images/soups/soup.jpg ">
+                <div class="dish">
+                    <a href="soups.html"><span class="description">Супы</span></a>
+                    <img src="../images/soups/soup.jpg">
                 </div>
-                <div class="dish ">
-                    <a href="salads.html "><span class="description ">Салаты / Закуски</span></a>
-                    <img src="../images/salads/saladDolceVita.jpg ">
+                <div class="dish">
+                    <a href="salads.html"><span class="description">Салаты / Закуски</span></a>
+                    <img src="../images/salads/saladDolceVita.jpg">
                 </div>
-                <div class="dish ">
-                    <a href="meat.html "><span class="description ">Мясо</span></a>
-                    <img src="../images/meat/meats.jpg ">
+                <div class="dish">
+                    <a href="meat.html"><span class="description">Мясо</span></a>
+                    <img src="../images/meat/meats.jpg">
                 </div>
-                <div class="dish ">
-                    <a href="seafood.html "><span class="description ">Рыба / Морепродукты</span></a>
-                    <img src="../images/seafood/friedFish.jpg ">
+                <div class="dish">
+                    <a href="seafood.html"><span class="description">Рыба / Морепродукты</span></a>
+                    <img src="../images/seafood/friedFish.jpg">
                 </div>
-                <div class="dish ">
-                    <a href="sideDish.html "><span class="description ">Гарниры</span></a>
-                    <img src="../images/side_dish/boiledPotatoes.jpg ">
+                <div class="dish">
+                    <a href="sideDish.html"><span class="description">Гарниры</span></a>
+                    <img src="../images/side_dish/boiledPotatoes.jpg">
                 </div>
-                <div class="dish ">
-                    <a href="pasta.html "><span class="description ">Паста</span></a>
-                    <img src="../images/pasta/pasta.jpg ">
+                <div class="dish">
+                    <a href="pasta.html"><span class="description">Паста</span></a>
+                    <img src="../images/pasta/pasta.jpg">
                 </div>
-                <div class="dish ">
-                    <a href="drink.html "><span class="description ">Напитки</span></a>
-                    <img src="../images/drink/cappuccino.jpg ">
+                <div class="dish">
+                    <a href="drink.html"><span class="description">Напитки</span></a>
+                    <img src="../images/drink/cappuccino.jpg">
                 </div>
-                <div class="dish ">
-                    <a href="dessert.html "><span class="description ">Десерты</span></a>
-                    <img src="../images/dessert/cake.jpg ">
+                <div class="dish">
+                    <a href="dessert.html"><span class="description">Десерты</span></a>
+                    <img src="../images/dessert/cake.jpg">
                 </div>
             </div>
         </div>
-        <div class="banquets " id="banquets ">
+        <div class="banquets" id="banquets">
             <div>
                 <p>Банкеты и свадьбы</p>
             </div>
-            <div class="banquetContainer ">
-                <div class="banquetList ">
+            <div class="banquetContainer">
+                <div class="banquetList">
                     <ul>
                         <li>Два зала вместимостью от 30 человек</li>
                         <li>Просторный балкон для фотосессии</li>
@@ -171,48 +183,50 @@
                         <li>Разработка индивидуального меню</li>
                         <li>Проведение вечера тамадой в подарок</li>
                     </ul>
-                    <div class="buttonOrder ">
-                        <a href="#orderBanquet "><button class="orderButtonBanquet ">Заказать банкет</button></a>
+                    <div class="buttonOrder">
+                        <a href="#orderBanquet"><button class="orderButtonBanquet">Заказать банкет</button></a>
                     </div>
                 </div>
-                <div class="photoGallery ">
-                    <div><img src="../images/wedding/banquet4.jpg " alt=" "></div>
-                    <div><img src="../images/wedding/banquet11.jpg " alt=" "></div>
-                    <div><img src="../images/wedding/banquet7.jpg " alt=" "></div>
-                    <div><img src="../images/wedding/banquet6.jpg " alt=" "></div>
-                    <div><img src="../images/wedding/banquet9.jpg " alt=" "></div>
-                    <div><img src="../images/wedding/banquet3.jpg " alt=" "></div>
-                    <div><img src="../images/wedding/banquet10.jpg " alt=" "></div>
-                    <div><img src="../images/wedding/banquet2.jpg " alt=" "></div>
-                    <div class="coverHide "><img src="../images/wedding/banquet15.jpg " alt=" "><a href="#modalWindowPhotoGallery "><span class="hideClick showClick "><label
-                                    for="hideCheckbox "><strong>+</strong> Посмотреть фото</label></span>
+                <div class="photoGallery">
+                    <div><img src="../images/wedding/banquet4.jpg" alt=""></div>
+                    <div><img src="../images/wedding/banquet11.jpg" alt=""></div>
+                    <div><img src="../images/wedding/banquet7.jpg" alt=""></div>
+                    <div><img src="../images/wedding/banquet6.jpg" alt=""></div>
+                    <div><img src="../images/wedding/banquet9.jpg" alt=""></div>
+                    <div><img src="../images/wedding/banquet3.jpg" alt=""></div>
+                    <div><img src="../images/wedding/banquet10.jpg" alt=""></div>
+                    <div><img src="../images/wedding/banquet2.jpg" alt=""></div>
+                    <div class="coverHide"><img src="../images/wedding/banquet15.jpg" alt=""><a
+                            href="#modalWindowPhotoGallery"><span class="hideClick showClick"><label
+                                    for="hideCheckbox"><strong>+</strong> Посмотреть фото</label></span>
                         </a></div>
                 </div>
             </div>
-            <div class="modalWindowBanquet " id="orderBanquet ">
-                <div class="modalDialogBanquet ">
-                    <div class="modalContentBanquet ">
-                        <div class="modalHeaderBanquet ">
+            <div class="modalWindowBanquet" id="orderBanquet">
+                <div class="modalDialogBanquet">
+                    <div class="modalContentBanquet">
+                        <div class="modalHeaderBanquet">
                             <p>Заказать банкет</p>
-                            <a href="#close " title="Close " class="close ">X</a>
+                            <a href="#close" title="Close" class="close">X</a>
                         </div>
-                        <div class="modalBodyBanquet ">
-                            <form class="orderBanquetForm " action="formOrder " method="POST ">
+                        <div class="modalBodyBanquet">
+                            <form class="orderBanquetForm" action="formOrder" method="POST">
                                 <fieldset>
                                     <p>
-                                        <input type="text " id="firstName " name="name " placeholder="Имя " pattern="[А-Яа-яЁё]{1,15} ">
+                                        <input type="text" id="firstName" name="name" placeholder="Имя"
+                                            pattern="[А-Яа-яЁё]{1,15} ">
                                     </p>
                                     <p>
-                                        <input type="text " name="phone " id="phoneClient " placeholder="Телефон ">
+                                        <input type="text" name="phone" id="phoneClient" placeholder="Телефон">
                                     </p>
                                 </fieldset>
-                                <p id="checkboxBanquet ">
-                                    <input type="checkbox ">
-                                    <label for="checkboxBanquet "> Я согласен с условиями обработки персональных
+                                <p id="checkboxBanquet">
+                                    <input type="checkbox">
+                                    <label for="checkboxBanquet"> Я согласен с условиями обработки персональных
                                         данных</label>
                                 </p>
-                                <p class="buttonBanquet ">
-                                    <button class="buttonOrderBanquet " type="submit " form="orderBanquet ">Заказать
+                                <p class="buttonBanquet">
+                                    <button class="buttonOrderBanquet" type="submit" form="orderBanquet">Заказать
                                         банкет</button>
                                 </p>
                             </form>
@@ -221,49 +235,48 @@
                 </div>
             </div>
         </div>
-        <div class="modalWindowGallery " id="modalWindowPhotoGallery ">
-            <div class="modalGallery ">
-                <div class="modalContentGallery ">
-                    <div class="galleryHeader ">
-                        <div class="counter "></div>
-                        <div class="buttonClose ">
-                            <a href="#close " title="Close " class="close ">X</a>
+        <div class="modalWindowGallery" id="modalWindowPhotoGallery">
+            <div class="modalGallery">
+                <div class="modalContentGallery">
+                    <div class="galleryHeader">
+                        <div class="counter"></div>
+                        <div class="buttonClose">
+                            <a href="#close" title="Close" class="close">X</a>
                         </div>
                     </div>
-                    <div class="modalBodyGallery ">
-                        <div class="previousPhoto ">
-                            <button class="previousButton ">
-                                < </button> </div>
-                        <div class="showPhoto ">
+                    <div class="modalBodyGallery">
+                        <div class="previousPhoto">
+                            <button class="previousButton">
+                                < </button> </div> <div class="showPhoto">
                         </div>
-                        <div class="nextPhoto ">
-                            <button class="nextButton "> > </button>
+                        <div class="nextPhoto">
+                            <button class="nextButton"> > </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="comments " id="comments ">
-            <div class="commentHeader ">
+        <div class="comments" id="comments">
+            <div class="commentHeader">
                 <p>Оставьте свои отзовы и предложения</p>
             </div>
-            <div class="commentForm ">
-                <form id="comment " action="FormComment " method="POST " name="comment ">
+            <div class="commentForm">
+                <form id="comment" action="FormComment" method="POST" name="comment">
                     <p>
-                        <input type="text " id="name " name="name " placeholder="Имя " pattern="[А-Яа-яЁё]{1,15} " required>
+                        <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required>
                     </p>
                     <p>
-                        <input type="email " id="email " name="email " placeholder="E-mail " required>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
                     </p>
-                    <textarea id="textComment " name="textComment " placeholder="Напишите ваш отзыв " required></textarea>
+                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
                     <p>
-                        <button class="commentButton " type="submit " form="comment ">Отправить отзыв</button>
+                        <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
                     </p>
                 </form>
             </div>
         </div>
         <!--Footer-->
-        <div class="footer " id="footer ">
+        <div class="footer" id="footer">
             <p>ул. Ленина, 40</p>
             <p>+7(8459)78-78-60</p>
             <p>dolcevita@enjoy.ru</p>
@@ -274,10 +287,10 @@
         console.log('полная ширира окна - ' + window.innerWidth);
         console.log('ширина окна за вычетом полосы прокрутки - ' + document.documentElement.clientWidth);
     </script> -->
-    <script src=" ../js/formsIndex.js "></script>
-    <script src=" ../js/photoGallery.js "></script>
-    <script src=" ../js/mobileMenu.js "></script>
-    <script src=" ../js/windowWidth.js "></script>
+    <script src=" ../js/formsIndex.js"></script>
+    <script src=" ../js/photoGallery.js"></script>
+    <script src=" ../js/mobileMenu.js"></script>
+    <script src=" ../js/windowWidth.js"></script>
 </body>
 
 </html>

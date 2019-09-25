@@ -1,11 +1,11 @@
 let firstNameOrder = document.getElementById('firstNameOrder');
 let phonNumberOrder = document.getElementById('phoneOrder');
-let inputDate = document.getElementById('calender');
 let inputTime = document.getElementById('timeOrder');
 let numberGuests = document.getElementById('guests');
 let messageOrder = document.getElementById('textOrder');
 let checkOrder = document.getElementById('check');
 let buttomOrder = document.getElementsByClassName('ButtonOrder');
+
 
 window.addEventListener('DOMContentLoaded', function() {
     function setCursorPosition(pos, elem) {
@@ -41,14 +41,16 @@ window.addEventListener('DOMContentLoaded', function() {
 
 });
 
-inputDate.addEventListener('blur', function() {
-    this.type = 'text';
-});
 
-inputDate.addEventListener('focus', function() {
-    this.type = 'date';
+// inputDate.addEventListener('blur', function() {
+//     this.type = 'text';
+//     dateCalender.value = (dayDate + "." + monthCons + "." + year);
+      
+// });
 
-});
+// inputDate.addEventListener('focus', function() {
+//     this.type = 'date'; 
+// });
 
 inputTime.addEventListener('blur', function() {
     this.type = 'text';
