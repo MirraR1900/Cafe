@@ -1,5 +1,6 @@
 let firstNameOrder = document.getElementById('firstNameOrder');
 let phonNumberOrder = document.getElementById('phoneOrder');
+let phoneClient = document.getElementById('phoneClient');
 let inputTime = document.getElementById('timeOrder');
 let numberGuests = document.getElementById('guests');
 let messageOrder = document.getElementById('textOrder');
@@ -38,19 +39,11 @@ window.addEventListener('DOMContentLoaded', function() {
     phonNumberOrder.addEventListener('input', mask, false);
     phonNumberOrder.addEventListener('focus', mask, false);
     phonNumberOrder.addEventListener('blur', mask, false);
+    phoneClient.addEventListener('input', mask, false);
+    phoneClient.addEventListener('focus', mask, false);
+    phoneClient.addEventListener('blur', mask, false);
 
 });
-
-
-// inputDate.addEventListener('blur', function() {
-//     this.type = 'text';
-//     dateCalender.value = (dayDate + "." + monthCons + "." + year);
-      
-// });
-
-// inputDate.addEventListener('focus', function() {
-//     this.type = 'date'; 
-// });
 
 inputTime.addEventListener('blur', function() {
     this.type = 'text';

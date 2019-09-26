@@ -34,15 +34,14 @@
                         <fieldset>
                             <p>
                                 <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя"
-                                    pattern="[А-Яа-яЁё]{1,15}" required>
+                                    pattern="[А-Яа-яЁё]{1,15}" required />
                             </p>
                             <p>
-                                <input name="phone" id="phoneOrder" value="" placeholder="Телефон" required>
+                                <input name="phone" id="phoneOrder" value="" placeholder="Телефон" required />
                             </p>
                             <fieldset>
                                 <input type="text" id="datepicker" class="calender" placeholder="Дата"
                                     title="Кликните мышкой чтобы выбрать дату">
-                                    <!-- <input type="text" id="datepicker"> -->
                                 <input type="text" name="time" id="timeOrder" placeholder="Время">
                                 <select name="guests" id="guests" size="1">
                                     <option>Гости</option>
@@ -202,35 +201,35 @@
                         </a></div>
                 </div>
             </div>
-            <div class="modalWindowBanquet" id="orderBanquet">
-                <div class="modalDialogBanquet">
-                    <div class="modalContentBanquet">
-                        <div class="modalHeaderBanquet">
-                            <p>Заказать банкет</p>
-                            <a href="#close" title="Close" class="close">X</a>
-                        </div>
-                        <div class="modalBodyBanquet">
-                            <form class="orderBanquetForm" action="formOrder" method="POST">
-                                <fieldset>
-                                    <p>
-                                        <input type="text" id="firstName" name="name" placeholder="Имя"
-                                            pattern="[А-Яа-яЁё]{1,15} ">
-                                    </p>
-                                    <p>
-                                        <input type="text" name="phone" id="phoneClient" placeholder="Телефон">
-                                    </p>
-                                </fieldset>
-                                <p id="checkboxBanquet">
-                                    <input type="checkbox">
-                                    <label for="checkboxBanquet"> Я согласен с условиями обработки персональных
-                                        данных</label>
+        </div>
+        <div class="modalWindowBanquet" id="orderBanquet">
+            <div class="modalDialogBanquet">
+                <div class="modalContentBanquet">
+                    <div class="modalHeaderBanquet">
+                        <p>Заказать банкет</p>
+                        <a href="#close" title="Close" class="close">X</a>
+                    </div>
+                    <div class="modalBodyBanquet">
+                        <form class="orderBanquetForm" action="formOrder" method="POST">
+                            <fieldset>
+                                <p>
+                                    <input type="text" id="firstName" name="name" placeholder="Имя"
+                                    pattern="[А-Яа-яЁё]{1,15}" required />
                                 </p>
-                                <p class="buttonBanquet">
-                                    <button class="buttonOrderBanquet" type="submit" form="orderBanquet">Заказать
-                                        банкет</button>
+                                <p>
+                                    <input type="text" name="phone" id="phoneClient" placeholder="Телефон">
                                 </p>
-                            </form>
-                        </div>
+                            </fieldset>
+                            <p id="checkboxBanquet">
+                                <input type="checkbox">
+                                <label for="checkboxBanquet"> Я согласен с условиями обработки персональных
+                                    данных</label>
+                            </p>
+                            <p class="buttonBanquet">
+                                <button class="buttonOrderBanquet" type="submit" form="orderBanquet">Заказать
+                                    банкет</button>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
