@@ -433,7 +433,7 @@ ul.navigationSiteList a {
 
 @media only screen and (min-width: 710px) and (max-width: 800px) {
     .header {
-        background: url(../images/header-mobile.jpg) no-repeat;
+        background: url(../images/headerMobile.jpg) no-repeat;
         background-size: cover;
     }
     .navigation {
@@ -461,7 +461,7 @@ ul.navigationSiteList a {
 
 @media only screen and (min-width: 600px) and (max-width: 709px) {
     .header {
-        background: url(../images/header-mobile.jpg) no-repeat;
+        background: url(../images/headerMobile.jpg) no-repeat;
         background-size: cover;
     }
     .navigation {
@@ -497,7 +497,7 @@ ul.navigationSiteList a {
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
     .header {
-        background: url(../images/header-mobile.jpg) no-repeat;
+        background: url(../images/headerMobile.jpg) no-repeat;
         background-size: cover;
     }
     .navigation {
