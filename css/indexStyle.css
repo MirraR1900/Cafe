@@ -542,3 +542,102 @@ ul.navigationSiteList a {
         font-size: 2.5em;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 100%;
+        overflow-x: hidden;
+    }
+    .header {
+        background: url(../images/headerMobile.jpg) no-repeat;
+    }
+    .name-cafe {
+        font-size: 2.5em;
+        font-weight: 100;
+    }
+    .navigation {
+        display: none;
+    }
+    .info {
+        display: none;
+    }
+    .info-mobile {
+        display: block;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        font-family: "Times new Roman", Arial, sans-serif;
+        text-align: center;
+    }
+    .buttonMobileNavigation {
+        display: block;
+        width: 70px;
+        height: 70px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10%;
+        font-size: 20px;
+        font-family: "Times new Roman", Arial, sans-serif;
+        margin-bottom: 10px;
+    }
+    .mobile-navigation {
+        display: block;
+        text-align: center;
+    }
+    .mobileNavigationSite {
+        background: rgb(0, 0, 0);
+    }
+    .navigationSiteList li {
+        list-style: none;
+    }
+    ul.navigationSiteList a {
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: "Times new Roman", Arial, sans-serif;
+        font-size: 23px;
+        margin-top: 10px;
+    }
+    .orderButton {
+        display: none;
+    }
+    .story {
+        padding: 20px;
+    }
+    .story p {
+        font-size: 1.5em;
+    }
+    .menu-dishes p {
+        font-size: 2em;
+    }
+    .list-dishes {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    .specification {
+        font-size: 2em;
+        padding-top: 20%;
+    }
+    .banquets p {
+        font-size: 2em;
+    }
+    .banquet-container {
+        grid-template-columns: 1fr;
+    }
+    .banquet-list li {
+        font-size: 1.2em;
+    }
+    .photo-gallery {
+        display: none;
+    }
+    .comment-header p {
+        font-size: 2em;
+    }
+    .commentForm input {
+        width: 280px;
+        font-size: 20px;
+    }
+    .commentForm textarea {
+        width: 280px;
+    }
+}
