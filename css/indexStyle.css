@@ -641,3 +641,108 @@ ul.navigationSiteList a {
         width: 280px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 100%;
+        overflow-x: hidden;
+    }
+    .header {
+        background: url(../images/headerMobile.jpg) no-repeat;
+    }
+    .name-cafe {
+        font-size: 2em;
+        font-weight: 100;
+    }
+    .navigation {
+        display: none;
+    }
+    .info {
+        display: none;
+    }
+    .info-mobile {
+        display: block;
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+        font-family: "Times new Roman", Arial, sans-serif;
+        text-align: center;
+    }
+    .buttonMobileNavigation {
+        display: block;
+        width: 70px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10%;
+        font-size: 18px;
+        font-family: "Times new Roman", Arial, sans-serif;
+        margin-bottom: 10px;
+    }
+    .mobile-navigation {
+        display: block;
+        text-align: center;
+    }
+    .mobileNavigationSite {
+        background: rgb(0, 0, 0);
+    }
+    .navigationSiteList li {
+        list-style: none;
+    }
+    ul.navigationSiteList a {
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: "Times new Roman", Arial, sans-serif;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .orderButton {
+        display: none;
+    }
+    .story {
+        padding: 10px;
+    }
+    .story p {
+        font-size: 1.2em;
+    }
+    .menu-dishes p {
+        font-size: 2em;
+    }
+    .list-dishes {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    .specification {
+        font-size: 1.5em;
+        padding-top: 20%;
+    }
+    .banquets p {
+        font-size: 2em;
+    }
+    .banquet-container {
+        grid-template-columns: 1fr;
+    }
+    .banquet-list li {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    .banquet-list li:before {
+        display: none;
+    }
+    .orderButtonBanquet {
+        display: none;
+    }
+    .photo-gallery {
+        display: none;
+    }
+    .comments {
+        display: none;
+    }
+    .comments-hide {
+        display: none;
+    }
+    .footer p {
+        font-size: 1.2em;
+    }
+}
