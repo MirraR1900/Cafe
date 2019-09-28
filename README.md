@@ -1,4 +1,9 @@
-# Site Cafe Dolce Vita
+# Website Cafe Dolce Vita
+
+![website](website.png "website")
+
+[View website](http://site-test-cafe-dolce-vita.netlify.com)
+
 
 The site is a practical work and was written with the aim of learning the basics of layout and the JavaScript language.
 
