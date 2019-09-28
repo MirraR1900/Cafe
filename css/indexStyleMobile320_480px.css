@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    .main-container {
+    .mainContainer {
         display: grid;
         grid-template-columns: 100%;
         overflow-x: hidden;
@@ -7,7 +7,7 @@
     .header {
         background: url(../images/headerMobile.jpg) no-repeat;
     }
-    .name-cafe {
+    .nameCafe {
         font-size: 2.5em;
         font-weight: 100;
     }
@@ -17,7 +17,7 @@
     .info {
         display: none;
     }
-    .info-mobile {
+    .infoMobile {
         display: block;
         color: rgb(255, 255, 255);
         font-size: 1.5em;
@@ -25,7 +25,6 @@
         text-align: center;
     }
     .buttonMobileNavigation {
-        display: block;
         width: 70px;
         height: 70px;
         background: rgba(255, 255, 255, 0.6);
@@ -34,7 +33,7 @@
         font-family: "Times new Roman", Arial, sans-serif;
         margin-bottom: 10px;
     }
-    .mobile-navigation {
+    .mobileNavigation {
         display: block;
         text-align: center;
     }
@@ -62,30 +61,33 @@
     .story p {
         font-size: 1.5em;
     }
-    .menu-dishes p {
+    .menuDishes p {
         font-size: 2em;
     }
-    .list-dishes {
+    .listDishes {
         display: grid;
         grid-template-columns: 80%;
     }
-    .specification {
+    .description {
         font-size: 2em;
         padding-top: 20%;
     }
     .banquets p {
         font-size: 2em;
     }
-    .banquet-container {
+    .banquetContainer {
         grid-template-columns: 1fr;
     }
-    .banquet-list li {
+    .banquetList li {
         font-size: 1.2em;
     }
-    .photo-gallery {
+    .buttonOrder {
         display: none;
     }
-    .comment-header p {
+    .photoGallery {
+        display: none;
+    }
+    .commentHeader p {
         font-size: 2em;
     }
     .commentForm input {
@@ -96,3 +98,5 @@
         width: 280px;
     }
 }
+
+
