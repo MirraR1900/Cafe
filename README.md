@@ -12,4 +12,6 @@ The site is a practical work and was written with the aim of learning the basics
 - CSS3
 - JavaScript ES6
 - JQuery
+- Browsers Google Chrome, FireFox, Opera
+- Do not support IE
 
