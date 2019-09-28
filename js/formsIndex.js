@@ -6,8 +6,9 @@ let numberGuests = document.getElementById('guests');
 let messageOrder = document.getElementById('textOrder');
 let checkOrder = document.getElementById('check');
 let buttomOrder = document.getElementsByClassName('ButtonOrder');
+let valueinputTime = inputTime.value;
 
-
+//  mask for entering a phone number
 window.addEventListener('DOMContentLoaded', function() {
     function setCursorPosition(pos, elem) {
         elem.focus();
@@ -39,16 +40,34 @@ window.addEventListener('DOMContentLoaded', function() {
     phonNumberOrder.addEventListener('input', mask, false);
     phonNumberOrder.addEventListener('focus', mask, false);
     phonNumberOrder.addEventListener('blur', mask, false);
-    phoneClient.addEventListener('input', mask, false);
-    phoneClient.addEventListener('focus', mask, false);
-    phoneClient.addEventListener('blur', mask, false);
+
+    /**
+     * An error appears on the Business Lunch page in the console. 
+     * Because the field on the Index page is also read. There phoneClient is null
+     */
+    if(phoneClient != null) {
+        phoneClient.addEventListener('input', mask, false);
+        phoneClient.addEventListener('focus', mask, false);
+        phoneClient.addEventListener('blur', mask, false);
+    }
+   
 
 });
 
+//  Checks the time range in the input "Time"
 inputTime.addEventListener('blur', function() {
     this.type = 'text';
+    let valueinputTime = inputTime.value;
+    let valueParse = parseInt(valueinputTime);
+
+    if(valueParse < 10 || valueParse > 22) {
+        inputTime.style.borderColor = 'red';
+    } 
 });
 
 inputTime.addEventListener('focus', function() {
     this.type = 'time';
+    //return the border color so that the user enters the correct value
+    inputTime.style.borderColor = '';
+    inputTime.style.borderColor = 'rgba(255, 255, 255, 0.5)';
 });
