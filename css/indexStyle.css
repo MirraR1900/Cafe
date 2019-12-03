@@ -182,7 +182,7 @@ ul.navigationSiteList a {
 }
 
 .dish {
-    border: 1 px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
     display: grid;
