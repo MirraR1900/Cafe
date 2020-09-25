@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="css/indexHeader.css">
-    <link rel="stylesheet" href="css/modalWindowBanquet.css">
-    <link rel="stylesheet" href="css/modalWindowPhotoGallery.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/indexStyle.css">
     <link rel="stylesheet" href="css/orderTable.css">
+    <link rel="stylesheet" href="css/modalWindowBanquet.css">
+    <link rel="stylesheet" href="css/modalWindowPhotoGallery.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -68,60 +68,40 @@
             </div>
         </div>
     </div>
-    <!-- <div class="mainContainer"> -->
     <header>
         <div class="header">
             <div class="headerFront">
-                <div class="nameCafe">
-                    Dolce vita
-                </div>
-                <div class="navigation">
-                    <ul class="navigationSite">
-                        <li><a href="# ">Главная</a></li>
-                        <li><a href="#story">О нас</a></li>
-                        <li><a href="#menuDishes">Меню</a></li>
-                        <li><a href="#banquets">Банкеты</a></li>
-                        <li><a href="#comments">Отзовы</a></li>
-                        <li><a href="#footer">Контакты</a></li>
-                    </ul>
-                </div>
+                    <div class="nameCafe">
+                        Dolce vita 
+                    </div>
+                    <div class="orderTable">
+                        <a href="#orderTableForm"><button class="orderButton">Забронировать столик</button></a>
+                    </div>
                 <div class="info">
                     <p>ул. Ленина, 40</p>
-                    <p>+0(0000)00-00-00</p>
+                    <p class="infoMobile">Заказать столик по тел:</p>
+                    <p>+7(8459)78-78-60</p>
                     <p>Мы работаем для Вас с 10 до 23 часов</p>
                 </div>
-                <div class="infoMobile">
-                    <p>ул. Ленина, 40</p>
-                    <p>Заказать столик по тел:</p>
-                    <p>+0(0000)00-00-00</p>
-                    <p>Мы работаем для Вас <br>с 10 до 23 часов</p>
-                </div>
-                <div class="mobileNavigation">
-                    <div class="contentNavigation">
-                        <p><button class="buttonMobileNavigation"> &#9776; Меню</button></p>
-                        <div class="mobileNavigationSite">
-                            <ul class="navigationSiteList">
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#story">О нас</a></li>
-                                <li><a href="#menuDishes">Меню</a></li>
-                                <li><a href="#banquets">Банкеты</a></li>
-                                <li class="commentsHide"><a href="#comments">Отзывы</a></li>
-                                <li><a href="#footer">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="orderTable">
-                    <a href="#orderTableForm"><button class="orderButton">Забронировать столик</button></a>
-                </div>
+                <nav class="navigation">
+                    <div class="mobileNavigation"><button class="buttonMobileNavigation" id="buttonMobileNavigation"> &#9776; Меню</button></div>
+                    <ul class="navigationSite" id="navigationSite">
+                        <li class="navItem"><a class="navLink" href="# ">Главная</a></li>
+                        <li class="navItem"><a class="navLink" href="#story">О нас</a></li>
+                        <li class="navItem"><a class="navLink" href="#menuDishes">Меню</a></li>
+                        <li class="navItem"><a class="navLink" href="#banquets">Банкеты</a></li>
+                        <li class="navItem"><a class="navLink" href="#comments">Отзывы</a></li>
+                        <li class="navItem"><a class="navLink" href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-    <!--Main-->
     <main>
         <div class="story" id="story">
-            <p><strong>Кафе "Dolce vita " место где всегда рады гостям.</strong></p>
-            <p>Кафе "Dolce vita " - это уютная атмосфера и блюда приготовленные с душой. Для наших гостей два просторных
+            <h1>Кафе "Dolce vita " место где всегда рады гостям.</h1>
+            <p class="descriptionCafe">Кафе "Dolce vita " - это уютная атмосфера и блюда приготовленные с душой. Для
+                наших гостей два просторных
                 этажа с баром, открытой кухней, живой музыкой, собственной закрытой парковкой и прекрасным панорамным
                 видом на город.
             </p>
@@ -285,11 +265,9 @@
             <p>&copy;2019</p>
         </div>
     </footer>
-    <!-- </div> -->
     <script src=" js/formsIndex.js"></script>
     <script src=" js/photoGallery.js"></script>
     <script src=" js/mobileMenu.js"></script>
-    <script src="js/windowWidth.js"></script>
 </body>
 
 </html>

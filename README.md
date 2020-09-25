@@ -1,7 +1,5 @@
 # Website Cafe Dolce Vita
 
-![website](website.png "website")
-
 [View website](http://site-test-cafe-dolce-vita.netlify.com)
 
 

@@ -4,12 +4,13 @@ header {
     overflow: hidden;
 }
 .header {
-    background: url(../images/header7.png) no-repeat;
+    background: url(../images/header7.jpg) no-repeat;
     background-size: cover;
     background-size: 100% 100%;
     height: auto;
 }
 .headerFront {
+    padding-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
@@ -22,79 +23,15 @@ header {
     font-weight: 400;
     text-align: center;
 }
-.navigation {
-    list-style: none;
-    text-align: center;
-}
-.navigationSite li {
-    display: inline;
-}
-ul.navigationSite a {
-    display: inline-block;
-    width: 100px;
-    padding: 10px;
-    opacity: 0, 1;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgb(105, 105, 105);
-    border-radius: 30px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: "Times new Roman", Arial, sans-serif;
-    font-size: 20px;
-    font-style: italic;
-}
-ul.navigationSite a:hover {
-    background-color: rgba(169, 169, 169, 0.4);
-    color: rgb(255, 255, 255);
-}
 .info {
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-family: "Times New Roman", Arial, sans-serif;
     font-style: italic;
     text-align: center;
-    padding-top: 50px;
 }
 .infoMobile {
     display: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.5em;
-    font-family: "Times new Roman", Arial, sans-serif;
-    text-align: center;
-}
-.mobileNavigation {
-    display: none;
-}
-.buttonMobileNavigation {
-    width: 80px;
-    height: 70px;
-    margin-top: 1.2em;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 10%;
-    font-size: 25px;
-    font-family: "Times new Roman", Arial, sans-serif;
-}
-.mobileNavigation {
-    display: none;
-    text-align: center;
-}
-.mobileNavigationSite {
-    display: none;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1em 0 1em 0;
-}
-.navigationSiteList li {
-    list-style: none;
-}
-ul.navigationSiteList a {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: "Times new Roman", Arial, sans-serif;
-    font-size: 23px;
-    margin-top: 10px;
 }
 .orderTable {
     text-align: center;
@@ -122,73 +59,26 @@ ul.navigationSiteList a {
         background: url(../images/headerMobile1.jpg) no-repeat;
         background-size: cover;
     }
-    .navigation {
-        display: none;
-    }
     .info {
-        display: none;
+        font-size: 25px;
     }
     .infoMobile {
         display: block;
-    }
-    .mobileNavigation {
-        display: block;
-    }
-    .orderTable {
-        display: none;
-    }
+    }  
 }
 @media only screen and (max-width: 768px) {
     .header {
         background: url(../images/headerMobile4.jpg) no-repeat;
         background-size: cover;
     }
-    .navigation {
-        display: none;
-    }
     .info {
-        display: none;
-    }
-    .infoMobile {
-        display: block;
-        font-size: 1.5em;
-    }
-    .buttonMobileNavigation {
-        font-size: 25px;
-    }
-    .mobileNavigation {
-        display: block;
-    }
-    ul.navigationSiteList a {
-        font-size: 23px;
+        font-size: 22px;
     }
 }
 @media only screen and (max-width: 600px) {
     .header {
         background: url(../images/headerMobile5.jpg) no-repeat;
         background-size: cover;
-    }
-
-    .navigation {
-        display: none;
-    }
-    .info {
-        display: none;
-    }
-    .infoMobile {
-        display: block;
-        font-size: 1.5em;
-    }
-    .buttonMobileNavigation {
-        font-size: 22px;
-    }
-    .mobileNavigation {
-        display: block;
-    }
-    ul.navigationSiteList a {
-        display: block;
-        font-size: 23px;
-        margin-top: 10px;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -201,46 +91,9 @@ ul.navigationSiteList a {
         font-size: 2.5em;
         font-weight: 100;
     }
-    .navigation {
-        display: none;
-    }
+
     .info {
-        display: none;
-    }
-    .infoMobile {
-        display: block;
-        color: rgb(255, 255, 255);
-        font-size: 1.5em;
-        font-family: "Times new Roman", Arial, sans-serif;
-        text-align: center;
-    }
-    .buttonMobileNavigation {
-        width: 70px;
-        height: 70px;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 10%;
-        font-size: 20px;
-        font-family: "Times new Roman", Arial, sans-serif;
-        margin-bottom: 10px;
-    }
-    .mobileNavigation {
-        display: block;
-        text-align: center;
-    }
-    .mobileNavigationSite {
-        background: rgb(0, 0, 0);
-    }
-    .navigationSiteList li {
-        list-style: none;
-    }
-    ul.navigationSiteList a {
-        display: block;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: "Times new Roman", Arial, sans-serif;
-        font-size: 23px;
-        margin-top: 10px;
+       font-size: 20px;
     }
     .orderButton {
         display: none;

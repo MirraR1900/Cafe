@@ -1,79 +1,13 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
+main {
+    margin: 0 auto;
     max-width: 1280px;
-    margin: 0 auto;
-    background: rgba(255, 228, 196, 0.7);
+    overflow: hidden;
 }
-
-.header {
-    background: url(../images/header.png) no-repeat;
-    background-size: 100% 100%;
-    height: auto;
-}
-
-.headerFront {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-}
-
-.nameCafe {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-family: "Times new Roman", Arial, sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    text-align: center;
-}
-
-.navigation {
-    list-style: none;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.navigationSite li {
-    display: inline;
-}
-
-ul.navigationSite a {
-    display: inline-block;
-    width: 100px;
-    padding: 10px;
-    opacity: 0, 1;
-    background: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgb(105, 105, 105);
-    border-radius: 30px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: "Times new Roman", Arial, sans-serif;
-    font-size: 20px;
-    font-style: italic;
-}
-
-ul.navigationSite a:hover {
-    background-color: rgba(169, 169, 169, 0.4);
-    color: rgb(255, 255, 255);
-}
-
-.mobileNavigation {
-    display: none;
-}
-
-.content {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
 .main {
     text-align: center;
     font-size: 30px;
@@ -92,22 +26,37 @@ ul.navigationSite a:hover {
     font-weight: 400;
     text-align: center;
 }
-
-.bissnesMenu p {
+.bissnesMenu {
     text-align: center;
-    font-size: 24px;
-    padding: 10px;
+}
+
+.specialOfferItem {
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+.specialOffer {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+.specialOfferInfo {
+    color: rgb(178, 34, 34);
+    font-size: 18px;
+}
+
+.priceSpecialOffer {
+    color: rgb(178, 34, 34);
 }
 
 .bissnesMenuInfo {
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(188, 143, 143);
+    color:  rgb(188, 143, 143);
 }
 
 .reservation {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
 }
 
 .resParagraph {
@@ -139,6 +88,11 @@ ul.navigationSite a:hover {
     border: 3px solid rgb(255, 255, 255);
 }
 
+footer {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
 .footer {
     background: rgba(0, 0, 0, 0.8);
     color: rgb(255, 255, 255);
@@ -147,221 +101,13 @@ ul.navigationSite a:hover {
     text-align: center;
 }
 
-.footer p {
-    margin: 5px;
-}
 
 @media screen and (max-width: 900px) {
-    ul.navigationSite a {
-        width: 80px;
-        font-size: 18px;
-    }
     .footer {
         font-size: 20px;
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 850px) {
-    .navigation {
-        display: none;
-    }
-    .buttonMobileNavigation {
-        width: 80px;
-        height: 70px;
-        margin-top: 1.2em;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 10%;
-        font-size: 25px;
-        font-family: "Times new Roman", Arial, sans-serif;
-    }
-    .mobileNavigation {
-        display: block;
-        text-align: center;
-    }
-    .mobileNavigationSite {
-        display: none;
-        background: rgba(0, 0, 0, 0.6);
-        padding: 1em 0 1em 0;
-    }
-    .navigationSiteList li {
-        list-style: none;
-    }
-    ul.navigationSiteList a {
-        display: block;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: "Times new Roman", Arial, sans-serif;
-        font-size: 23px;
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .container {
-        display: grid;
-        grid-template-columns: 100%;
-        overflow-x: hidden;
-    }
-    .header {
-        background: url(../images/header-mobile.jpg) no-repeat;
-    }
-    .navigation {
-        display: none;
-    }
-    .buttonMobileNavigation {
-        width: 80px;
-        height: 70px;
-        margin-top: 1.2em;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 10%;
-        font-size: 25px;
-        font-family: "Times new Roman", Arial, sans-serif;
-    }
-    .mobileNavigation {
-        display: block;
-        text-align: center;
-    }
-    .mobileNavigationSite {
-        display: none;
-        background: rgba(0, 0, 0, 0.6);
-        padding: 1em 0 1em 0;
-    }
-    .navigationSiteList li {
-        list-style: none;
-    }
-    ul.navigationSiteList a {
-        display: block;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: "Times new Roman", Arial, sans-serif;
-        font-size: 23px;
-        margin-top: 10px;
-    }
-    .headline {
-        font-size: 30px;
-    }
-    .content {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .main {
-        font-size: 20px;
-        border: 4px solid rgb(222, 184, 135);
-        margin-top: 10px;
-    }
-    .bissnesMenu p {
-        font-size: 18px;
-    }
-    .orderTable {
-        display: none;
-    }
-    .reservation {
-        font-size: 20px;
-    }
-    .resParagraph {
-        font-size: 20px;
-    }
-}
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    .mainContainer {
-        display: grid;
-        grid-template-columns: 100%;
-        overflow-x: hidden;
-    }
-    .header {
-        background: url(../images/headerMobile.jpg) no-repeat;
-    }
-    .nameCafe {
-        font-size: 2.5em;
-        font-weight: 100;
-    }
-    .navigation {
-        display: none;
-    }
-    .info {
-        display: none;
-    }
-    .infoMobile {
-        display: block;
-        color: rgb(255, 255, 255);
-        font-size: 1.5em;
-        font-family: "Times new Roman", Arial, sans-serif;
-        text-align: center;
-    }
-    .buttonMobileNavigation {
-        width: 70px;
-        height: 70px;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 10%;
-        font-size: 20px;
-        font-family: "Times new Roman", Arial, sans-serif;
-        margin-bottom: 10px;
-    }
-    .mobileNavigation {
-        display: block;
-        text-align: center;
-    }
-    .mobileNavigationSite {
-        background: rgb(0, 0, 0);
-    }
-    .navigationSiteList li {
-        list-style: none;
-    }
-    ul.navigationSiteList a {
-        display: block;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-family: "Times new Roman", Arial, sans-serif;
-        font-size: 23px;
-        margin-top: 10px;
-    }
-    .orderButton {
-        display: none;
-    }
-    .story {
-        padding: 20px;
-    }
-    .story p {
-        font-size: 1.5em;
-    }
-    .menuDishes p {
-        font-size: 2em;
-    }
-    .listDishes {
-        display: grid;
-        grid-template-columns: 80%;
-    }
-    .description {
-        font-size: 2em;
-        padding-top: 20%;
-    }
-    .banquets p {
-        font-size: 2em;
-    }
-    .banquetContainer {
-        grid-template-columns: 1fr;
-    }
-    .banquetList li {
-        font-size: 1.2em;
-    }
-    .buttonOrder {
-        display: none;
-    }
-    .photoGallery {
-        display: none;
-    }
-    .commentHeader p {
-        font-size: 2em;
-    }
-    .commentForm input {
-        width: 280px;
-        font-size: 20px;
-    }
-    .commentForm textarea {
-        width: 280px;
-    }
+
 }

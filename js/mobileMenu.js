@@ -1,33 +1,24 @@
-let buttonMobileNavigation = document.querySelector('.buttonMobileNavigation');
-let mobileNavigationSite = document.querySelector('.mobileNavigationSite');
-let flagСondition = false;
+let buttonMobileNavigation = document.getElementById("buttonMobileNavigation");
+let navigationSite = document.getElementById("navigationSite");
 
-/**
- * When a button is pressed, if flagСondition is false, it changes the color of the button, 
- * opens the menu, sets display: block, flagСondition sets true. 
- * When pressed again, the menu closes, the button changes color by setting display: none
- * to close the menu and flagCondition assigns false
- */
 function pressButton() {
     if (flagСondition === false) {
         buttonMobileNavigation.style.color = '';
-        buttonMobileNavigation.style.color = 'rgb(0, 0, 255)'; // blue
-        openMenu();
+        buttonMobileNavigation.style.color = 'rgb(0, 0, 255)'; 
+        tooggleMenu();
     } else {
         buttonMobileNavigation.style.color = '';
-        buttonMobileNavigation.style.color = 'rgb(0, 0, 0,)'; // black
-        closeMenu();
+        buttonMobileNavigation.style.color = 'rgb(0, 0, 0,)'; 
+        tooggleMenu();
     }
 };
 
-function openMenu() {
-    mobileNavigationSite.style.display = 'block';
-    flagСondition = true;
-};
-
-function closeMenu() {
-    mobileNavigationSite.style.display = 'none';
-    flagСondition = false;
-};
+function tooggleMenu() {
+    if (navigationSite.className === "navigationSite") {
+        navigationSite.className += " adaptive";
+    } else {
+        navigationSite.className = "navigationSite";
+    }
+}
 
 buttonMobileNavigation.addEventListener("click", pressButton);

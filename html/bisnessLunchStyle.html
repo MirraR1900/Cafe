@@ -4,140 +4,127 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/bisnessLunchStyle.css">
     <link rel="stylesheet" href="../css/bissnesLunchOrderTable.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/calendar.js"></script>
     <script src="../js/datepicker-ru.js"></script>
-    <!-- <link rel="stylesheet" media="screen and (max-width: 320px)" href="../css/bisnessLunchStyle320.css"> -->
-    <!-- <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 480px)" href="../css/bisnessLunchStyle320_480.css"> -->
     <title>Бизнес-ланч</title>
 </head>
 
 <body>
-    <div>
-        <div class="container">
-            <!--Header-->
-            <div class="header">
-                <div class="headerFront">
-                    <div class="nameCafe">
-                        Dolce vita
-                    </div>
-                    <div class="navigation">
-                        <ul class="navigationSite">
-                            <li><a href="../index.html">Главная</a></li>
-                            <li><a href="../index.html#story">О нас</a></li>
-                            <li><a href="../index.html#menu-dishes">Меню</a></li>
-                            <li><a href="../index.html#banquets">Банкеты</a></li>
-                            <li><a href="../index.html#comments">Отзывы</a></li>
-                            <li><a href="../index.html#footer">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobileNavigation">
-                        <div class="contentNavigation">
-                            <p><button class="buttonMobileNavigation"> &#9776; Меню</button></p>
-                            <div class="mobileNavigationSite">
-                                <ul class="navigationSiteList">
-                                    <li><a href="../index.html">Главная</a></li>
-                                    <li><a href="../index.html#story">О нас</a></li>
-                                    <li><a href="../index.html#menu-dishes">Меню</a></li>
-                                    <li><a href="../index.html#banquets">Банкеты</a></li>
-                                    <li><a href="../index.html#comments">Отзывы</a></li>
-                                    <li><a href="../index.html#footer">Контакты</a></li>
-                                </ul>
-                            </div>
+    <header>
+        <div class="header">
+            <div class="headerFront">
+                <div class="nameCafe">
+                    Dolce vita
+                </div>
+                <nav class="navigation">
+                    <div class="mobileNavigation"><button class="buttonMobileNavigation" id="buttonMobileNavigation">
+                            &#9776; Меню</button></div>
+                    <ul class="navigationSite" id="navigationSite">
+                        <li class="navItem"><a class="navLink" href="../index.html">Главная</a></li>
+                        <li class="navItem"><a class="navLink" href="../index.html#story">О нас</a></li>
+                        <li class="navItem"><a class="navLink" href="../index.html#menu-dishes">Меню</a></li>
+                        <li class="navItem"><a class="navLink" href="../index.html#banquets">Банкеты</a></li>
+                        <li class="navItem"><a class="navLink" href="../index.html#comments">Отзывы</a></li>
+                        <li class="navItem"><a class="navLink" href="../index.html#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="headline">Бизнес-ланчи</h1>
+        <div class="bissnesMenu">
+            <h2 class="specialOffer">Специальное предложение</h2>
+            <p class="specialOfferInfo">Понедельник - пятница</p>
+            <p class="specialOfferInfo">С 12:00 до 16:00 часов</p>
+            <p class="specialOfferItem">Суп-пюре с грибами, салат "Цезарь с курицей", картофель пюре, стейк лососем
+                <strong class="priceSpecialOffer">810
+                    руб</strong></p>
+            <p class="specialOfferItem">Суп с лососем, паста с креветками, салат "Вегетарианский" <strong
+                    class="priceSpecialOffer">780 руб</strong></p>
+            <p class="specialOfferItem">Солянка с говядиной, лосось с овощами, салат "Весна" <strong
+                    class="priceSpecialOffer">630 руб</strong></p>
+            <p class="specialOfferItem">Суп с фрикадельками, тортеллини, салат "Греческий" <strong
+                    class="priceSpecialOffer">660 руб</strong></p>
+            <p class="bissnesMenuInfo"><small>Уважаемы гости, любое из предложенных блюд может быть заменено
+                    на
+                    альтернативное.</small></p>
+        </div>
+        <div class="reservation">
+            <h2>Забронировать столик</h2>
+            <p>Любой столик можно забронировать по телефону: <strong>+7(8459)78-78-60 </strong> или онлайн.</p>
+            <p class="info"><small>Уважаемые гости, столик бронируется не позднее, чем за 2 часа до
+                    мероприятия.</small>
+            </p>
+            <div class="orderTable">
+                <a href="#orderTableForm"><button class="orderButton reservationButton">Забронировать
+                        столик</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>ул. Ленина, 40</p>
+            <p>+7(8459)78-78-60</p>
+            <p>dolcevita@enjoy.ru</p>
+            <p>&copy;2019</p>
+        </div>
+    </footer>
+    <div id="orderTableForm" class="modalWindow">
+        <div class="modalDialog">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <p class="modalTitle">Бизнес-ланч бронирование столика</p>
+                    <a href="#close" title="Close" class="close">X</a>
+                </div>
+                <div class="modalBody">
+                    <form class="orderTableForm" action="FormOrder" method="POST" name="orderTable">
+                        <fieldset>
+                            <p>
+                                <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя"
+                                    pattern="[А-Яа-яЁё]{1,15}" required />
+                            </p>
+                            <p>
+                                <input name="phone" id="phoneOrder" value="" placeholder="Телефон">
+                            </p>
+                            <p>
+                                <input type="email" id="email" placeholder="E-mail" required />
+                            </p>
+                            <fieldset>
+                                <input type="text" id="datepicker" class="calender" placeholder="Дата"
+                                    title="Кликните мышкой чтобы выбрать дату">
+                                <input type="text" name="time" id="timeOrder" placeholder="Время">
+                                <select name="guests" id="guests" size="1">
+                                    <option value="data" selected>Гости</option>
+                                    <option value="2">2 гостя</option>
+                                    <option value="3">3 гостя</option>
+                                    <option value="4">4 гостя</option>
+                                    <option value="5">5 гостей</option>
+                                    <option value="6">6 гостей</option>
+                                    <option value="7">7 гостей</option>
+                                    <option value="8">8 гостей</option>
+                                    <option value="9">9 гостей</option>
+                                    <option value="10">10 гостей</option>
+                                </select>
+                            </fieldset>
+                        </fieldset>
+                        <div id="check">
+                            <input type="checkbox">
+                            <label for="check1">Я согласен с условиями обработки персональных данных</label>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content">
-                <div class="main">
-                    <div class="headline">Бизнес-ланчи</div>
-                    <p>Понедельник - пятница</p>
-                    <p>С 12:00 до 16:00 часов</p>
-                    <!--Menu-->
-                    <div class="bissnesMenu">
-                        <p>Суп-пюре с грибами, салат "Цезарь с курицей", картофель пюре, стейк лососем <strong>810
-                                руб</strong></p>
-                        <p>Суп с лососем, паста с креветками, салат "Вегетарианский" <strong>780 руб</strong></p>
-                        <p>Солянка с говядиной, лосось с овощами, салат "Весна" <strong>630 руб</strong></p>
-                        <p>Сур с фрикадельками, тортеллини, салат "Греческий" <strong>660 руб</strong></p>
-                        <p class="bissnesMenuInfo"><small>Уважаемы гости, любое из предложенных блюд может быть заменено
-                                на
-                                альтернативное.</small></p>
-                    </div>
-                </div>
-            </div>
-            <!--Reservation-->
-            <div class="reservation">
-                <p class="resParagraph">Забронировать столик</p>
-                <p>Любой столик можно забронировать по телефону: <strong>+7(8459)78-78-60 </strong></br>или онлайн.</p>
-                <p class="info"><small>Уважаемые гости, столик бронируется не позднее, чем за 2 часа до
-                        мероприятия.</small>
-                </p>
-                <div class="orderTable">
-                    <a href="#orderTableForm"><button class="orderButton reservationButton">Забронировать
-                            столик</button></a>
-                </div>
-            </div>
-            <div id="orderTableForm" class="modalWindow">
-                <div class="modalDialog">
-                    <div class="modalContent">
-                        <div class="modalHeader">
-                            <p class="modalTitle">Бизнес-ланч бронирование столика</p>
-                            <a href="#close" title="Close" class="close">X</a>
+                        <div class="sibmit">
+                            <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
+                                сообщение</button>
                         </div>
-                        <div class="modalBody">
-                            <form class="orderTableForm" action="FormOrder" method="POST" name="orderTable">
-                                <fieldset>
-                                    <p>
-                                        <input name="name" id="firstNameOrder" maxlength="30" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required  />
-                                    </p>
-                                    <p>
-                                        <input name="phone" id="phoneOrder" value="" placeholder="Телефон">
-                                    </p>
-                                    <p>
-                                        <input type="email" id="email" placeholder="E-mail" required />
-                                    </p>
-                                    <fieldset>
-                                        <input type="text" id="datepicker" class="calender" placeholder="Дата"
-                                        title="Кликните мышкой чтобы выбрать дату">
-                                        <input type="text" name="time" id="timeOrder" placeholder="Время">
-                                        <select name="guests" id="guests" size="1">
-                                            <option value="data" selected>Гости</option>
-                                            <option value="2">2 гостя</option>
-                                            <option value="3">3 гостя</option>
-                                            <option value="4">4 гостя</option>
-                                            <option value="5">5 гостей</option>
-                                            <option value="6">6 гостей</option>
-                                            <option value="7">7 гостей</option>
-                                            <option value="8">8 гостей</option>
-                                            <option value="9">9 гостей</option>
-                                            <option value="10">10 гостей</option>
-                                        </select>
-                                    </fieldset>
-                                </fieldset>
-                                <p id="check">
-                                    <input type="checkbox">
-                                    <label for="check1">Я согласен с условиями обработки персональных данных</label>
-                                </p>
-                                <p class="sibmit">
-                                    <button class="ButtonOrder" type="submit" form="orderTableForm">Отправить
-                                        сообщение</button>
-                                </p>
-                            </form>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </div>
-            <div class="footer" id="footer">
-                <p>ул. Ленина, 40</p>
-                <p>+7(8459)78-78-60</p>
-                <p>dolcevita@enjoy.ru</p>
-                <p>&copy;2019</p>
             </div>
         </div>
     </div>

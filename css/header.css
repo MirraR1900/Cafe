@@ -1,0 +1,26 @@
+header {
+    margin: 0 auto;
+    max-width: 1280px;
+    overflow: hidden;
+    height: auto;
+}
+.header {
+    background: url(../images/header7.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.headerFront {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.nameCafe {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: "Times new Roman", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}

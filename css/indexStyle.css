@@ -27,7 +27,12 @@ main {
     background-image: -webkit-linear-gradient(top left, rgb(255, 255, 255), rgb(210, 180, 140));
 }
 
-.story p {
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+.descriptionCafe {
     font-size: 30px;
     font-family: "Times New Roman", Arial, sans-serif;
     font-style: italic;
