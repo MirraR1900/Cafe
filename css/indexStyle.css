@@ -18,6 +18,9 @@ main {
     overflow: hidden;
 }
 
+.nameSection {
+    padding: 30px 0;
+}
 .story {
     padding: 50px 50px 100px 50px;
     background-color: rgb(255, 228, 196);
@@ -226,7 +229,8 @@ h1 {
 
 .comments {
     text-align: center;
-    background: rgb(210, 180, 140);
+    background-color: rgb(210, 180, 140);
+    /* border: 1px solid red; */
 }
 
 .commentHeader p {
@@ -245,10 +249,10 @@ h1 {
 
 .commentForm input {
     margin-top: 10px;
-    width: 400px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 30px;
+    border-radius: 10px;
     background: none;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -256,11 +260,11 @@ h1 {
 }
 
 .commentForm textarea {
-    width: 450px;
+    width: 430px;
     height: auto;
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 10px;
     padding: 10px;
     color: rgb(255, 255, 255);

@@ -107,7 +107,7 @@
             </p>
         </div>
         <div class="menuDishes" id="menuDishes">
-            <p>Меню</p>
+            <p class="nameSection">Меню</p>
             <div class="listDishes">
                 <div class="dish">
                     <a href="html/bisnessLunchStyle.html"><span class="description">Бизнес ланч</span></a>
@@ -149,7 +149,7 @@
         </div>
         <div class="banquets" id="banquets">
             <div>
-                <p>Банкеты и свадьбы</p>
+                <p class="nameSection">Банкеты и свадьбы</p>
             </div>
             <div class="banquetContainer">
                 <div class="banquetList">
@@ -186,7 +186,7 @@
             <div class="modalDialogBanquet">
                 <div class="modalContentBanquet">
                     <div class="modalHeaderBanquet">
-                        <p>Заказать банкет</p>
+                        <p class="nameSection">Заказать банкет</p>
                         <a href="#close" title="Close" class="close">X</a>
                     </div>
                     <div class="modalBodyBanquet">
@@ -214,6 +214,25 @@
                 </div>
             </div>
         </div>
+        <div class="comments" id="comments">
+            <div class="commentHeader">
+                <p class="nameSection">Оставьте свои отзовы и предложения</p>
+            </div>
+            <div class="commentForm">
+                <form id="comment" action="FormComment" method="POST" name="comment">
+                    <p>
+                        <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required>
+                    </p>
+                    <p>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </p>
+                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
+                    <p>
+                        <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
+                    </p>
+                </form>
+            </div>
+        </div>
         <div class="modalWindowGallery" id="modalWindowPhotoGallery">
             <div class="modalGallery">
                 <div class="modalContentGallery">
@@ -235,25 +254,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="comments" id="comments">
-            <div class="commentHeader">
-                <p>Оставьте свои отзовы и предложения</p>
-            </div>
-            <div class="commentForm">
-                <form id="comment" action="FormComment" method="POST" name="comment">
-                    <p>
-                        <input type="text" id="name" name="name" placeholder="Имя" pattern="[А-Яа-яЁё]{1,15}" required>
-                    </p>
-                    <p>
-                        <input type="email" id="email" name="email" placeholder="E-mail" required>
-                    </p>
-                    <textarea id="textComment" name="textComment" placeholder="Напишите ваш отзыв" required></textarea>
-                    <p>
-                        <button class="commentButton" type="submit" form="comment">Отправить отзыв</button>
-                    </p>
-                </form>
             </div>
         </div>
     </main>
