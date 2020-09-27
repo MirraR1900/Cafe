@@ -35,7 +35,6 @@ main {
 }
 
 .description {
-    /* display: none; */
     position: absolute;
     left: 0;
     width: 100%;
@@ -44,10 +43,14 @@ main {
     color: rgb(255, 255, 255);
     text-align: center;
     opacity: 1;
-    top: 70%;
+    top: 65%;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
+}
+
+.composition {
+    display: none;
 }
 
 .nameDish {
