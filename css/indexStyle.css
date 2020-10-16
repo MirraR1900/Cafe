@@ -367,7 +367,38 @@ footer {
 
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
+.story {
+    padding: 20px;
+    line-height: normal;
+}
+.listDishes {
+    grid-template-columns: 1fr;
+}
+.banquetList li {
+    font-size: 20px;
+}
+.commentHeader p {
+    font-size: 30px;
+}
+   
+.commentForm input {
+    width: 300px;
+    font-size: 20px;
+}
+
+.commentForm textarea {
+    width: 270px;
+    font-size: 20px;
+}
+
+.commentButton {
+    width: 200px;
+    font-size: 20px;
+}
+}
+
+/* @media only screen and (max-width: 360px) {
     .story {
         padding: 20px;
         line-height: normal;
@@ -386,12 +417,12 @@ footer {
     }
    
 .commentForm input {
-    width: 250px;
+    width: 300px;
     font-size: 20px;
 }
 
 .commentForm textarea {
-    width: 230px;
+    width: 270px;
     font-size: 20px;
 }
 
@@ -400,4 +431,4 @@ footer {
     font-size: 20px;
 }
 
-}
+} */
