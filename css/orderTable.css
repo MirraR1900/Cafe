@@ -238,7 +238,7 @@ body {
     text-align: center;
 }
 
-.orderTableForm p.sibmit {
+.orderTableForm div.sibmit {
     clear: both;
     background: none;
     padding: 0 25px 20px 25px;

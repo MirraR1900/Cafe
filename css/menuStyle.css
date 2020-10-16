@@ -118,133 +118,27 @@ footer {
     margin: 5px;
 }
 
-@media screen and (min-width: 1250px) and (max-width: 1400px) {
-    /* .description {
-        display: none;
-    }
-    .descriptionMobile {
-        display: grid;
-    } */
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1250px) {
-    /* .description {
-        display: none;
-    }
-    .descriptionMobile {
-        display: block;
-        top: 65%;
-    }
-    .nameDishMobile {
-        font-size: 22px;
-        text-align: center;
-    }
-    .compositionMobile {
-        display: none;
-        font-size: 22px;
-    } */
-}
-
 @media screen and (min-width: 900px) and (max-width: 1000px) {
-    /* .description {
-        display: none;
-    } */
     .gridContainer {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    /* .descriptionMobile {
-        display: block;
-        top: 65%;
-    } */
-    .compositionMobile {
-        display: none;
-        font-size: 25px;
-    }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 900px) {
-    /* .navigation {
-        display: none;
-    }
-    .mobileNavigation {
-        display: grid;
-    }
-    .description {
-        display: none;
-    } */
-    .gridContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .descriptionMobile {
-        display: block;
-        top: 65%;
-    }
-    .nameDishMobile {
-        font-size: 25px;
-        text-align: center;
     }
     .compositionMobile {
         display: none;
-        font-size: 25px;
     }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 800px) {
-    /* .navigation {
-        display: none;
-    }
-    .mobileNavigation {
-        display: grid;
-    }
-    .description {
-        display: none;
-    }
-    .gridContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .descriptionMobile {
-        display: block;
-        top: 65%;
-    }
-    .nameDishMobile {
-        font-size: 22px;
-        text-align: center;
-    }
-    .compositionMobile {
-        display: none;
-        font-size: 22px;
-    } */
+@media only screen and (max-width: 800px) {
+.menuContainer {
+    grid-template-columns: repeat(2, 1fr);
 }
 
-@media only screen and (min-width: 480px) and (max-width: 640px) {
-    .navigation {
-        display: none;
-    }
-    .mobileNavigation {
-        display: grid;
-    }
-    .description {
-        display: none;
-    }
-    .gridContainer {
-        display: grid;
+.nameDish {
+    font-size: 23px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .menuContainer {
         grid-template-columns: 1fr;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-    .descriptionMobile {
-        display: block;
-        top: 65%;
-    }
-    .nameDishMobile {
-        font-size: 22px;
-        text-align: center;
-    }
-    .compositionMobile {
-        display: none;
-        font-size: 22px;
-    }
+    }    
 }
