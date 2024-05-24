@@ -1,6 +1,6 @@
 # Website Cafe Dolce Vita
 
-[View website](http://site-test-cafe-dolce-vita.netlify.com)
+[View website](https://site-test-cafe-dolce-vita.netlify.app/)
 
 
 The site is a practical work and was written with the aim of learning the basics of layout and the JavaScript language.
